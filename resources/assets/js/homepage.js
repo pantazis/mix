@@ -1,5 +1,10 @@
 import {$,jQuery} from 'jquery';
-import 'bootstrap';
-// export for others scripts to use
+import { createPopper } from '@popperjs/core';
+import {  Alert,Tooltip } from 'bootstrap';
+
+
 window.$ = $;
 window.jQuery = jQuery;
+
+
+console.log( Alert)
