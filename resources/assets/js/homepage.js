@@ -7,4 +7,3 @@ window.$ = $;
 window.jQuery = jQuery;
 
 
-console.log( Alert)
