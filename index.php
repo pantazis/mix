@@ -23,7 +23,8 @@ echo '.'.$obj->$filename;
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
+  <link href="<?php mix('/public/assets/css/home_page.css');?>" rel="stylesheet">
+  
   <!-- Plugin CSS -->
  
 

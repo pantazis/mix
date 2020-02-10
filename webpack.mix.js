@@ -8,6 +8,5 @@ mix.options({
 
 mix.js('./resources/assets/js/homepage.js','./public/assets/js/homepage.js');
 
-
-mix.sass('public/scss/home_page.scss', 'public/css');
+mix.sass('resources/assets/sass/home_page.scss','public/assets/css');
 
