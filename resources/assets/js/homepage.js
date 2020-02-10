@@ -1,3 +1,4 @@
-import {jQuery} from './_libraries/jquery-3.4.1';
-
-console.log(jQuery)
+import {$,jQuery} from 'jquery';
+// export for others scripts to use
+window.$ = $;
+window.jQuery = jQuery;
