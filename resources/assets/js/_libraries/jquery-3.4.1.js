@@ -10596,3 +10596,6 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+
+
+export function jQuery();

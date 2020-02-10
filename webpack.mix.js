@@ -1,4 +1,8 @@
 const mix = require('laravel-mix');
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+mix.options({
+   processCssUrls: false 
+}).sourceMaps(true, 'source-map').version();
+
+
+mix.js('resources\assets\js\homepage.js','public/assets/js/homepage.js');
