@@ -1,9 +1,13 @@
 
-// Variables
-@import "_variables";
 
 // Bootstrap
 @import "_libraries/bootstrap-scss/bootstrap";
+// Bootstrap varibles scss
+@import "_libraries/bootstrap-scss/_variables";
+
+// Variables
+@import "_variables";
+
 
 //navbar scss
 @import "_partial/_nav.scss";
