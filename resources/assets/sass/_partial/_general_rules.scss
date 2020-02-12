@@ -1,4 +1,9 @@
 
+p{
+    color: $fontcolor;
+    font-size: 15px;
+}
+
 
 .main_body {
     margin-top: $nav_height;
@@ -16,12 +21,47 @@
     border-radius: 4px;
     padding:  20px;
     margin:#{$grid-gutter-width/2} 0px;
+    &.main_cat {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
     p,a{
         padding: 0;
         margin: 0;
     }
     .listrow {
         border-bottom: 1px solid #{$border_color};
-        margin-bottom: 8px;
+        padding: 12px 0;
+        position: relative;
+        img.bg_icon {
+            right: 0;
+            position: absolute;
+            top: 20px;
+        }
+        &:last-of-type {
+            padding-bottom:  0;
+            border-bottom: 0;
+          }
+          &:first-of-type {
+            img.bg_icon {
+               top: 0px;
+            }
+            padding-top:  0;
+          }
     }
+
+    a.icon {
+    
+        margin-left: auto;
+        img{
+            width: 30px;
+        }
+    }
+}
+
+p.num {
+    font-size: 25px;
+    color: #2F80ED;
 }

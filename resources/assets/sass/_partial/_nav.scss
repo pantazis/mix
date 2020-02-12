@@ -26,7 +26,23 @@ nav.side{
     bottom: 0;
     height: 100%;
     left: 0;
-    border: 1px solid #{$border_color};
+    border-right: 1px solid #{$border_color};
+    ul{
+        padding: 0;
+        li {
+            border-bottom: 1px solid #{$border_color};;
+            padding: 5px;
+        }
+    }
+    img {
+        width: 38px;
+    }
+
+    span.text {
+        font-weight: bold;
+        margin-left: 5px;
+        color: $fontcolor;
+    }
 
 
 }

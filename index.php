@@ -36,12 +36,13 @@ echo '.'.$obj->$filename;
     <div class="main_body">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="text_con">
+                <div class="col-lg-12">
+                    <div class="text_con main_cat">
                         <h1 class="h2">Πίνακας ελέγχου</h1>
+                        <a href="" class="icon"><img  src="public/assets/img/info.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="text_con">
                         <h2 class="h3">pantazis vastardis</h2>
                         <p>pantazisvastardis@gmail.com <a href="">(επαλήθευση)</a>
@@ -51,9 +52,6 @@ echo '.'.$obj->$filename;
                             <a href="">αλλαγή στοιχείων & ρυθμίσεων</a>
                         </p>
                     </div>
-                </div>
-
-                <div class="col-md-8">
                     <div class="text_con">
                     <?php for ($x = 0; $x <= 2; $x++) { ?>
                         <div class="listrow">
@@ -61,13 +59,29 @@ echo '.'.$obj->$filename;
                                 ΥΠΟΛΟΙΠΟ FORTH
                             </h2>
                             <p class="num">
+                                100
+                            </p>                            
+                        </div>
+                    <?php } ?>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="text_con">
+                    <?php for ($x = 0; $x <= 2; $x++) { ?>
+                        <div class="listrow">
+                        <img class="bg_icon"  src="public/assets/img/euro" alt="">
+                            <h2 class="h3">
+                                ΥΠΟΛΟΙΠΟ FORTH
+                            </h2>
+                            <p class="num">
                                 $47.928,31
                             </p>
                             <p>
-                                Τιμές:com: $8,95net: $15,55org: $8,95cc: $24,95tv: $39,95
+                                <b>Τιμές:</b> com: $8,95net: $15,55org: $8,95cc: $24,95tv: $39,95
                             </p>
                             <p>
-                                Συνολικά domains: 6
+                                <b>Συνολικά domains:</b> 6
                             </p>
                         </div>
                     <?php } ?>
@@ -75,6 +89,17 @@ echo '.'.$obj->$filename;
                 </div>
 
 
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text_con">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary no">no menu</button>
+                            <button type="button" class="btn btn-secondary only">only icons</button>
+                            <button type="button" class="btn btn-secondary full"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

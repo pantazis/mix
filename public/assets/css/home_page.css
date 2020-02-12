@@ -5,6 +5,10 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/*sm: 540px,
+ md: 720px,
+ lg: 960px,
+ xl: 1140px*/
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -76,7 +80,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
 }
 
 p {
@@ -356,9 +360,9 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 h1, .h1 {
@@ -393,25 +397,25 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 hr {
@@ -544,22 +548,22 @@ pre code {
 }
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 1280px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 1280px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 1280px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1280px;
   }
 }
 
@@ -572,23 +576,23 @@ pre code {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container {
-    max-width: 540px;
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1280px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 720px;
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1280px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1280px;
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1280px;
   }
 }
 .row {
@@ -9946,8 +9950,16 @@ h3 {
     border-color: #dee2e6;
   }
 }
+/*sm: 540px,
+ md: 720px,
+ lg: 960px,
+ xl: 1140px*/
 h3, .h3 {
   font-size: 20px;
+}
+
+h2, .h2 {
+  font-size: 25px;
 }
 
 nav.nav_top {
@@ -9973,7 +9985,27 @@ nav.side {
   bottom: 0;
   height: 100%;
   left: 0;
-  border: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+nav.side ul {
+  padding: 0;
+}
+nav.side ul li {
+  border-bottom: 1px solid #dedede;
+  padding: 5px;
+}
+nav.side img {
+  width: 38px;
+}
+nav.side span.text {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #616060;
+}
+
+p {
+  color: #616060;
+  font-size: 15px;
 }
 
 .main_body {
@@ -9992,12 +10024,44 @@ nav.side {
   padding: 20px;
   margin: 15px 0px;
 }
+.text_con.main_cat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .text_con p, .text_con a {
   padding: 0;
   margin: 0;
 }
 .text_con .listrow {
   border-bottom: 1px solid #dedede;
-  margin-bottom: 8px;
+  padding: 12px 0;
+  position: relative;
+}
+.text_con .listrow img.bg_icon {
+  right: 0;
+  position: absolute;
+  top: 20px;
+}
+.text_con .listrow:last-of-type {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.text_con .listrow:first-of-type {
+  padding-top: 0;
+}
+.text_con .listrow:first-of-type img.bg_icon {
+  top: 0px;
+}
+.text_con a.icon {
+  margin-left: auto;
+}
+.text_con a.icon img {
+  width: 30px;
+}
+
+p.num {
+  font-size: 25px;
+  color: #2F80ED;
 }
 /*# sourceMappingURL=home_page.css.map*/
