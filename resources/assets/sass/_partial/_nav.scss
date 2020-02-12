@@ -1,0 +1,32 @@
+$nav_height: 50px;
+$border_color:#dedede;
+$nav_side_width:200px;
+
+nav.nav_top{
+    height: $nav_height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #{$border_color};
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    
+    img.logo {
+        height: 100%;
+    }
+}
+
+nav.side{
+    position: fixed;
+    top:$nav_height;
+    width:$nav_side_width;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    border: 1px solid #{$border_color};
+
+
+}

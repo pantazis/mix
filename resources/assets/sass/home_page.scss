@@ -1,9 +1,9 @@
 
-// Fonts
-
-
 // Variables
 @import "_variables";
 
 // Bootstrap
 @import "_libraries/bootstrap-scss/bootstrap";
+
+//navbar scss
+@import "_partial/_nav.scss";
