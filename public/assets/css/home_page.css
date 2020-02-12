@@ -9971,4 +9971,19 @@ nav.side {
   left: 0;
   border: 1px solid #dedede;
 }
+
+.main_body {
+  margin-top: 50px;
+  margin-left: 200px;
+  min-height: calc(100vh - 50px);
+  background-color: #F3F3F4;
+}
+
+.text_con {
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
 /*# sourceMappingURL=home_page.css.map*/

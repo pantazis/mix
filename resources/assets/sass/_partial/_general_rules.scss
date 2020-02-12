@@ -1,0 +1,17 @@
+
+
+.main_body {
+    margin-top: $nav_height;
+    margin-left: $nav_side_width;
+    min-height: calc(100vh - #{$nav_height});
+    background-color: $main_body_background;
+
+}
+
+.text_con {
+    border: 1px solid #{$border_color};
+    border-bottom: 2px solid #{$border_color};;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+}

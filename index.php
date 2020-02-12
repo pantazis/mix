@@ -33,9 +33,11 @@ echo '.'.$obj->$filename;
     <div class="main_body">
         <div class="container">
             <div class="row">
-                <div class="text_con col-md-4">aaaa</div>
-                <div class="text_con col-md-4">aaaa</div>
-                <div class="text_con col-md-4">aaaa</div>
+                <?php for ($x = 0; $x <= 10; $x++) { ?>
+                <div class="col-md-4">
+                <div class="text_con">aaaa</div> </div>
+                <?php } ?>
+              
             </div>
         </div>
     </div>
