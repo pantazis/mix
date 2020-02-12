@@ -1,6 +1,6 @@
 $nav_height: 50px;
 $border_color:#dedede;
-$nav_side_width:200px;
+$nav_side_full:200px;
 
 nav.nav_top{
     height: $nav_height;
@@ -13,6 +13,8 @@ nav.nav_top{
     top:0;
     left:0;
     width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
     
     img.logo {
         height: 100%;
@@ -20,18 +22,33 @@ nav.nav_top{
 }
 
 nav.side{
+    width: 0;
+    background-color: #ffffff;
+    overflow: hidden;
     position: fixed;
     top:$nav_height;
-    width:$nav_side_width;
     bottom: 0;
     height: 100%;
     left: 0;
     border-right: 1px solid #{$border_color};
+    transition: width .3s;
+    .no-menu &{
+        width: $nav_side_none;
+       }
+       
+       .only_icons &{
+        width: $nav_side_icons;
+       }
+       
+       .full_menu &{
+        width: $nav_side_full;
+       }
     ul{
         padding: 0;
         li {
             border-bottom: 1px solid #{$border_color};;
             padding: 5px;
+            min-width: 200px;
         }
     }
     img {

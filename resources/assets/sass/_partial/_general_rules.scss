@@ -7,10 +7,21 @@ p{
 
 .main_body {
     margin-top: $nav_height;
-    margin-left: $nav_side_width;
     min-height: calc(100vh - #{$nav_height});
     background-color: $main_body_background;
     padding:#{$grid-gutter-width/2} ;
+    transition:  margin-left .3s;
+    .no-menu &{
+        margin-left: $nav_side_none;
+       }
+       
+       .only_icons &{
+       margin-left: $nav_side_icons;
+       }
+       
+       .full_menu &{
+       margin-left: $nav_side_full;
+       }
 
 }
 

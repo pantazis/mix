@@ -96,7 +96,7 @@ echo '.'.$obj->$filename;
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-secondary no">no menu</button>
                             <button type="button" class="btn btn-secondary only">only icons</button>
-                            <button type="button" class="btn btn-secondary full"></button>
+                            <button type="button" class="btn btn-secondary full">full</button>
                         </div>
                     </div>
                 </div>

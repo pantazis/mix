@@ -20612,22 +20612,53 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./resources/assets/js/_partial/global_functions.js":
-/*!**********************************************************!*\
-  !*** ./resources/assets/js/_partial/global_functions.js ***!
-  \**********************************************************/
+/***/ "./resources/assets/js/_partial/nav.js":
+/*!*********************************************!*\
+  !*** ./resources/assets/js/_partial/nav.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // behaviour for our module
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
+var menu_class_arr = ["no-menu", "only_icons", "full_menu"];
 
-function foo() {
-  $("body").addClass("asasasas");
-} // export (expose) foo to other modules
+function remuveNavClasses() {
+  $(menu_class_arr).each(function (index) {
+    $("body").removeClass(menu_class_arr[index]);
+  });
+}
 
+function change_menu() {
+  $('button').click(function () {
+    remuveNavClasses();
 
-exports.foo = foo;
+    if ($(this).hasClass("no")) {
+      $("body").addClass("no-menu");
+    }
+
+    if ($(this).hasClass("only")) {
+      $("body").addClass("only_icons");
+    }
+
+    if ($(this).hasClass("full")) {
+      $("body").addClass("full_menu");
+    }
+  });
+}
+
+function fullMenuOnHover() {
+  $("nav.side").hover(function () {
+    remuveNavClasses();
+    $("body").addClass("full_menu");
+  }, function () {
+    remuveNavClasses();
+    $("body").addClass("only_icons");
+  });
+}
+
+exports.change_menu = change_menu;
+exports.fullMenuOnHover = fullMenuOnHover;
 
 /***/ }),
 
@@ -20643,14 +20674,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _popperjs_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/popper.js");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _partial_global_functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_partial/global_functions */ "./resources/assets/js/_partial/global_functions.js");
-/* harmony import */ var _partial_global_functions__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_partial_global_functions__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _partial_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_partial/nav */ "./resources/assets/js/_partial/nav.js");
+/* harmony import */ var _partial_nav__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_partial_nav__WEBPACK_IMPORTED_MODULE_2__);
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
 
 
-Object(_partial_global_functions__WEBPACK_IMPORTED_MODULE_2__["foo"])();
+Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_menu"])();
+fullMenuOnHover();
 
 /***/ }),
 

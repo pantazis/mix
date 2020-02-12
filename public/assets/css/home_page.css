@@ -9973,19 +9973,33 @@ nav.nav_top {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
 }
 nav.nav_top img.logo {
   height: 100%;
 }
 
 nav.side {
+  width: 0;
+  background-color: #ffffff;
+  overflow: hidden;
   position: fixed;
   top: 50px;
-  width: 200px;
   bottom: 0;
   height: 100%;
   left: 0;
   border-right: 1px solid #dedede;
+  transition: width 0.3s;
+}
+.no-menu nav.side {
+  width: 0;
+}
+.only_icons nav.side {
+  width: 48px;
+}
+.full_menu nav.side {
+  width: 200px;
 }
 nav.side ul {
   padding: 0;
@@ -9993,6 +10007,7 @@ nav.side ul {
 nav.side ul li {
   border-bottom: 1px solid #dedede;
   padding: 5px;
+  min-width: 200px;
 }
 nav.side img {
   width: 38px;
@@ -10010,10 +10025,19 @@ p {
 
 .main_body {
   margin-top: 50px;
-  margin-left: 200px;
   min-height: calc(100vh - 50px);
   background-color: #F3F3F4;
   padding: 15px;
+  transition: margin-left 0.3s;
+}
+.no-menu .main_body {
+  margin-left: 0;
+}
+.only_icons .main_body {
+  margin-left: 48px;
+}
+.full_menu .main_body {
+  margin-left: 200px;
 }
 
 .text_con {
