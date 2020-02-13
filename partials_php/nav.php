@@ -5,7 +5,9 @@
                 <div class="three"></div>
             </div>
     
-<img src="public/assets/img/nav/dnhost-logo.svg" alt="" class="logo"></nav>
+<img src="public/assets/img/nav/dnhost-logo.svg" alt="" class="logo">
+
+</nav>
 <nav class="side">
 <ul>
 <?php for ($x = 0; $x <= 10; $x++) { ?>
@@ -14,6 +16,7 @@
     </li>
 <?php } ?>
 </ul>
+
 
 
 </nav>
