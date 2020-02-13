@@ -20621,44 +20621,46 @@ module.exports = g;
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-var menu_class_arr = ["no-menu", "only_icons", "full_menu"];
-
-function remuveNavClasses() {
-  $(menu_class_arr).each(function (index) {
-    $("body").removeClass(menu_class_arr[index]);
+function remuveNavClasses(classarr, el) {
+  $(classarr).each(function (index) {
+    $("body").removeClass(classarr[index]);
   });
-}
-
-function change_menu() {
-  $('button').click(function () {
-    remuveNavClasses();
-
-    if ($(this).hasClass("no")) {
-      $("body").addClass("no-menu");
-    }
-
-    if ($(this).hasClass("only")) {
-      $("body").addClass("only_icons");
-    }
-
-    if ($(this).hasClass("full")) {
-      $("body").addClass("full_menu");
+  $(classarr).each(function (index) {
+    if ($(el).hasClass(classarr[index])) {
+      $("body").addClass(classarr[index]);
     }
   });
 }
 
-function fullMenuOnHover() {
-  $("nav.side").hover(function () {
-    remuveNavClasses();
-    $("body").addClass("full_menu");
-  }, function () {
-    remuveNavClasses();
-    $("body").addClass("only_icons");
+function change_menu(arr, el) {
+  console.log(el);
+  remuveNavClasses(arr, el);
+}
+
+function change_container_size(arr, el) {
+  remuveNavClasses(arr, el);
+}
+/*function fullMenuOnHover(){
+    $("nav.side").hover(function(){
+        remuveNavClasses ();
+        $("body").addClass("full_menu");
+      }, function(){
+        remuveNavClasses ();
+        $("body").addClass("only_icons");
+    });
+}*/
+
+
+function toggleMenu() {
+  $("#toggle").click(function () {
+    $("body").toggleClass("menu_open");
   });
 }
 
-exports.change_menu = change_menu;
-exports.fullMenuOnHover = fullMenuOnHover;
+exports.change_menu = change_menu; //exports.fullMenuOnHover = fullMenuOnHover;
+
+exports.toggleMenu = toggleMenu;
+exports.change_container_size = change_container_size;
 
 /***/ }),
 
@@ -20681,8 +20683,16 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 
 
-Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_menu"])();
-fullMenuOnHover();
+var menu_class_arr = ["no-menu", "only_icons", "full_menu"];
+var container_size_arr = ["full_container", "normal_container"];
+$(".b1 button").click(function (event) {
+  Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_menu"])(menu_class_arr, event.target);
+});
+$(".b2 button").click(function (event) {
+  Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_container_size"])(container_size_arr, event.target);
+}); //fullMenuOnHover();
+
+Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["toggleMenu"])();
 
 /***/ }),
 

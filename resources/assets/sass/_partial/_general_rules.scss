@@ -4,6 +4,14 @@ p{
     font-size: 15px;
 }
 
+.container{
+    transition: max-width .3s;
+    .full_container &{
+        max-width: 100%;
+    }
+
+}
+
 
 .main_body {
     margin-top: $nav_height;

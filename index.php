@@ -93,10 +93,15 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con">
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary no">no menu</button>
-                            <button type="button" class="btn btn-secondary only">only icons</button>
-                            <button type="button" class="btn btn-secondary full">full</button>
+                        <div class="btn-group b1" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary no-menu">no menu</button>
+                            <button type="button" class="btn btn-secondary only_icons">only icons</button>
+                            <button type="button" class="btn btn-secondary full_menu">full</button>
+                        </div>
+                        <div class="btn-group b2" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary full_container ">full container </button>
+                            <button type="button" class="btn btn-secondary normal_container">normal_container</button>
+                           
                         </div>
                     </div>
                 </div>
