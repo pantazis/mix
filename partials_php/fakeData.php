@@ -91,3 +91,7 @@ $menu_cat = '{
 }';
 
 $menu_cat2 = json_decode($menu_cat,true);
+
+/*fa-user
+fa-shopping-cart
+fa-question-circle*/
