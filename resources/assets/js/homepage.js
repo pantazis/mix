@@ -1,7 +1,7 @@
 var $ = require("jquery");
 import { createPopper } from '@popperjs/core';
 import {  Alert,Tooltip } from 'bootstrap';
-import {change_menu,toggleMenu,change_container_size } from './_partial/nav';
+import {change_menu,toggleMenu,change_container_size,menu_sub_cat } from './_partial/nav';
 
 
 
@@ -18,7 +18,7 @@ $(".b2 button").click(function(event){
 })
 
 //fullMenuOnHover();
-
+menu_sub_cat();
     toggleMenu();
 
 

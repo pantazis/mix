@@ -15943,16 +15943,18 @@ nav.side {
 }
 nav.side ul {
   padding: 0;
+  list-style: none;
 }
 nav.side ul li {
+  width: 200px;
   border-bottom: 1px solid #dedede;
-  min-width: 200px;
+  position: relative;
 }
 nav.side ul li a {
   display: flex;
   align-items: center;
 }
-nav.side span.nav_icon {
+nav.side ul span.nav_icon {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -15960,10 +15962,10 @@ nav.side span.nav_icon {
   justify-content: center;
   align-items: center;
 }
-nav.side span.nav_icon img {
+nav.side ul span.nav_icon img {
   width: 28px;
 }
-nav.side span.text {
+nav.side ul span.text {
   font-weight: bold;
   margin-left: 5px;
   color: #616060;
@@ -15981,6 +15983,10 @@ nav.nav-modal {
   z-index: 3;
   width: 0;
 }
+nav.nav-modal .ul_par {
+  display: flex;
+  flex-direction: row;
+}
 .menu_open nav.nav-modal {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -15994,6 +16000,67 @@ nav.nav-modal .side_cont {
 }
 .menu_open nav.nav-modal .side_cont {
   transform: translatex(0px);
+}
+nav.nav-modal .side_cont ul {
+  padding: 0;
+  list-style: none;
+}
+nav.nav-modal .side_cont ul li {
+  width: 300px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+nav.nav-modal .side_cont ul li a {
+  display: flex;
+  align-items: center;
+}
+nav.nav-modal .side_cont ul span.nav_icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav.nav-modal .side_cont ul span.nav_icon img {
+  width: 28px;
+}
+nav.nav-modal .side_cont ul span.text {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #616060;
+}
+nav.nav-modal .side_cont ul {
+  width: 0;
+  transition: width 0.3s;
+  z-index: 1;
+}
+nav.nav-modal .side_cont ul li.first_sub {
+  background-color: #004280;
+}
+nav.nav-modal .side_cont ul li.first_sub span.text {
+  color: #fff;
+}
+nav.nav-modal .side_cont ul li.first_sub .nav_icon img {
+  -webkit-filter: contrast(100);
+          filter: contrast(100);
+}
+nav.nav-modal .side_cont ul.sub_cat {
+  z-index: 2;
+  overflow: hidden;
+  width: 0;
+  background-color: #fff;
+}
+nav.nav-modal .side_cont ul.sub_cat.active {
+  width: 300px;
+}
+nav.nav-modal .side_cont i.fas {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1;
 }
 nav.nav-modal img.top_img {
   width: 100%;

@@ -20655,12 +20655,24 @@ function toggleMenu() {
   $("#toggle").click(function () {
     $("body").toggleClass("menu_open");
   });
+} //opne menu sub categories
+
+
+function menu_sub_cat() {
+  $(".side_cont li").click(function () {
+    var parent_category = $(this).attr("data-parent");
+    $(".side_cont ul[data-child=" + parent_category + "]").addClass("active");
+  });
+  $(".sub_cat ").click(function () {
+    $(this).removeClass("active");
+  });
 }
 
 exports.change_menu = change_menu; //exports.fullMenuOnHover = fullMenuOnHover;
 
 exports.toggleMenu = toggleMenu;
 exports.change_container_size = change_container_size;
+exports.menu_sub_cat = menu_sub_cat;
 
 /***/ }),
 
@@ -20692,6 +20704,7 @@ $(".b2 button").click(function (event) {
   Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_container_size"])(container_size_arr, event.target);
 }); //fullMenuOnHover();
 
+Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["menu_sub_cat"])();
 Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["toggleMenu"])();
 
 /***/ }),

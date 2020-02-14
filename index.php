@@ -1,3 +1,4 @@
+<?php include "partials_php/fakeData.php"?> 
 <?php
 function mix($filename){
 $json = file_get_contents('mix-manifest.json');
@@ -5,7 +6,10 @@ $obj = json_decode($json);
 echo '.'.$obj->$filename;
 };
 
+
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

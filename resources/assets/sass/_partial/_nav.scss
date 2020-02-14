@@ -2,6 +2,38 @@ $nav_height: 50px;
 $border_color:#dedede;
 $nav_side_full:200px;
 
+@mixin navstyle($width){
+    ul{
+        padding: 0;
+        list-style: none;
+     li {
+        width: $width;
+        border-bottom: 1px solid #dedede;
+        position: relative;
+    a {
+        display: flex;
+        align-items: center;
+    }
+        }
+    span.nav_icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 28px;
+        }
+    }
+     span.text {
+        font-weight: bold;
+        margin-left: 5px;
+        color: #616060;
+    }
+    }
+    }
+
 #toggle {
     position: absolute;
     left: 20px;
@@ -73,43 +105,17 @@ nav.side{
        .full_menu &{
         width: $nav_side_full;
        }
-    ul{
-        padding: 0;
-        li {
-            border-bottom: 1px solid #{$border_color};;
-           
-            min-width: 200px;
-            a{
-                display: flex;
-                align-items: center;
-            
-
-            }
-        }
-    }
-    span.nav_icon {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-            width: 28px;
-        }
-    }
-    
-
-    span.text {
-        font-weight: bold;
-        margin-left: 5px;
-        color: $fontcolor;
-    }
+       @include navstyle($nav_side_full);
+   
 
 
 }
 
 nav.nav-modal {
+    .ul_par {
+        display: flex;
+        flex-direction: row;
+    }
     position: fixed;
     top: $nav_height;
     left: 0;
@@ -138,6 +144,50 @@ nav.nav-modal {
     .menu_open & {
         transform: translatex(0px);
     }
+    @include navstyle($side_width);
+    ul{
+        width: 0;
+        transition: width .3s;
+        z-index:1; 
+          li.first_sub {
+            background-color: #004280;
+            span.text {               
+                color: #fff;
+               
+            }
+            .nav_icon{
+                img{
+                    filter: contrast(100);
+                }
+
+            }
+          
+        } 
+       &.sub_cat{ 
+        z-index: 2;        
+           overflow: hidden;
+           width: 0;
+           background-color: #fff;
+           &.active{       
+        
+            width:$side_width;
+
+           }
+        }
+        
+      
+
+    }
+    i.fas {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 1;
+    }
+  
+     
 }
 img.top_img {
     width: 100%;
@@ -145,3 +195,5 @@ img.top_img {
 
 
 }
+
+
