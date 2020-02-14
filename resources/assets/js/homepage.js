@@ -7,7 +7,9 @@ import {change_menu,toggleMenu,change_container_size,menu_sub_cat } from './_par
 
 var menu_class_arr = ["no-menu","only_icons","full_menu"];
 var container_size_arr = ["full_container", "normal_container"];
-
+$(function () {
+    $('[data-toggle="popover0"]').popover()
+  })
 
 $(".b1 button").click(function(event){
     change_menu(menu_class_arr,event.target);

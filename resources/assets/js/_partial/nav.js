@@ -41,12 +41,12 @@ $("#toggle").click(function(){
 }
 //opne menu sub categories
 function menu_sub_cat(){   
-    $(".side_cont li").click(function(){
-       var parent_category = $(this).attr("data-parent");
+    $(".side_cont li .fas").click(function(){
+       var parent_category = $(this).closest("li").attr("data-parent");
        $(".side_cont ul[data-child="+parent_category+"]").addClass("active");
     });
-    $(".sub_cat ").click(function(){
-      $(this).removeClass("active")
+    $(".sub_cat .fas").click(function(){
+      $(this).closest("ul").removeClass("active")
     });
 }
 

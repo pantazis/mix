@@ -20659,12 +20659,12 @@ function toggleMenu() {
 
 
 function menu_sub_cat() {
-  $(".side_cont li").click(function () {
-    var parent_category = $(this).attr("data-parent");
+  $(".side_cont li .fas").click(function () {
+    var parent_category = $(this).closest("li").attr("data-parent");
     $(".side_cont ul[data-child=" + parent_category + "]").addClass("active");
   });
-  $(".sub_cat ").click(function () {
-    $(this).removeClass("active");
+  $(".sub_cat .fas").click(function () {
+    $(this).closest("ul").removeClass("active");
   });
 }
 
@@ -20697,6 +20697,9 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 var menu_class_arr = ["no-menu", "only_icons", "full_menu"];
 var container_size_arr = ["full_container", "normal_container"];
+$(function () {
+  $('[data-toggle="popover0"]').popover();
+});
 $(".b1 button").click(function (event) {
   Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_menu"])(menu_class_arr, event.target);
 });

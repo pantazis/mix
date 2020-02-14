@@ -70,7 +70,7 @@ nav.nav_top{
     justify-content: center;
     align-items: center;
     padding: 5px;
-    border-bottom: 1px solid #{$border_color};
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
     position: fixed;
     top:0;
     left:0;
@@ -92,7 +92,10 @@ nav.side{
     bottom: 0;
     height: 100%;
     left: 0;
-    border-right: 1px solid #{$border_color};
+
+    box-shadow:  -2px 0px 3px 0px rgba(0, 0, 0, 0.2) inset;
+
+
     transition: width .3s;
     .no-menu &{
         width: $nav_side_none;
@@ -193,6 +196,47 @@ img.top_img {
     width: 100%;
 }
 
+
+}
+
+.icon-par {
+    display: flex;
+    position: absolute;
+    right: 20px;
+}
+.nav-icon {
+    cursor:pointer;
+    width: 44px;
+    height: 44px;
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    position: relative;
+    i.fa.fa-mars-double {
+        position: relative;
+        z-index: 1;
+    }
+   
+}
+
+.bg-effect{
+    position: absolute;
+    background-color: #F3F3F4;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    transform: scale(0);
+    transition: all .3s;
+    .nav-icon:hover &{
+        transform: scale(1);
+     }
 
 }
 

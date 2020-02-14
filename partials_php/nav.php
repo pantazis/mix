@@ -7,6 +7,17 @@
     </div>
 
     <img src="public/assets/img/nav/dnhost-logo.svg" alt="" class="logo">
+    <div class="icon-par">
+    <?php for ($x = 0; $x <= 2; $x++) { ?>        
+        <div class="nav-icon"  data-container="body" data-toggle="popover<?=$x?>" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+            <div class="bg-effect"></div>
+             <i class="fa fa-mars-double" aria-hidden="true"></i>
+        </div>
+     
+    <?php } ?>
+    </div>
+
 
 </nav>
 <nav class="side">
