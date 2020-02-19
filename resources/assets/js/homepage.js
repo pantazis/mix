@@ -1,22 +1,56 @@
 var $ = require("jquery");
 import { createPopper } from '@popperjs/core';
 import {  Alert,Tooltip } from 'bootstrap';
-import {change_menu,toggleMenu,change_container_size,menu_sub_cat } from './_partial/nav';
+import {change_menu,toggleMenu,change_container_size,menu_sub_cat,nav_popover } from './_partial/nav';
 
 
 
 var menu_class_arr = ["no-menu","only_icons","full_menu"];
 var container_size_arr = ["full_container", "normal_container"];
-$(function () {
-    $('[data-toggle="popover0"]').popover()
-  })
+
+var popover_options={
+   html:true,
+   boundary:'viewport'    
+};
+
+nav_popover('[data-toggle="popover0"]',$(".login").html(),popover_options);
+
+nav_popover('[data-toggle="popover1"]',$(".cart").html(),popover_options);
+
+nav_popover('[data-toggle="popover2"]',$(".help").html(),popover_options);
+
+
+
+
+
+
+
+
+  $("body").click(function(event){  
+   var is_popover_body = $(event.target).closest(".popover-body").length == 0;
+   var is_popover = $(event.target).closest('[data-toggle*="popover"]').length == 0;
+   if(is_popover_body && is_popover){
+        $(this).find('[data-toggle*="popover"]').popover('hide');
+       
+      }
+     
+    
+      
+  });
+
+  $('[data-toggle*="popover"]').on('click', function (e) {
+    $('[data-toggle*="popover"]').not(this).popover('hide');
+});
+
 
 $(".b1 button").click(function(event){
-    change_menu(menu_class_arr,event.target);
+    var targ = $(event.target).closest(".btn");
+    change_menu(menu_class_arr,targ);
 });
 
 $(".b2 button").click(function(event){
-    change_container_size(container_size_arr,event.target);
+    var targ = $(event.target).closest(".btn");
+    change_container_size(container_size_arr,targ );
 })
 
 //fullMenuOnHover();

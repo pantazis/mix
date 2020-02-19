@@ -10,16 +10,12 @@ function remuveNavClasses (classarr,el){
         if($(el).hasClass(classarr[index])){
             $("body").addClass(classarr[index]);
             }
-       
-        
     });
    
 }
 
-function change_menu (arr,el){   
-    console.log(el);   
+function change_menu (arr,el){
             remuveNavClasses (arr,el);
-      
 }
 
 function change_container_size (arr,el){  
@@ -50,6 +46,17 @@ function menu_sub_cat(){
     });
 }
 
+function nav_popover(el,data,options){   
+$(el).hover(function(){
+    $(this).attr('data-content',data);    
+    $(el).popover(options);
+ 
+});
+}
+
+   
+
+
 
  
 
@@ -58,5 +65,6 @@ exports.change_menu = change_menu;
 exports.toggleMenu = toggleMenu;
 exports.change_container_size = change_container_size;
 exports.menu_sub_cat=menu_sub_cat;
+exports. nav_popover= nav_popover;
 
 

@@ -62,14 +62,14 @@ echo '.'.$obj->$filename;
                             <h2 class="h3">
                                 ΥΠΟΛΟΙΠΟ FORTH
                             </h2>
-                            <p class="num">
-                                100
-                            </p>                            
+                            <div class="flex-r">
+                            <p class="num">100</p> 
+                            <button type="button" class="ml-auto btn btn-primary btn-sm">προβολή</button>
+                            </div>                                                     
                         </div>
                     <?php } ?>
                     </div>
                 </div>
-
                 <div class="col-lg-8">
                     <div class="text_con">
                     <?php for ($x = 0; $x <= 2; $x++) { ?>
@@ -84,27 +84,31 @@ echo '.'.$obj->$filename;
                             <p>
                                 <b>Τιμές:</b> com: $8,95net: $15,55org: $8,95cc: $24,95tv: $39,95
                             </p>
+                            <div class="flex-r">
                             <p>
                                 <b>Συνολικά domains:</b> 6
                             </p>
+                            <p>
+                                Τελ. έλεγχος: 17/02/2020 16:06:01
+                            </p>
+                            </div>
+
                         </div>
                     <?php } ?>
                     </div>
                 </div>
-
-
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con">
                         <div class="btn-group b1" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary no-menu">no menu</button>
-                            <button type="button" class="btn btn-secondary only_icons">only icons</button>
-                            <button type="button" class="btn btn-secondary full_menu">full</button>
+                            <button type="button" class="btn btn-secondary no-menu"><span class="text">no menu</span></button>
+                            <button type="button" class="btn btn-secondary only_icons"><span class="text">only icons</span></button>
+                            <button type="button" class="btn btn-secondary full_menu"><span class="text">full</span></button>
                         </div>
                         <div class="btn-group b2" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary full_container ">full container </button>
-                            <button type="button" class="btn btn-secondary normal_container">normal_container</button>
+                            <button type="button" class="btn btn-secondary full_container "><span class="text">full container</span> </button>
+                            <button type="button" class="btn btn-secondary normal_container"><span class="text">normal_container</span></button>
                            
                         </div>
                     </div>

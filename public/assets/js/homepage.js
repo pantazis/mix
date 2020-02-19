@@ -20633,7 +20633,6 @@ function remuveNavClasses(classarr, el) {
 }
 
 function change_menu(arr, el) {
-  console.log(el);
   remuveNavClasses(arr, el);
 }
 
@@ -20668,11 +20667,19 @@ function menu_sub_cat() {
   });
 }
 
+function nav_popover(el, data, options) {
+  $(el).hover(function () {
+    $(this).attr('data-content', data);
+    $(el).popover(options);
+  });
+}
+
 exports.change_menu = change_menu; //exports.fullMenuOnHover = fullMenuOnHover;
 
 exports.toggleMenu = toggleMenu;
 exports.change_container_size = change_container_size;
 exports.menu_sub_cat = menu_sub_cat;
+exports.nav_popover = nav_popover;
 
 /***/ }),
 
@@ -20697,14 +20704,31 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 var menu_class_arr = ["no-menu", "only_icons", "full_menu"];
 var container_size_arr = ["full_container", "normal_container"];
-$(function () {
-  $('[data-toggle="popover0"]').popover();
+var popover_options = {
+  html: true,
+  boundary: 'viewport'
+};
+Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["nav_popover"])('[data-toggle="popover0"]', $(".login").html(), popover_options);
+Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["nav_popover"])('[data-toggle="popover1"]', $(".cart").html(), popover_options);
+Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["nav_popover"])('[data-toggle="popover2"]', $(".help").html(), popover_options);
+$("body").click(function (event) {
+  var is_popover_body = $(event.target).closest(".popover-body").length == 0;
+  var is_popover = $(event.target).closest('[data-toggle*="popover"]').length == 0;
+
+  if (is_popover_body && is_popover) {
+    $(this).find('[data-toggle*="popover"]').popover('hide');
+  }
+});
+$('[data-toggle*="popover"]').on('click', function (e) {
+  $('[data-toggle*="popover"]').not(this).popover('hide');
 });
 $(".b1 button").click(function (event) {
-  Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_menu"])(menu_class_arr, event.target);
+  var targ = $(event.target).closest(".btn");
+  Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_menu"])(menu_class_arr, targ);
 });
 $(".b2 button").click(function (event) {
-  Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_container_size"])(container_size_arr, event.target);
+  var targ = $(event.target).closest(".btn");
+  Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["change_container_size"])(container_size_arr, targ);
 }); //fullMenuOnHover();
 
 Object(_partial_nav__WEBPACK_IMPORTED_MODULE_2__["menu_sub_cat"])();
