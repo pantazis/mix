@@ -5,6 +5,10 @@ p{
 }
 
 .container{
+    .main_body &{
+        max-width: 1500px;
+    }
+    
     transition: max-width .3s;
     .full_container &{
         max-width: 100%;
@@ -14,6 +18,11 @@ p{
 
 
 .main_body {
+    &.m2 {
+        margin-top: 0;
+        background-color: #e2e2e2;
+        height: auto;
+    }
     margin-top: $nav_height;
     min-height: calc(100vh - #{$nav_height});
     background-color: $main_body_background;
@@ -40,6 +49,10 @@ p{
     border-radius: 4px;
     padding:  20px;
     margin:#{$grid-gutter-width/2} 0px;
+    &.full_height{
+        height: calc(100% - #{$grid-gutter-width});
+
+    }
     &.main_cat {
         display: flex;
         flex-direction: row;
@@ -93,4 +106,12 @@ p.num {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.flex-cc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

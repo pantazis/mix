@@ -7447,16 +7447,36 @@ button.bg-dark:focus {
   box-shadow: none !important;
 }
 
-.w-25 {
-  width: 25% !important;
+.w-10 {
+  width: 10% !important;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.w-40 {
+  width: 40% !important;
 }
 
 .w-50 {
   width: 50% !important;
 }
 
-.w-75 {
-  width: 75% !important;
+.w-60 {
+  width: 60% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-90 {
+  width: 90% !important;
 }
 
 .w-100 {
@@ -7467,16 +7487,36 @@ button.bg-dark:focus {
   width: auto !important;
 }
 
-.h-25 {
-  height: 25% !important;
+.h-10 {
+  height: 10% !important;
+}
+
+.h-20 {
+  height: 20% !important;
+}
+
+.h-30 {
+  height: 30% !important;
+}
+
+.h-40 {
+  height: 40% !important;
 }
 
 .h-50 {
   height: 50% !important;
 }
 
-.h-75 {
-  height: 75% !important;
+.h-60 {
+  height: 60% !important;
+}
+
+.h-80 {
+  height: 80% !important;
+}
+
+.h-90 {
+  height: 90% !important;
 }
 
 .h-100 {
@@ -15969,7 +16009,7 @@ readers do not read off random characters that represent icons */
 }
 
 nav.nav_top {
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15991,7 +16031,7 @@ nav.side {
   background-color: #ffffff;
   overflow: hidden;
   position: fixed;
-  top: 50px;
+  top: 60px;
   bottom: 0;
   height: 100%;
   left: 0;
@@ -16039,7 +16079,7 @@ nav.side ul span.text {
 
 nav.nav-modal {
   position: fixed;
-  top: 50px;
+  top: 60px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -16225,16 +16265,24 @@ p {
 .container {
   transition: max-width 0.3s;
 }
+.main_body .container {
+  max-width: 1500px;
+}
 .full_container .container {
   max-width: 100%;
 }
 
 .main_body {
-  margin-top: 50px;
-  min-height: calc(100vh - 50px);
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
   background-color: #F3F3F4;
   padding: 15px;
   transition: margin-left 0.3s;
+}
+.main_body.m2 {
+  margin-top: 0;
+  background-color: #e2e2e2;
+  height: auto;
 }
 .no-menu .main_body {
   margin-left: 0;
@@ -16252,6 +16300,9 @@ p {
   border-radius: 4px;
   padding: 20px;
   margin: 15px 0px;
+}
+.text_con.full_height {
+  height: calc(100% - 30px);
 }
 .text_con.main_cat {
   display: flex;
@@ -16303,5 +16354,13 @@ p.num {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.flex-cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=home_page.css.map*/
