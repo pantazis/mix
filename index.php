@@ -6,8 +6,6 @@ $obj = json_decode($json);
 echo '.'.$obj->$filename;
 };
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -22,13 +20,10 @@ echo '.'.$obj->$filename;
 
     <title></title>
 
-
-
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=greek-ext,latin-ext"
         rel="stylesheet">
-
 
     <link href="<?php mix('/public/assets/css/home_page.css');?>" rel="stylesheet">
 
@@ -37,7 +32,7 @@ echo '.'.$obj->$filename;
 
 <body>
     <?php include "partials_php/nav.php" ?>
-    <div class="main_body">
+<div class="main_body">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -130,11 +125,9 @@ echo '.'.$obj->$filename;
                 <?php } ?>
             </div>
 
-
-
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="text_con">
+                    <div class="text_con">                   
                         <div class="btn-group b1" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-secondary no-menu"><span class="text">no
                                     menu</span></button>
@@ -154,8 +147,8 @@ echo '.'.$obj->$filename;
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main_body m2">
+</div>
+<div class="main_body m2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -164,15 +157,53 @@ echo '.'.$obj->$filename;
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <div class="text_con main_cat">
+                        <h1 class="h2">Πίνακας ελέγχου</h1>
+                        <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
+                    </div>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="text_con main_cat"> 
+                    <form class="form-inline w-100">
+                       
+                        <div class="form-group flex-fill">
+                            <label for="inputPassword2" class="sr-only">Password</label>
+                            <input type="password" class="form-control w-100" id="inputPassword2" placeholder="Password">
+                        </div>
+                        <div class="btn-group " role="group" aria-label="Basic example">
+                            
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                aaaaaaaaaaa
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div> 
+                            <button type="button" class="btn btn-secondary">
+                                <span class="text"><i class="fas fa-search"></i></span>
+                            </button>
+                        </div>
+                      
+                    </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text_con main_cat">
+                        <h1 class="h2">Πίνακας ελέγχου</h1>
+                        <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
+                    </div>
+                </div>
                 
             </div>
             
-            </div>
-            
         </div>
-    </div>
-
-
+            
+</div>
+   
     <script src="<?php mix('/public/assets/js/homepage.js');?>"></script>
 </body>
 
