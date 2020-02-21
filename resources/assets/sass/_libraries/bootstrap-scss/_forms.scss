@@ -42,8 +42,14 @@
   // Placeholder
   &::placeholder {
     color: $input-placeholder-color;
+    content: "sdsdsdsd";
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
-    opacity: 1;
+    opacity: 0;
+    transition: .3s;
+
+    .input-cont.focused &, .input-cont:hover &{
+      opacity: 1;
+    }
   }
 
   // Disabled and read-only inputs
@@ -192,6 +198,7 @@ textarea.form-control {
   flex-wrap: wrap;
   margin-right: -$form-grid-gutter-width / 2;
   margin-left: -$form-grid-gutter-width / 2;
+  margin-bottom: -1rem;
 
   > .col,
   > [class*="col-"] {
@@ -290,8 +297,7 @@ textarea.form-control {
       flex: 0 0 auto;
       flex-flow: row wrap;
       align-items: center;
-      margin-bottom: 0;
-    }
+   }
 
     // Allow folks to *not* use `.form-group`
     .form-control {

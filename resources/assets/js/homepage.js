@@ -1,10 +1,10 @@
 var $ = require("jquery");
+import * as bootstrapValidate from 'bootstrap-validate';
 import { createPopper } from '@popperjs/core';
 import {  Alert,Tooltip } from 'bootstrap';
 import {change_menu,toggleMenu,change_container_size,menu_sub_cat,nav_popover } from './_partial/nav';
-
-
-
+import {} from './_partial/forms';
+window.bootstrapValidate = bootstrapValidate;
 var menu_class_arr = ["no-menu","only_icons","full_menu"];
 var container_size_arr = ["full_container", "normal_container"];
 
@@ -56,6 +56,28 @@ $(".b2 button").click(function(event){
 //fullMenuOnHover();
 menu_sub_cat();
     toggleMenu();
+
+
+//form validetion
+   /* bootstrapValidate(
+        '#docs-demo',
+        'email:Enter a valid E-Mail Address!'
+     );*/
+     $("input").hover(function(){
+        
+    })
+
+     $("input").hover(
+         function(){},
+         function(){}
+         );
+
+
+     
+
+
+    
+
 
 
 

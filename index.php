@@ -167,14 +167,12 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-8">
                     <div class="text_con main_cat"> 
-                    <form class="form-inline w-100">
-                       
-                        <div class="form-group flex-fill">
+                    <form class="form-inline w-100"> 
+                    <div class="form-row w-100 ">
+                        <div class="form-group col-lg-12 flex-fill">
                             <label for="inputPassword2" class="sr-only">Password</label>
-                            <input type="password" class="form-control w-100" id="inputPassword2" placeholder="Password">
-                        </div>
-                        <div class="btn-group " role="group" aria-label="Basic example">
-                            
+                            <input type="password" class="form-control flex-grow-1" id="inputPassword2" placeholder="Password">
+                            <div class="btn-group " role="group" aria-label="Basic example">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 aaaaaaaaaaa
                             </button>
@@ -187,6 +185,41 @@ echo '.'.$obj->$filename;
                                 <span class="text"><i class="fas fa-search"></i></span>
                             </button>
                         </div>
+                    </div>                    
+                    <?php $arr =["date","datetime-local","email","month","number","password","search","tel","text","time","url","week"]; ?>   
+                    <?php foreach ( $arr as $key => $value) { ?>                        
+                        <div class="form-group col-lg-6 flex-fill">
+                         <div class="input-cont">  
+                        <label for="<?=$value?>"><?=$value?></label>                            
+                            <input type="<?=$value?>" class="form-control" id="<?=$value?>" placeholder="First name"  required>
+                            </div> 
+                        </div>
+                    <?php } ?>
+                    <div class="form-group col-lg-12 flex-fill">
+                        <div class="input-cont">
+                            <label for="textarea">textarea</label> 
+                            <textarea class="form-control" id="textarea" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <?php $arr =["checkbox","radio"]; ?>   
+                    <?php foreach ( $arr as $key => $value) { ?>                        
+                        <div class="form-group col-lg-6 flex-fill">
+                         <div class="input-cont">  
+                        <label for="<?=$value?>"><?=$value?></label>                            
+                            <input type="<?=$value?>" class="form-control" id="<?=$value?>" placeholder="First name"  required>
+                            </div> 
+                        </div>
+                    <?php } ?>
+                    <?php $arr =["reset","submit","button"]; ?> 
+                    <div class="form-group col-lg-12 flex-fill">
+                    <div class="btn-group b1" role="group" aria-label="Basic example">
+                    <?php foreach ( $arr as $key => $value) { ?>
+                        <input type="<?=$value?>" class="btn btn-primary" id="<?=$value?>" value="<?=$value?>"  >
+                    <?php } ?>
+                    </div> 
+                    </div>
+                        
+                    </div>
                       
                     </form>
                     </div>

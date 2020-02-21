@@ -2022,22 +2022,51 @@ pre code {
 }
 .form-control::-webkit-input-placeholder {
   color: #6c757d;
-  opacity: 1;
+  content: "sdsdsdsd";
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .form-control::-moz-placeholder {
   color: #6c757d;
-  opacity: 1;
+  content: "sdsdsdsd";
+  opacity: 0;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
 }
 .form-control:-ms-input-placeholder {
   color: #6c757d;
-  opacity: 1;
+  content: "sdsdsdsd";
+  opacity: 0;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 .form-control::-ms-input-placeholder {
   color: #6c757d;
-  opacity: 1;
+  content: "sdsdsdsd";
+  opacity: 0;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 .form-control::placeholder {
   color: #6c757d;
+  content: "sdsdsdsd";
+  opacity: 0;
+  transition: 0.3s;
+}
+.input-cont.focused .form-control::-webkit-input-placeholder, .input-cont:hover .form-control::-webkit-input-placeholder {
+  opacity: 1;
+}
+.input-cont.focused .form-control::-moz-placeholder, .input-cont:hover .form-control::-moz-placeholder {
+  opacity: 1;
+}
+.input-cont.focused .form-control:-ms-input-placeholder, .input-cont:hover .form-control:-ms-input-placeholder {
+  opacity: 1;
+}
+.input-cont.focused .form-control::-ms-input-placeholder, .input-cont:hover .form-control::-ms-input-placeholder {
+  opacity: 1;
+}
+.input-cont.focused .form-control::placeholder, .input-cont:hover .form-control::placeholder {
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
@@ -2133,6 +2162,7 @@ textarea.form-control {
   flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px;
+  margin-bottom: -1rem;
 }
 .form-row > .col,
 .form-row > [class*=col-] {
@@ -2376,7 +2406,6 @@ textarea.form-control {
     flex: 0 0 auto;
     flex-flow: row wrap;
     align-items: center;
-    margin-bottom: 0;
   }
   .form-inline .form-control {
     display: inline-block;
@@ -16364,5 +16393,60 @@ p.num {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.form-inline .form-control {
+  width: 100%;
+}
+.form-inline .form-control.flex-grow-1 {
+  width: auto;
+  flex-grow: 1;
+}
+
+input.form-control, textarea.form-control {
+  background: #f5f5f5;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  padding: 20px 16px 6px;
+  height: 52px;
+  color: transparent;
+  transition: all 0.3s;
+}
+.form-group:hover input.form-control, .form-group:hover textarea.form-control {
+  color: #000;
+}
+input.form-control:hover, input.form-control:active, input.form-control:focus, textarea.form-control:hover, textarea.form-control:active, textarea.form-control:focus {
+  border-bottom: 2px solid #407dbf;
+  background: #e4e1e1;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.form-group .btn {
+  height: 52px;
+}
+
+label {
+  transition: all 0.3s;
+  position: absolute;
+  left: 20px;
+  top: 19px;
+}
+.input-cont:hover label {
+  font-size: 14px;
+  top: 3px;
+}
+.input-cont.focused label {
+  font-size: 14px;
+  top: 3px;
+}
+
+.input-cont {
+  width: 100%;
 }
 /*# sourceMappingURL=home_page.css.map*/
