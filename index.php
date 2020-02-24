@@ -36,7 +36,7 @@ echo '.'.$obj->$filename;
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="text_con main_cat">
+                    <div class="text_con main_cat title">
                         <h1 class="h2">Πίνακας ελέγχου</h1>
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
@@ -152,20 +152,20 @@ echo '.'.$obj->$filename;
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="text_con main_cat">
-                        <h1 class="h2">Πίνακας ελέγχου</h1>
+                    <div class="text_con main_cat title">
+                        <h1 class="h2">Γρήγορη αναζήτηση</h1>
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="text_con main_cat">
-                        <h1 class="h2">Πίνακας ελέγχου</h1>
+                    <div class="text_con main_cat title">
+                        <h1 class="h2">Προσφορές</h1>
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 d-flex flex-column">
                     <div class="text_con main_cat">
                         <form class="form-inline w-100">
                             <div class="form-row w-100 ">
@@ -189,66 +189,55 @@ echo '.'.$obj->$filename;
                                         </button>
                                     </div>
                                 </div>
-                                <?php $arr =["date","datetime-local","email","month","number","password","search","tel","text","time","url","week"]; ?>
-                                <?php foreach ( $arr as $key => $value) { ?>
-                                <div class="form-group col-lg-6 flex-fill">
-                                    <div class="input-cont">
-                                        <label for="<?=$value?>"><?=$value?></label>
-                                        <input type="<?=$value?>" class="form-control" id="<?=$value?>"
-                                            placeholder="First name" required>
-                                    </div>
-                                </div>
-                                <?php } ?>
-                                <div class="form-group col-lg-12 flex-fill">
-                                    <div class="input-cont">
-                                        <label for="textarea">textarea</label>
-                                        <textarea class="form-control" id="textarea" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group checkboxes col-lg-6 flex-fill">
-                                <?php $arr1 =["Male1","female2","other3"];?> 
-                                    <div class="input-cont redio w-100"> 
-                                    <?php foreach ( $arr1 as $key => $value) {?>
-                                     <div class="row-redio">  
-                                        <label for="<?=$value?>" class="before_inout"><?=$value?></label>  
-                                        <input type="checkbox" class="form-control" id="<?=$value?>" name="gender">
-                                        <label for="<?=$value?>"></label>
-                                    </div>                                    
-                                    <?php }?>
-                                    </div>
-                                </div>
-                                <div class="form-group checkboxes col-lg-4 flex-fill">                                   
-                                    <?php $arr1 =["Male","female","other"];?> 
-                                    <div class="input-cont redio w-100"> 
-                                    <?php foreach ( $arr1 as $key => $value) {?>
-                                     <div class="row-redio">  
-                                        <label for="<?=$value?>" class="before_inout"><?=$value?></label>  
-                                        <input type="radio" class="form-control" id="<?=$value?>" name="gender">
-                                        <label for="<?=$value?>"></label>
-                                    </div>                                    
-                                    <?php }?>
-                                    </div>
-                                </div>
-                                <?php $arr =["reset","submit","button"]; ?>
-                                <div class="form-group col-lg-12 flex-fill">
-                                    <div class="btn-group b1" role="group" aria-label="Basic example">
-                                        <?php foreach ( $arr as $key => $value) { ?>
-                                        <input type="<?=$value?>" class="btn btn-primary" id="<?=$value?>"
-                                            value="<?=$value?>">
-                                        <?php } ?>
-                                    </div>
-                                </div>
-
                             </div>
 
                         </form>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text_con main_cat">
-                        <h1 class="h2">Πίνακας ελέγχου</h1>
+                    <div class="text_con main_cat title">
+                        <h1 class="h2">Γρήγορες ενέργειες</h1>
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
+                    <div class="row">
+                        <?php $arr=["fab fa-500px","fas fa-allergies","fab fa-android","fab fa-angular"]  ?>
+                        <?php foreach ($arr as $key => $value){ ?> 
+                        <div class="col-sm-3">
+                        <div class="text_con p-0 full_height">
+                        <div class="offer clip">
+                            <div class="custom_bg">
+                                <div class="inner">                                
+                                <i class="bgs <?= $value?>"></i>
+                                <i class="<?= $value?>"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="c-pad">
+                        <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR </p>
+                            <a href="">
+                                <button class="btn btn-primary btn-block">Αναζήτηση Domain <i class="fas fa-angle-right"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                        </div>
+                        <?php } ?>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                <?php $arr=['offer']  ?>
+               <?php foreach ($arr as $key => $value){ ?> 
+                    <div class="text_con p-0 full_height">
+                        <div class="offer">
+                            <a href=""><img src="public\assets\img\static_images\<?=$value?>.jpg"  alt=""></a>
+                        </div>
+                        <div class="c-pad">
+                        <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR domain name σου για 2 έτη μόνο με 14,00€!</p>
+                            <a href="">
+                                <button class="btn btn-primary btn-block">Δες την προσφορά  <i class="fas fa-angle-right"></i></button>
+                            </a>
+                        </div>
+                    </div>
+               <?php } ?>
+                  
                 </div>
 
             </div>
