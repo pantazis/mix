@@ -198,24 +198,27 @@ echo '.'.$obj->$filename;
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
                     <div class="row">
-                        <?php $arr=["fab fa-500px","fas fa-allergies","fab fa-android","fab fa-angular"]  ?>
+                        <?php $arr=["name","dns","users","order"];$arr2=["Αναζήτηση Domain","Αλλαγή Καταχωρητή","Πρόσωπα Επαφής","Παραγγελίες"]  ?>
                         <?php foreach ($arr as $key => $value){ ?> 
                         <div class="col-sm-3">
-                        <div class="text_con p-0 full_height">
+                        <div class="text_con p-0 full_height d-flex flex-column">
                         <div class="offer clip">
                             <div class="custom_bg">
-                                <div class="inner">                                
-                                <i class="bgs <?= $value?>"></i>
-                                <i class="<?= $value?>"></i>
+                                <div class="inner">
+                                    <div class="img-cont">
+                                        <img class="img-shadow" src="public/assets/img/footer/<?= $value?>.svg" alt="">    
+                                        <img src="public/assets/img/footer/<?= $value?>-w.svg" alt="">                                
+                                    </div>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="c-pad">
+                        <div class="c-pad d-flex flex-column flex-grow-1">
+                        <h2 class="h3"><?= $arr2[$key]?></h2>
                         <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR </p>
-                            <a href="">
-                                <button class="btn btn-primary btn-block">Αναζήτηση Domain <i class="fas fa-angle-right"></i></button>
-                            </a>
+         
+                                <a href="" class="btn btn-primary btn-block mt-auto"><?= $arr2[$key]?></a>
+                           
                         </div>
                     </div>
                         </div>
@@ -225,15 +228,16 @@ echo '.'.$obj->$filename;
                 <div class="col-lg-4">
                 <?php $arr=['offer']  ?>
                <?php foreach ($arr as $key => $value){ ?> 
-                    <div class="text_con p-0 full_height">
+                    <div class="text_con p-0 full_height d-flex flex-column">
                         <div class="offer">
                             <a href=""><img src="public/assets/img/static_images/<?=$value?>.jpg"  alt=""></a>
                         </div>
-                        <div class="c-pad">
+                        <div class="c-pad d-flex flex-column flex-grow-1">
+                        <h2 class="h2"> .GR domain name </h2>
                         <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR domain name σου για 2 έτη μόνο με 14,00€!</p>
-                            <a href="">
-                                <button class="btn btn-primary btn-block">Δες την προσφορά  <i class="fas fa-angle-right"></i></button>
-                            </a>
+                            
+                            <a href="" class="btn btn-primary btn-block mt-auto">Δες την προσφορά  <i class="fas fa-angle-right"></i></a>
+                           
                         </div>
                     </div>
                <?php } ?>
