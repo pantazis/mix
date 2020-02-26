@@ -52,55 +52,125 @@ echo '.'.$obj->$filename;
                         </p>
                     </div>
                     <div class="text_con">
-                        <?php for ($x = 0; $x <= 2; $x++) { ?>
                         <div class="listrow">
                             <h2 class="h3">
-                                ΥΠΟΛΟΙΠΟ FORTH
+                                ΑΤΙΜΟΛΟΓΗΤΕΣ ΚΙΝΗΣΕΙΣ
+
                             </h2>
                             <div class="flex-r">
-                                <p class="num">100</p>
+                                <p class="num">1363</p>
                                 <button type="button" class="ml-auto btn btn-primary btn-sm">προβολή</button>
                             </div>
                         </div>
-                        <?php } ?>
+                        <div class="listrow">
+                            <h2 class="h3">
+                                ΠΑΡΑΓΓΕΛΙΕΣ ΠΟΥ ΑΠΑΙΤΟΥΝ ADMIN ΕΝΕΡΓΕΙΕΣ
+
+                            </h2>
+                            <div class="flex-r">
+                                <p class="num">172</p>
+                                <button type="button" class="ml-auto btn btn-primary btn-sm">προβολή</button>
+                            </div>
+                        </div>
+                        <div class="listrow">
+                            <h2 class="h3">
+                                ΠΕΛΑΤΕΣ ΜΕ ΠΙΣΤΩΤΙΚΟ ΟΡΙΟ
+
+                            </h2>
+                            <div class="flex-r">
+                                <p class="num">13</p>
+                                <button type="button" class="ml-auto btn btn-primary btn-sm">προβολή</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="text_con full_height">
-                        <?php for ($x = 0; $x <= 2; $x++) { ?>
-                        <div class="listrow">
+                    <div class="text_con full_height d-flex flex-column">
+                        <div class="listrow flex-grow-1 d-flex flex-column">
                             <img class="bg_icon" src="public/assets/img/euro" alt="">
                             <h2 class="h3">
                                 ΥΠΟΛΟΙΠΟ FORTH
                             </h2>
                             <p class="num">
-                                $47.928,31
+                                50352 €
                             </p>
-                            <p>
-                                <b>Τιμές:</b> com: $8,95net: $15,55org: $8,95cc: $24,95tv: $39,95
-                            </p>
-                            <div class="flex-r">
-                                <p>
-                                    <b>Συνολικά domains:</b> 6
-                                </p>
-                                <p>
-                                    Τελ. έλεγχος: 17/02/2020 16:06:01
-                                </p>
+
+                            <div class="mt-auto">
+                                <div class="flex-r">
+                                    <p>
+
+                                    </p>
+                                    <p>
+                                        Τελ. έλεγχος: 17/02/2020 16:06:01
+                                    </p>
+                                </div>
                             </div>
 
                         </div>
-                        <?php } ?>
+                        <div class="listrow flex-grow-1 d-flex flex-column">
+                            <img class="bg_icon" src="public/assets/img/euro" alt="">
+                            <h2 class="h3">
+                                ΥΠΟΛΟΙΠΟ EURID
+                            </h2>
+                            <p class="num">
+                                98.504,75 €
+                            </p>
+                            <div class="mt-auto">
+                                <p>
+                                    <b>Hitpoints:</b> 0 (2000),&nbsp;<b>Όριο κατοχυρώσεων</b>: 1000 (τρέχον: 0)
+                                </p>
+                                <div class="flex-r">
+                                    <p>
+                                        <b>Συνολικά domains:</b> 6
+                                    </p>
+                                    <p>
+                                        Τελ. έλεγχος: 17/02/2020 16:06:01
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="listrow flex-grow-1 d-flex flex-column">
+                            <img class="bg_icon" src="public/assets/img/euro" alt="">
+                            <h2 class="h3">
+                                ΥΠΟΛΟΙΠΟ ENOM
+                            </h2>
+                            <p class="num">
+                                47.917,21 $
+                            </p>
+                            <div class="mt-auto">
+                                <p>
+                                    <b>Τιμές:</b>&nbsp;com: $8,95&nbsp;net: $15,55&nbsp;org: $8,95&nbsp;cc:
+                                    $24,95&nbsp;tv:
+                                    $39,95
+                                </p>
+                                <div class="flex-r">
+                                    <p>
+                                        <b>Συνολικά domains:</b> 6
+                                    </p>
+                                    <p>
+                                        Τελ. έλεγχος: 17/02/2020 16:06:01
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
             </div>
 
             <div class="row">
-                <?php for ($x = 0; $x <= 2; $x++) { ?>
+
+                <?php $arr=["Κατοχύρωσε ένα νέο Domain","Αγόρασε ένα πακέτο Hosting","Έκδοσε άμεσα ένα SSL"];
+                      $arr2=["DOMAIN NAMES","ΠΑΚΕΤΑ HOSTING","ΠΙΣΤΟΠΟΙΗΤΙΚΑ SSL"];
+                ?>
+                <?php foreach ($arr as $key => $value) {?>
                 <div class="col-lg-4">
                     <div class="text_con full_height">
                         <div class="row m-0 mb-2">
                             <div class="border-right w-60 pr-2 flex-cc">
-                                <h3 class="h3">DOMAIN NAMES</h3>
+                                <h3 class="h3"><?=$arr2[$key]?></h3>
                                 <p class="num">300</p>
                             </div>
                             <div class="w-40 pl-2">
@@ -118,7 +188,7 @@ echo '.'.$obj->$filename;
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary btn-block">Κατοχύρωσε ένα νέο Domain <i
+                        <button class="btn btn-primary btn-block"><?=$value?> <i
                                 class="fas fa-angle-right"></i></button>
                     </div>
                 </div>
@@ -174,17 +244,20 @@ echo '.'.$obj->$filename;
                                     <input type="password" class="form-control flex-grow-1" id="inputPassword2"
                                         placeholder="Password">
                                     <div class="btn-group " role="group" aria-label="Basic example">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
                                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
-                                            aaaaaaaaaaa
+                                            Διάλεξε πίνακα
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <?php $arr = ["Διάλεξε πίνακα","Domain","Domain (orders)","Domain (trades)","Email (users)","VAT","Documents"]?>
+                                            <?php foreach ($arr as $key => $value) {?>
+
+                                            <a class="dropdown-item" href="#"><?= $value?></a>
+                                            <?php }?>
+
                                         </div>
-                                        <button type="button" class="btn btn-secondary">
+                                        <button type="button" class="btn btn-primary">
                                             <span class="text"><i class="fas fa-search"></i></span>
                                         </button>
                                     </div>
@@ -199,53 +272,55 @@ echo '.'.$obj->$filename;
                     </div>
                     <div class="row">
                         <?php $arr=["name","dns","users","order"];$arr2=["Αναζήτηση Domain","Αλλαγή Καταχωρητή","Πρόσωπα Επαφής","Παραγγελίες"]  ?>
-                        <?php foreach ($arr as $key => $value){ ?> 
+                        <?php foreach ($arr as $key => $value){ ?>
                         <div class="col-sm-3">
-                        <div class="text_con p-0 full_height d-flex flex-column">
-                        <div class="offer clip">
-                            <div class="custom_bg">
-                                <div class="inner">
-                                    <div class="img-cont">
-                                        <img class="img-shadow" src="public/assets/img/footer/<?= $value?>.svg" alt="">    
-                                        <img src="public/assets/img/footer/<?= $value?>-w.svg" alt="">                                
+                            <div class="text_con p-0 full_height d-flex flex-column">
+                                <div class="offer clip">
+                                    <div class="custom_bg">
+                                        <div class="inner">
+                                            <div class="img-cont">
+                                                <img class="img-shadow" src="public/assets/img/footer/<?= $value?>.svg"
+                                                    alt="">
+                                                <img src="public/assets/img/footer/<?= $value?>-w.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="c-pad d-flex flex-column flex-grow-1">
+                                    <h2 class="h3"><?= $arr2[$key]?></h2>
+                                    <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR </p>
 
+                                    <a href="" class="btn btn-primary btn-block mt-auto"><?= $arr2[$key]?></a>
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="c-pad d-flex flex-column flex-grow-1">
-                        <h2 class="h3"><?= $arr2[$key]?></h2>
-                        <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR </p>
-         
-                                <a href="" class="btn btn-primary btn-block mt-auto"><?= $arr2[$key]?></a>
-                           
-                        </div>
-                    </div>
                         </div>
                         <?php } ?>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                <?php $arr=['offer']  ?>
-               <?php foreach ($arr as $key => $value){ ?> 
+                    <?php $arr=['offer']  ?>
+                    <?php foreach ($arr as $key => $value){ ?>
                     <div class="text_con p-0 full_height d-flex flex-column">
                         <div class="offer">
-                            <a href=""><img src="public/assets/img/static_images/<?=$value?>.jpg"  alt=""></a>
+                            <a href=""><img src="public/assets/img/static_images/<?=$value?>.jpg" alt=""></a>
                         </div>
                         <div class="c-pad d-flex flex-column flex-grow-1">
-                        <h2 class="h2"> .GR domain name </h2>
-                        <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR domain name σου για 2 έτη μόνο με 14,00€!</p>
-                            
-                            <a href="" class="btn btn-primary btn-block mt-auto">Δες την προσφορά  <i class="fas fa-angle-right"></i></a>
-                           
+                            <h2 class="h2"> .GR domain name </h2>
+                            <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR domain name σου
+                                για 2 έτη μόνο με 14,00€!</p>
+
+                            <a href="" class="btn btn-primary btn-block mt-auto">Δες την προσφορά <i
+                                    class="fas fa-angle-right"></i></a>
+
                         </div>
                     </div>
-               <?php } ?>
-                  
+                    <?php } ?>
+
                 </div>
 
             </div>
-           
+
         </div>
         <?php include "partials_php/_footer.php"?>
     </div>

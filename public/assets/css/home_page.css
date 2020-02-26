@@ -16072,7 +16072,7 @@ nav.side {
   width: 0;
 }
 .only_icons nav.side {
-  width: 48px;
+  width: 60px;
 }
 .full_menu nav.side {
   width: 200px;
@@ -16092,14 +16092,14 @@ nav.side ul li a {
 }
 nav.side ul span.nav_icon {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 nav.side ul span.nav_icon img {
-  width: 28px;
+  height: 30px;
 }
 nav.side ul span.text {
   font-weight: bold;
@@ -16152,14 +16152,14 @@ nav.nav-modal .side_cont ul li a {
 }
 nav.nav-modal .side_cont ul span.nav_icon {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 nav.nav-modal .side_cont ul span.nav_icon img {
-  width: 28px;
+  height: 30px;
 }
 nav.nav-modal .side_cont ul span.text {
   font-weight: bold;
@@ -16193,7 +16193,7 @@ nav.nav-modal .side_cont ul.sub_cat.active {
 nav.nav-modal .side_cont i.fas {
   position: absolute;
   right: 20px;
-  top: 12px;
+  top: 18px;
   font-size: 25px;
   cursor: pointer;
   z-index: 1;
@@ -16348,7 +16348,7 @@ p {
   margin-left: 0;
 }
 .only_icons .main_body {
-  margin-left: 48px;
+  margin-left: 60px;
 }
 .full_menu .main_body {
   margin-left: 200px;

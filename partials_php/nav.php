@@ -27,9 +27,10 @@
 </nav>
 <nav class="side">
     <ul>
+        <?php $arr =["control_panel","hosting","domains","ssl","users","euro","product"];?>
         <?php  foreach ($menu_cat2["menucat"] as $key => $value){ ?>
         <li>
-            <a href="#"><span class="nav_icon"><img src="public/assets/img/euro.svg" alt=""></span><span
+            <a href="#"><span class="nav_icon"><img src="public/assets/img/nav/<?=$arr[$key]?>.svg" alt=""></span><span
                     class="text"><?=$value["name"]?></span></a>
         </li>
         <?php } ?>
@@ -40,12 +41,13 @@
         <img src="public/assets/img/nav/nav_pic.jpg" alt="" class="top_img">
         <div class="ul_par">
             <ul>
+              
                 <?php foreach ($menu_cat2["menucat"] as $key => $value){ ?>
                 <li data-parent="<?=$value["name"]?>">
                     <?php if(count($value["sub"]) > 0){  ?>
                     <i class="fas fa-angle-right"></i>
                     <?php } ?>
-                    <a href="#"><span class="nav_icon"><img src="public/assets/img/euro.svg" alt=""></span><span
+                    <a href="#"><span class="nav_icon"><img src="public/assets/img/nav/<?=$arr[$key]?>.svg" alt=""></span><span
                             class="text"><?=$value["name"]?></span></a>
                 </li>
                 <?php } ?>
