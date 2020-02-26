@@ -227,7 +227,7 @@ echo '.'.$obj->$filename;
                <?php foreach ($arr as $key => $value){ ?> 
                     <div class="text_con p-0 full_height">
                         <div class="offer">
-                            <a href=""><img src="public\assets\img\static_images\<?=$value?>.jpg"  alt=""></a>
+                            <a href=""><img src="public/assets/img/static_images/<?=$value?>.jpg"  alt=""></a>
                         </div>
                         <div class="c-pad">
                         <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR domain name σου για 2 έτη μόνο με 14,00€!</p>
@@ -241,10 +241,11 @@ echo '.'.$obj->$filename;
                 </div>
 
             </div>
-
+           
         </div>
-
+        <?php include "partials_php/_footer.php"?>
     </div>
+
 
     <script src="<?php mix('/public/assets/js/homepage.js');?>"></script>
 </body>

@@ -1,0 +1,66 @@
+footer{
+    $fontcolor:rgba(250,250,250,0.5);
+    margin-top: auto;
+    background-color: #565656;
+    p{
+        color: $fontcolor;
+    }
+    h5{
+        color: $fontcolor;
+    }
+    .mynav {
+        display: block;
+        padding: 4px 15px;
+        flex-wrap: wrap;
+        
+        
+    }
+    .f-logo{
+    width: 200px;
+    padding-bottom: 10px;
+    }
+    .sosial {
+        color:  $fontcolor;
+        font-size: 43px;
+    }
+    a.link-f {
+        padding: 0 15px;
+        text-align: center;
+    }
+}
+
+.r-width{
+    width: 100%;
+
+    @media (min-width: $lg){
+        width: auto;
+
+    }
+}
+
+.copyright{
+  
+    text-align: center;
+    @media (min-width: $lg){
+        text-align: left;
+        order: inherit;
+
+    }
+
+   
+
+}
+
+.copyright-cont{
+     
+    order: 2;
+    @media (min-width: $lg){
+        order: inherit;
+      
+
+    }
+
+}
+.footer-copyright {  
+    background-color: rgba(0,0,0,0.2);
+}
