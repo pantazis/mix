@@ -1,0 +1,30 @@
+
+
+// Bootstrap
+@import "_libraries/bootstrap-scss/bootstrap";
+// Bootstrap varibles scss
+@import "_libraries/bootstrap-scss/_variables";
+
+// Variables
+@import "_variables";
+
+//font awesome
+@import "_libraries/font_awesome";
+
+//navbar scss
+@import "_partial/_nav";
+
+//General rules scss
+@import "_partial/_general_rules";
+
+//form style rules scss
+@import "_partial/_forms";
+
+//footer style rules scss
+@import "_partial/_footer";
+
+//resposive table style rules scss
+@import "_partial/_tables";
+
+
+

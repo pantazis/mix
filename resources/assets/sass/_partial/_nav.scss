@@ -2,13 +2,13 @@
 
 
 
-@mixin navstyle($width){
+@mixin navstyle($width,$color,$filter_val){
     ul{
         padding: 0;
         list-style: none;
      li {
         width: $width;
-        border-bottom: 1px solid #dedede;
+        border-bottom: 1px solid #405c79;
         position: relative;
     a {
         display: flex;
@@ -22,6 +22,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        -webkit-filter: brightness($filter_val); 
+        filter: brightness($filter_val);
         img {
             height:30px;
         }
@@ -29,7 +31,7 @@
      span.text {
         font-weight: bold;
         margin-left: 5px;
-        color: #616060;
+        color: $color;
     }
     }
     }
@@ -85,7 +87,7 @@ nav.nav_top{
 
 nav.side{
     width: 0;
-    background-color: #ffffff;
+    background-color: #00254c;
     overflow: hidden;
     position: fixed;
     top:$nav_height;
@@ -108,7 +110,7 @@ nav.side{
        .full_menu &{
         width: $nav_side_full;
        }
-       @include navstyle($nav_side_full);
+       @include navstyle($nav_side_full,#fff,1.8);
    
 
 
@@ -147,7 +149,7 @@ nav.nav-modal {
     .menu_open & {
         transform: translatex(0px);
     }
-    @include navstyle($side_width);
+    @include navstyle($side_width,#000,1);
     ul{
         width: 0;
         transition: width .3s;

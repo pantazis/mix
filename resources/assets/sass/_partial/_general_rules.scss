@@ -82,6 +82,7 @@ p{
     border-radius: 4px;
     padding:  $inner-padding;
     margin:#{$grid-gutter-width/2} 0px;
+
     +.text_con{ margin-top:#{$grid-gutter-width}}
 
     &.title {
