@@ -20701,12 +20701,30 @@ function nav_popover(el, data, options) {
   });
 }
 
-exports.change_menu = change_menu; //exports.fullMenuOnHover = fullMenuOnHover;
+function detect_body_scroll() {
+  $(window).scroll(function () {
+    var body_scroll = $(this)[0].pageYOffset;
 
-exports.toggleMenu = toggleMenu;
-exports.change_container_size = change_container_size;
-exports.menu_sub_cat = menu_sub_cat;
-exports.nav_popover = nav_popover;
+    if (body_scroll > 20) {
+      $("body").addClass("logo_small");
+    } else {
+      $("body").removeClass("logo_small");
+    }
+  });
+}
+
+; //object with function for navigation
+
+nav = {
+  change_menu: change_menu,
+  //exports.fullMenuOnHover = fullMenuOnHover;
+  toggleMenu: toggleMenu,
+  change_container_size: change_container_size,
+  menu_sub_cat: menu_sub_cat,
+  nav_popover: nav_popover,
+  detect_body_scroll: detect_body_scroll
+};
+exports.nav = nav;
 
 /***/ }),
 
@@ -20742,9 +20760,13 @@ var popover_options = {
   html: true,
   boundary: 'viewport'
 };
-Object(_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav_popover"])('[data-toggle="popover0"]', $(".login").html(), popover_options);
-Object(_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav_popover"])('[data-toggle="popover1"]', $(".cart").html(), popover_options);
-Object(_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav_popover"])('[data-toggle="popover2"]', $(".help").html(), popover_options);
+_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].nav_popover('[data-toggle="popover0"]', $(".login").html(), popover_options);
+_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].nav_popover('[data-toggle="popover1"]', $(".cart").html(), popover_options);
+_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].nav_popover('[data-toggle="popover2"]', $(".help").html(), popover_options); //fullMenuOnHover();
+
+_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].menu_sub_cat();
+_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].toggleMenu();
+_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].detect_body_scroll();
 $("body").click(function (event) {
   var is_popover_body = $(event.target).closest(".popover-body").length == 0;
   var is_popover = $(event.target).closest('[data-toggle*="popover"]').length == 0;
@@ -20758,23 +20780,12 @@ $('[data-toggle*="popover"]').on('click', function (e) {
 });
 $(".b1 button").click(function (event) {
   var targ = $(event.target).closest(".btn");
-  Object(_partial_nav__WEBPACK_IMPORTED_MODULE_3__["change_menu"])(menu_class_arr, targ);
+  _partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].change_menu(menu_class_arr, targ);
 });
 $(".b2 button").click(function (event) {
   var targ = $(event.target).closest(".btn");
-  Object(_partial_nav__WEBPACK_IMPORTED_MODULE_3__["change_container_size"])(container_size_arr, targ);
-}); //fullMenuOnHover();
-
-Object(_partial_nav__WEBPACK_IMPORTED_MODULE_3__["menu_sub_cat"])();
-Object(_partial_nav__WEBPACK_IMPORTED_MODULE_3__["toggleMenu"])(); //form validetion
-
-/* bootstrapValidate(
-     '#docs-demo',
-     'email:Enter a valid E-Mail Address!'
-  );*/
-
-$("input").hover(function () {});
-$("input").hover(function () {}, function () {});
+  _partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].change_container_size(container_size_arr, targ);
+});
 
 /***/ }),
 

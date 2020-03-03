@@ -87,11 +87,21 @@ nav.nav_top{
     position: relative;
     img.logo {
         $width:90px;
+        $width_normal:50px;
         position: absolute;
         top:#{(120 - $width)/2};
         left:#{(120 - $width)/2};
         height: $width;
         width:  $width;
+        transition: all .3s;
+        .logo_small &{
+        height: $width_normal;
+        width:   $width_normal;
+        top:#{(60 - $width_normal)/2};
+        left:#{(120 - $width_normal)/2};
+
+
+        }
     }
     img.logo_bg {
         position: absolute;
@@ -99,6 +109,11 @@ nav.nav_top{
         left: 0px;
         height: 120px;
         width: 120px;
+        transition: opacity .7s;
+        .logo_small &{
+            opacity: 0;
+
+        }
     }
 }
 

@@ -16063,6 +16063,13 @@ nav.nav_top {
   left: 15px;
   height: 90px;
   width: 90px;
+  transition: all 0.3s;
+}
+.logo_small .logo_cont img.logo {
+  height: 50px;
+  width: 50px;
+  top: 5px;
+  left: 35px;
 }
 .logo_cont img.logo_bg {
   position: absolute;
@@ -16070,6 +16077,10 @@ nav.nav_top {
   left: 0px;
   height: 120px;
   width: 120px;
+  transition: opacity 0.7s;
+}
+.logo_small .logo_cont img.logo_bg {
+  opacity: 0;
 }
 
 nav.side {

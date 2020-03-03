@@ -2,7 +2,7 @@ var $ = require("jquery");
 import * as bootstrapValidate from 'bootstrap-validate';
 import { createPopper } from '@popperjs/core';
 import {  Alert,Tooltip } from 'bootstrap';
-import {change_menu,toggleMenu,change_container_size,menu_sub_cat,nav_popover } from './_partial/nav';
+import {nav} from './_partial/nav';
 import {} from './_partial/forms';
 window.bootstrapValidate = bootstrapValidate;
 var menu_class_arr = ["no-menu","only_icons","full_menu"];
@@ -13,11 +13,18 @@ var popover_options={
    boundary:'viewport'    
 };
 
-nav_popover('[data-toggle="popover0"]',$(".login").html(),popover_options);
+nav.nav_popover('[data-toggle="popover0"]',$(".login").html(),popover_options);
 
-nav_popover('[data-toggle="popover1"]',$(".cart").html(),popover_options);
+nav.nav_popover('[data-toggle="popover1"]',$(".cart").html(),popover_options);
 
-nav_popover('[data-toggle="popover2"]',$(".help").html(),popover_options);
+nav.nav_popover('[data-toggle="popover2"]',$(".help").html(),popover_options);
+
+//fullMenuOnHover();
+nav.menu_sub_cat();
+nav.toggleMenu();
+
+nav.detect_body_scroll();
+
 
 
 
@@ -45,32 +52,16 @@ nav_popover('[data-toggle="popover2"]',$(".help").html(),popover_options);
 
 $(".b1 button").click(function(event){
     var targ = $(event.target).closest(".btn");
-    change_menu(menu_class_arr,targ);
+    nav.change_menu(menu_class_arr,targ);
 });
 
 $(".b2 button").click(function(event){
     var targ = $(event.target).closest(".btn");
-    change_container_size(container_size_arr,targ );
+    nav.change_container_size(container_size_arr,targ );
 })
 
-//fullMenuOnHover();
-menu_sub_cat();
-    toggleMenu();
 
 
-//form validetion
-   /* bootstrapValidate(
-        '#docs-demo',
-        'email:Enter a valid E-Mail Address!'
-     );*/
-     $("input").hover(function(){
-        
-    })
-
-     $("input").hover(
-         function(){},
-         function(){}
-         );
 
 
      
