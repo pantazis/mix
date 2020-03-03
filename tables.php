@@ -50,28 +50,28 @@ echo '.'.$obj->$filename;
                                 <thead>
                                     <tr class="table100-head">
                                         <?php $arr_cat=["ID","Email","Κατάσταση","Μέθοδος επαλήθευσης","Συνδρομές","Τελευταίος συγχρονισμός"];?>
-                                        
-                                        <?php foreach ($arr_cat as $key => $value) { ?> 
-                                                                                      
-                                        <th class="column1"; ><?=$value?></th>
-                                        
+
+                                        <?php foreach ($arr_cat as $key => $value) { ?>
+
+                                        <th class="column1" ;><?=$value?></th>
+
                                         <?php } ?>
-                                       
+
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php for ($i=0; $i <20; $i++) { ?> 
+                                    <?php for ($i=0; $i <20; $i++) { ?>
                                     <tr>
-                                    <?php $arr=[$i,"sunray69@gmail.com","ΕΝΕΡΓΟ","Email - Κωδικός","45","18/02/2020"];?>
-                                    <?php foreach ($arr as $key => $value) { ?> 
-                                        <td class="column1" > <span class="cat"><?=$arr_cat[$key]?>:</span>   <?=$value?></td>
+                                        <?php $arr=[$i,"sunray69@gmail.com","ΕΝΕΡΓΟ","Email - Κωδικός","45","18/02/2020"];?>
+                                        <?php foreach ($arr as $key => $value) { ?>
+                                        <td class="column1"> <span class="cat"><?=$arr_cat[$key]?>:</span> <?=$value?>
+                                        </td>
                                         <?php } ?>
-                                      
+
                                     </tr>
                                     <?php }?>
 
 
-                           
 
 
 
@@ -79,9 +79,30 @@ echo '.'.$obj->$filename;
 
 
 
-                                    
+
+
                                 </tbody>
                             </table>
+                            <div class="pagination-custom">
+                                <span class="pag-el"><button class="btn dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        rows per page: 10
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                                        <a class="dropdown-item" href="#">rows per page: 10</a>
+
+                                        <a class="dropdown-item" href="#">rows per page: 20</a>
+
+                                        <a class="dropdown-item" href="#"> rows per page: 40</a>                                        
+
+                                    </div>
+                                </span>
+                                <span class="pag-el">1-10 άπω 100</span>
+                                <span class="pag-el next-p"><i class="fas fa-angle-left"></i><i
+                                        class="fas fa-angle-right"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div>

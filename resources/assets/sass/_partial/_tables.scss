@@ -1,6 +1,7 @@
 
 
-
+$padding-r-l:40px;
+$row-height:60px;
 
 table {
   border-spacing: 1;
@@ -18,7 +19,7 @@ table th {
   padding-left: 8px;
 }
 table thead tr {
-  height: 60px;
+  height: $row-height;
   background: #2e435e;
 }
 table tbody tr {
@@ -73,10 +74,10 @@ tbody tr:hover {
 }
 .column1 {
  
-  padding-left: 40px;
+  padding-left: $padding-r-l;
   &:last-of-type{
     text-align: right;
-    padding-right: 40px;
+    padding-right: $padding-r-l;
     @media screen and (max-width:$lg){
         text-align: left;
         padding-right: 0px;
@@ -166,4 +167,34 @@ table tbody tr td span.cat {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+.pagination-custom{  
+  font-weight: bold;
+padding:0 $padding-r-l;
+height: $row-height;
+display: flex;
+align-items: center;
+.pag-el{
+  padding-left:$padding-r-l; 
+  &:first-of-type{
+    margin-left: auto;
+  }
+  &.next-p{
+    i.fas{
+      font-size: 25px;
+     
+      &:first-of-type{
+        padding-right:#{$padding-r-l/2};
+
+      }
+      &:last-of-type{
+        padding-left:#{$padding-r-l/2};
+    }
+  }
+
+}
+}
+.btn {  
+  box-shadow:none
+}
 }

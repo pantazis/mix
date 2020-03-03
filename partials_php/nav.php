@@ -5,7 +5,10 @@
         <div class="two"></div>
         <div class="three"></div>
     </div>
-    <img src="public/assets/img/nav/dnhost-logo.svg" alt="" class="logo">
+    <div class="logo_cont">
+        <img src="public/assets/img/nav/logo_bg.png" alt="" class="logo_bg">
+        <img src="public/assets/img/nav/logo-notext.svg" alt="" class="logo">        
+    </div>
     <div class="icon-par">
         <div class="nav-icon popover-cont" data-container="body" data-toggle="popover0" data-placement="bottom" data-content="1"
            title="" >

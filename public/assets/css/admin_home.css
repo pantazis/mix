@@ -16043,7 +16043,6 @@ nav.nav_top {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   position: fixed;
   top: 0;
@@ -16052,8 +16051,25 @@ nav.nav_top {
   background-color: #ffffff;
   z-index: 1;
 }
-nav.nav_top img.logo {
-  height: 100%;
+
+.logo_cont {
+  width: 120px;
+  height: 60px;
+  position: relative;
+}
+.logo_cont img.logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 90px;
+  width: 90px;
+}
+.logo_cont img.logo_bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 120px;
+  width: 120px;
 }
 
 nav.side {
