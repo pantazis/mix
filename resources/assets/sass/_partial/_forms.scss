@@ -1,7 +1,7 @@
 @import "_custom_radio";
 
 .form-group:not(.checkboxes){
-    .btn{
+    input + .btn-group .btn{
         height: 52px;
     }
 
@@ -76,7 +76,7 @@ select.form-control {
     transition: all 0.3s;
     border-bottom:1px solid rgba(0, 0, 0, 0.3);
     background:#f5f5f5;
-    color: #000;
+     color: transparent;
 }
 .form-group:not(.checkboxes) select.form-control:hover, .form-group:not(.checkboxes) select.form-control:active, .form-group:not(.checkboxes) select.form-control:focus, .form-group:not(.checkboxes) textarea.form-control:hover, .form-group:not(.checkboxes) textarea.form-control:active, .form-group:not(.checkboxes) textarea.form-control:focus {
     border-bottom: 2px solid #407dbf;

@@ -35,6 +35,14 @@ echo '.'.$obj->$filename;
     <div class="main_body">
         <div class="container">
             <div class="row">
+            <div class="col-lg-12">
+            <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ</a></li>
+    <li class="breadcrumb-item active" aria-current="page">HOSTING</li>
+  </ol>
+</nav>
+</div>
                 <div class="col-lg-12">
                     <div class="text_con main_cat title">
                         <h1 class="h2">Λογαριασμοί Hosting</h1>
@@ -49,15 +57,15 @@ echo '.'.$obj->$filename;
 
                                 <div class="form-group col-lg-3 flex-fill">
                                     <div class="input-cont">
-                                        <label for="text">text</label>
-                                        <input type="text" class="form-control" id="text" placeholder="First name"
+                                        <label for="text">ID</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Γράψε ID"
                                             required="">
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-3 flex-fill">
                                     <div class="input-cont">
-
-                                        <select class="form-control" id="exampleFormControlSelect1">
+                                    <label for="Select1">Κατάσταση</label>
+                                        <select class="form-control" id="Select1"  placeholder="Επιλογή κατάστασης">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -68,28 +76,48 @@ echo '.'.$obj->$filename;
                                 </div>
                                 <div class="form-group col-lg-3 flex-fill">
                                     <div class="input-cont">
-                                        <label for="text">text</label>
-                                        <input type="text" class="form-control" id="text" placeholder="First name"
+                                        <label for="text">Email</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Γράψε email"
                                             required="">
                                     </div>
                                 </div>
 
-                               
+
                                 <div class="form-group checkboxes col-lg-3 flex-fill">
 
-                                    <div class="input-cont redio w-100 focused">
-                                        <div class="row-redio">
-                                            <label for="Male" class="before_inout">Male</label>
-                                            <input type="radio" class="form-control" id="Male" name="gender">
-                                            <label for="Male"></label>
+                                    <div class="input-cont redio w-100 focused redio-special-group">
+                                        <label for="Male">Προϋπόθεση</label>
+                                        <div class="redio-special">
+                                            <label for="Male" class="option1"><span>και</span></label>
+                                            <input type="checkbox" class="form-control" id="Male" name="gender">
+                                            <label for="Male" class="option2"><span>ή</span></label>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
-                               
+                                <div class="form-group w-100">
+                                    
+
+<span class="result_text">Βρήκαμε 12 αποτελέσματα</span>  
+
+<div class="btn-group ml-auto" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary  ">
+        Καθαρισμός φίλτρων
+    </button>
+    <button type="button" class="btn btn-primary ">
+         Αναζήτηση</button>
+
+</div>
+
+</div>
+
+
 
                             </div>
+                            
+                           
+                        
 
                         </form>
                     </div>
@@ -241,7 +269,6 @@ echo '.'.$obj->$filename;
                                     </div>
                                 </div>
                             </div>
-
                         </form>
                     </div>
                     <div class="text_con main_cat title">

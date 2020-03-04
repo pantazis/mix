@@ -25,7 +25,7 @@ echo '.'.$obj->$filename;
         href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=greek-ext,latin-ext"
         rel="stylesheet">
 
-    <link href="<?php mix('/public/assets/css/home_page.css');?>" rel="stylesheet">
+    <link href="<?php mix('/public/assets/css/admin_home.css');?>" rel="stylesheet">
 
     <!-- Plugin CSS -->
 </head>
@@ -210,7 +210,7 @@ echo '.'.$obj->$filename;
                                     <div class="input-cont redio w-100"> 
                                     <?php foreach ( $arr1 as $key => $value) {?>
                                      <div class="row-redio">  
-                                        <label for="<?=$value?>" class="before_inout"><?=$value?></label>  
+                                        <label for="<?=$value?>" class="before_input"><?=$value?></label>  
                                         <input type="checkbox" class="form-control" id="<?=$value?>" name="gender">
                                         <label for="<?=$value?>"></label>
                                     </div>                                    
@@ -222,7 +222,7 @@ echo '.'.$obj->$filename;
                                     <div class="input-cont redio w-100"> 
                                     <?php foreach ( $arr1 as $key => $value) {?>
                                      <div class="row-redio">  
-                                        <label for="<?=$value?>" class="before_inout"><?=$value?></label>  
+                                        <label for="<?=$value?>" class="before_input"><?=$value?></label>  
                                         <input type="radio" class="form-control" id="<?=$value?>" name="gender">
                                         <label for="<?=$value?>"></label>
                                     </div>                                    
@@ -257,7 +257,7 @@ echo '.'.$obj->$filename;
 
     </div>
 
-    <script src="<?php mix('/public/assets/js/homepage.js');?>"></script>
+    <script src="<?php mix('/public/assets/js/admin_home.js');?>"></script>
 </body>
 
 </html>

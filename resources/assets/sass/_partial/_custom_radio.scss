@@ -21,7 +21,8 @@
         transition: .4s;
         width: 26px; 
         border-radius: 50%; 
-        box-shadow: -1px 0 3px 1px rgba(0,0,0,0.3);  
+        box-shadow: -1px 0 3px 1px rgba(0,0,0,0.3);
+        z-index: 0;  
     }
 
     &:checked,
@@ -48,6 +49,7 @@
             background-color: #e4e1e1;;
             border-radius: 34px;
             transition:  background-color .3s;
+            z-index: 0; 
            
            
         
@@ -80,4 +82,73 @@
     100% { box-shadow: 0px 0px 4px 12px rgba($blue, 0);}
   }
   //--------------------------------------------------------------------------------------------
+  .redio-special{
+    $border-r:4px;   
+    $height:30px ;
+    $pad: 10px;
+    $height2: $height + $pad;
+    $width: $height2 * 4;
+    $after-width: $height*2;
+    width:$width;
+    position: relative;
+    label{
+        &.option2{
+           > span{
+            right: #{$pad/2};
+            left: auto;
+           }
+        }
+         > span{
+    position: absolute;
+    z-index: 1;  
+    left: #{$pad/2};
+    bottom: #{$pad/2};
+    height: $height;      
+    width: $after-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+    [type=radio] + label:after, [type=checkbox] + label:after {
+        height: $height;      
+        width: $after-width;
+        border-radius: $border-r;
+        left: #{$pad/2};
+        bottom: #{$pad/2};
+       
+    }
+    [type=radio]:checked + label:before, [type=radio]:not(:checked) + label:before, [type=checkbox]:checked + label:before, [type=checkbox]:not(:checked) + label:before{
+       
+        height: $height2;
+        width:  $width ;
+        border-radius: $border-r;
+        background-color: #d9b48c;
+    }
+    [type=radio]:checked + label:before, [type=checkbox]:checked + label:before {
+  
+        background-color: #8cb1d9;
+    }
+    .option2{
+        width: $width !important;
+        height: $height2 !important;
+
+    }
+    [type=radio]:checked + label:after, [type=checkbox]:checked + label:after {
+        left: #{$width - $after-width -$pad/2 };
+    }
+
+        
+   
+    
+      
+}
+
+
+.redio-special-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
   

@@ -16514,6 +16514,18 @@ p.description {
   opacity: 0.7;
 }
 
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0rem;
+  margin-bottom: 0;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  position: relative;
+  top: -15px;
+}
+
 .row-redio {
   display: flex;
   justify-content: space-between;
@@ -16533,6 +16545,7 @@ p.description {
   width: 26px;
   border-radius: 50%;
   box-shadow: -1px 0 3px 1px rgba(0, 0, 0, 0.3);
+  z-index: 0;
 }
 [type=radio]:checked, [type=radio]:not(:checked), [type=checkbox]:checked, [type=checkbox]:not(:checked) {
   position: absolute;
@@ -16558,6 +16571,7 @@ p.description {
   background-color: #e4e1e1;
   border-radius: 34px;
   transition: background-color 0.3s;
+  z-index: 0;
 }
 
 [type=radio]:checked + label:before, [type=checkbox]:checked + label:before {
@@ -16580,7 +16594,56 @@ p.description {
     box-shadow: 0px 0px 4px 12px rgba(64, 125, 191, 0);
   }
 }
-.form-group:not(.checkboxes) .btn {
+.redio-special {
+  width: 160px;
+  position: relative;
+}
+.redio-special label.option2 > span {
+  right: 5px;
+  left: auto;
+}
+.redio-special label > span {
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  bottom: 5px;
+  height: 30px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redio-special [type=radio] + label:after, .redio-special [type=checkbox] + label:after {
+  height: 30px;
+  width: 60px;
+  border-radius: 4px;
+  left: 5px;
+  bottom: 5px;
+}
+.redio-special [type=radio]:checked + label:before, .redio-special [type=radio]:not(:checked) + label:before, .redio-special [type=checkbox]:checked + label:before, .redio-special [type=checkbox]:not(:checked) + label:before {
+  height: 40px;
+  width: 160px;
+  border-radius: 4px;
+  background-color: #d9b48c;
+}
+.redio-special [type=radio]:checked + label:before, .redio-special [type=checkbox]:checked + label:before {
+  background-color: #8cb1d9;
+}
+.redio-special .option2 {
+  width: 160px !important;
+  height: 40px !important;
+}
+.redio-special [type=radio]:checked + label:after, .redio-special [type=checkbox]:checked + label:after {
+  left: 95px;
+}
+
+.redio-special-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group:not(.checkboxes) input + .btn-group .btn {
   height: 52px;
 }
 .form-group:not(.checkboxes) .form-control {
@@ -16634,7 +16697,7 @@ select.form-control {
   transition: all 0.3s;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   background: #f5f5f5;
-  color: #000;
+  color: transparent;
 }
 
 .form-group:not(.checkboxes) select.form-control:hover, .form-group:not(.checkboxes) select.form-control:active, .form-group:not(.checkboxes) select.form-control:focus, .form-group:not(.checkboxes) textarea.form-control:hover, .form-group:not(.checkboxes) textarea.form-control:active, .form-group:not(.checkboxes) textarea.form-control:focus {

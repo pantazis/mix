@@ -216,3 +216,15 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
         }
     }
 }
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0rem;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    position: relative;
+    top: -15px;
+}
