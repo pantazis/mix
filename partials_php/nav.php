@@ -1,14 +1,18 @@
 <?php include "partials_php/fakeData.php";?>
 <nav class="nav_top">
-    <div id="toggle" class="mobilenav">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
+<div class="icon-par ip1">
+        <div class="nav-icon popover-cont"  >
+            <div class="bg-effect"></div>
+            <i class="fas fa-bars"></i>
+        </div>    
+
     </div>
+ 
     <div class="logo_cont">
         <img src="public/assets/img/nav/logo_bg.png" alt="" class="logo_bg">
         <img src="public/assets/img/nav/logo-notext.svg" alt="" class="logo">        
     </div>
+
     <div class="icon-par">
         <div class="nav-icon popover-cont" data-container="body" data-toggle="popover0" data-placement="bottom" data-content="1"
            title="" >
