@@ -2,6 +2,9 @@ footer{
     $fontcolor:rgba(250,250,250,0.5);
     margin-top: auto;
     background-color: #565656;
+    .container{
+        padding-bottom: 0 !important;
+    }
     p{
         color: $fontcolor;
     }

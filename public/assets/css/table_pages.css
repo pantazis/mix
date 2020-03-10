@@ -16357,6 +16357,7 @@ p {
 }
 .main_body .container {
   max-width: 1500px;
+  padding-bottom: 50px;
 }
 .full_container .container {
   max-width: 100%;
@@ -16526,6 +16527,10 @@ p.description {
   top: -15px;
 }
 
+.form-row {
+  margin-bottom: 0;
+}
+
 .row-redio {
   display: flex;
   justify-content: space-between;
@@ -16595,7 +16600,8 @@ p.description {
   }
 }
 .redio-special {
-  width: 160px;
+  width: 188px;
+  height: 52px;
   position: relative;
 }
 .redio-special label.option2 > span {
@@ -16607,22 +16613,22 @@ p.description {
   z-index: 1;
   left: 5px;
   bottom: 5px;
-  height: 30px;
-  width: 60px;
+  height: 42px;
+  width: 84px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .redio-special [type=radio] + label:after, .redio-special [type=checkbox] + label:after {
-  height: 30px;
-  width: 60px;
+  height: 42px;
+  width: 84px;
   border-radius: 4px;
   left: 5px;
   bottom: 5px;
 }
 .redio-special [type=radio]:checked + label:before, .redio-special [type=radio]:not(:checked) + label:before, .redio-special [type=checkbox]:checked + label:before, .redio-special [type=checkbox]:not(:checked) + label:before {
-  height: 40px;
-  width: 160px;
+  height: 52px;
+  width: 188px;
   border-radius: 4px;
   background-color: #d9b48c;
 }
@@ -16630,11 +16636,12 @@ p.description {
   background-color: #8cb1d9;
 }
 .redio-special .option2 {
-  width: 160px !important;
-  height: 40px !important;
+  width: 188px !important;
+  height: 52px !important;
+  position: initial !important;
 }
 .redio-special [type=radio]:checked + label:after, .redio-special [type=checkbox]:checked + label:after {
-  left: 95px;
+  left: 99px;
 }
 
 .redio-special-group {
@@ -16710,6 +16717,9 @@ select.form-control {
 footer {
   margin-top: auto;
   background-color: #565656;
+}
+footer .container {
+  padding-bottom: 0 !important;
 }
 footer p {
   color: rgba(250, 250, 250, 0.5);
@@ -16974,5 +16984,16 @@ table th {
 
 span.result_text {
   margin: 0px 5px;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+.filter img {
+  width: 10px;
+}
+
+.filter-form {
+  padding: 20px;
 }
 /*# sourceMappingURL=table_pages.css.map*/

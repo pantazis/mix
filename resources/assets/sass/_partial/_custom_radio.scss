@@ -84,12 +84,13 @@
   //--------------------------------------------------------------------------------------------
   .redio-special{
     $border-r:4px;   
-    $height:30px ;
+    $height:42px ;
     $pad: 10px;
-    $height2: $height + $pad;
-    $width: $height2 * 4;
+    $height2: $height + $pad;   
     $after-width: $height*2;
+    $width: ($after-width + $pad) * 2;
     width:$width;
+    height: $height2;
     position: relative;
     label{
         &.option2{
@@ -133,6 +134,7 @@
     .option2{
         width: $width !important;
         height: $height2 !important;
+        position: initial !important;
 
     }
     [type=radio]:checked + label:after, [type=checkbox]:checked + label:after {

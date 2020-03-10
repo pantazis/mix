@@ -35,14 +35,14 @@ echo '.'.$obj->$filename;
     <div class="main_body">
         <div class="container">
             <div class="row">
-            <div class="col-lg-12">
-            <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ</a></li>
-    <li class="breadcrumb-item active" aria-current="page">HOSTING</li>
-  </ol>
-</nav>
-</div>
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">HOSTING</li>
+                        </ol>
+                    </nav>
+                </div>
                 <div class="col-lg-12">
                     <div class="text_con main_cat title">
                         <h1 class="h2">Λογαριασμοί Hosting</h1>
@@ -50,9 +50,16 @@ echo '.'.$obj->$filename;
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <div class="text_con main_cat">
-                        <form class="form-inline w-100">
-                            <div class="form-row w-100 ">
+                    <div class="text_con main_cat d-block p-0">
+                        <div class="row m-0">
+                            <div class="col-lg-12 p-0">
+                                <button class="btn btn-primary filter ">
+                                    <img src="public/assets/img/tables/filters.svg" alt=""> Κατοχύρωσε ένα νέο Domain
+                                </button></div>
+                        </div>
+
+                        <form class=" flex-fill filter-form">
+                            <div class="form-row flex-fill ">
 
 
                                 <div class="form-group col-lg-3 flex-fill">
@@ -64,8 +71,8 @@ echo '.'.$obj->$filename;
                                 </div>
                                 <div class="form-group col-lg-3 flex-fill">
                                     <div class="input-cont">
-                                    <label for="Select1">Κατάσταση</label>
-                                        <select class="form-control" id="Select1"  placeholder="Επιλογή κατάστασης">
+                                        <label for="Select1">Κατάσταση</label>
+                                        <select class="form-control" id="Select1" placeholder="Επιλογή κατάστασης">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -85,7 +92,7 @@ echo '.'.$obj->$filename;
 
                                 <div class="form-group checkboxes col-lg-3 flex-fill">
 
-                                    <div class="input-cont redio w-100 focused redio-special-group">
+                                    <div class="input-cont redio flex-fill focused redio-special-group">
                                         <label for="Male">Προϋπόθεση</label>
                                         <div class="redio-special">
                                             <label for="Male" class="option1"><span>και</span></label>
@@ -96,28 +103,33 @@ echo '.'.$obj->$filename;
 
                                     </div>
                                 </div>
-                                <div class="form-group w-100">
-                                    
 
-<span class="result_text">Βρήκαμε 12 αποτελέσματα</span>  
-
-<div class="btn-group ml-auto" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-primary  ">
-        Καθαρισμός φίλτρων
-    </button>
-    <button type="button" class="btn btn-primary ">
-         Αναζήτηση</button>
-
-</div>
-
-</div>
 
 
 
                             </div>
-                            
-                           
-                        
+                            <div class="form-row flex-fill">
+                                <div class="form-group col-lg-12 flex-fill d-flex aligns m-0 ">
+
+
+
+                                    <span class="result_text">Βρήκαμε 12 αποτελέσματα</span>
+
+                                    <div class="btn-group ml-auto" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-primary  ">
+                                            Καθαρισμός φίλτρων
+                                        </button>
+                                        <button type="button" class="btn btn-primary ">
+                                            Αναζήτηση</button>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
 
                         </form>
                     </div>
@@ -243,8 +255,8 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-8 d-flex flex-column">
                     <div class="text_con main_cat">
-                        <form class="form-inline w-100">
-                            <div class="form-row w-100 ">
+                        <form class="form-inline flex-fill">
+                            <div class="form-row flex-fill ">
                                 <div class="form-group col-lg-12 flex-fill">
                                     <label for="inputPassword2" class="sr-only">Password</label>
                                     <input type="password" class="form-control flex-grow-1" id="inputPassword2"
