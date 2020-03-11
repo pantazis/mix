@@ -9,7 +9,11 @@
     </div>
  
     <div class="logo_cont">
-        <img src="public/assets/img/nav/logo_bg.png" alt="" class="logo_bg">
+        <div class="logo_bg">
+            <div class="logo_bg_in">
+                <div class="bg_w"></div>
+            </div>
+        </div>
         <img src="public/assets/img/nav/logo-notext.svg" alt="" class="logo">        
     </div>
 
