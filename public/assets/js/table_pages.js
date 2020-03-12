@@ -20678,18 +20678,26 @@ function change_container_size(arr, el) {
 
 
 function toggleMenu() {
-  $("#toggle").click(function () {
-    $("body").toggleClass("menu_open");
+  $(".icon-par.ip1").click(function () {
+    $("body").addClass("menu_open");
+  });
+  $(".nav-modal").click(function (e) {
+    if ($(e.target).closest(".side_cont").length == 0) {
+      $("body").removeClass("menu_open");
+    }
+  });
+  $(".close_icon").click(function () {
+    $("body").removeClass("menu_open");
   });
 } //opne menu sub categories
 
 
 function menu_sub_cat() {
-  $(".side_cont li .fas").click(function () {
+  $(".side_cont li .sub-cat-open").click(function () {
     var parent_category = $(this).closest("li").attr("data-parent");
     $(".side_cont ul[data-child=" + parent_category + "]").addClass("active");
   });
-  $(".sub_cat .fas").click(function () {
+  $(".sub_cat .close_sub").click(function () {
     $(this).closest("ul").removeClass("active");
   });
 }

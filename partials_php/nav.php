@@ -42,21 +42,43 @@
         <?php  foreach ($menu_cat2["menucat"] as $key => $value){ ?>
         <li>
             <a href="#"><span class="nav_icon"><img src="public/assets/img/nav/<?=$arr[$key]?>.svg" alt=""></span><span
-                    class="text"><?=$value["name"]?></span></a>
+            class="text"><?=$value["name"]?></span></a>
         </li>
         <?php } ?>
     </ul>
 </nav>
 <nav class="nav-modal">
+    <div class="bgdark"></div>    
     <div class="side_cont">
-        <img src="public/assets/img/nav/nav_pic.jpg" alt="" class="top_img">
+       <div class="close_nav">
+            <div class="icon-par  ">
+            <a href="" class="nav-icon popover-cont ">
+                    <div class="bg-effect"></div>
+                    <i class="fas fa-user-cog"></i>
+                </a>
+                <a  href="" class="nav-icon popover-cont ">
+                    <div class="bg-effect"></div>
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <div class="nav-icon popover-cont close_icon">
+                    <div class="bg-effect"></div>
+                    <i class="fas fa-times"></i>
+                </div>            
+            </div>
+        </div>
         <div class="ul_par">
             <ul>
               
                 <?php foreach ($menu_cat2["menucat"] as $key => $value){ ?>
                 <li data-parent="<?=$value["name"]?>">
                     <?php if(count($value["sub"]) > 0){  ?>
-                    <i class="fas fa-angle-right"></i>
+                    <!--<i class="fas fa-angle-right"></i>-->
+                    <div class="icon-par sub-cat-open ">
+                        <div class="nav-icon">
+                            <div class="bg-effect"></div>
+                            <i class="fas fa-angle-right"></i>
+                        </div>               
+                    </div>                   
                     <?php } ?>
                     <a href="#"><span class="nav_icon"><img src="public/assets/img/nav/<?=$arr[$key]?>.svg" alt=""></span><span
                             class="text"><?=$value["name"]?></span></a>
@@ -67,15 +89,21 @@
             <?php if(count($value["sub"]) > 0){ ?>
             <ul class="sub_cat" data-child="<?=$value["name"]?>">
                 <li class="first_sub">
-                    <i class="fas fa-times" style="color:#fff"></i>
-                    <a href="#"><span class="nav_icon"><img src="public/assets/img/euro.svg" alt=""></span><span
+                <div class="icon-par close_sub ">
+                <div class="nav-icon popover-cont">
+                    <div class="bg-effect"></div>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+                    <a href="#"><span class="nav_icon"><img src="<?=$value["img"]?>" alt=""></span><span
                             class="text"><?=$value["name"]?></span></a>
                 </li>
 
                 <?php foreach ($value["sub"] as $key => $value){ ?>
                 <li>
-                    <a href="#"><span class="nav_icon"><img src="public/assets/img/euro.svg" alt=""></span><span
-                            class="text"><?=$value["subname"]?></span></a>
+                    <a href="#"><span class="nav_icon no"></span>
+                        <span class="text"><?=$value["subname"]?></span>
+                    </a>
                 </li>
                 <?php } ?>
             </ul>
@@ -123,5 +151,4 @@
             <a class="dropdown-item" href="#">Tρόποι πληρωμής</a>
         </div>
    </div> 
-
 </div>  

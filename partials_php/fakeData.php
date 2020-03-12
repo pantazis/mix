@@ -4,10 +4,13 @@ $menu_cat = '{
   "menucat": [
     {
       "name": "Πίνακας ελέγχου",
+      "img":"public/assets/img/nav/control_panel.svg",
       "sub": []
+      
     },
     {
       "name": "Domains",
+      "img":"public/assets/img/nav/hosting.svg",
       "sub": [
         
     
@@ -21,6 +24,7 @@ $menu_cat = '{
     },
     {
       "name": "Hosting",
+      "img":"public/assets/img/nav/domains.svg",
       "sub": [
         
      
@@ -43,6 +47,7 @@ $menu_cat = '{
     },
     {
       "name": "SSL",
+      "img":"public/assets/img/nav/ssl.svg",
       "sub": [
        
     
@@ -53,10 +58,12 @@ $menu_cat = '{
     },
     {
       "name": "Χρήστες",
+      "img":"public/assets/img/nav/users.svg",
       "sub": []
     },
     {
       "name": "Οικονομικά",
+      "img":"public/assets/img/nav/euro.svg",
       "sub": [
         
       
@@ -76,6 +83,7 @@ $menu_cat = '{
     },
     {
       "name": "Προϊόντα",
+      "img":"public/assets/img/nav/product.svg",
       "sub": [
         
      
