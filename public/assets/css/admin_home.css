@@ -16741,6 +16741,9 @@ p.description {
   left: 20px;
   top: 19px;
 }
+.form-group:not(.checkboxes) .form-control:visited, .form-group:not(.checkboxes) .form-control:link, .form-group:not(.checkboxes) .form-control:hover, .form-group:not(.checkboxes) .form-control:active, .form-group:not(.checkboxes) .form-control:focus, .form-group:not(.checkboxes) .form-control.has_val {
+  color: #000000;
+}
 .form-group:not(.checkboxes) .form-control:visited + label, .form-group:not(.checkboxes) .form-control:link + label, .form-group:not(.checkboxes) .form-control:hover + label, .form-group:not(.checkboxes) .form-control:active + label, .form-group:not(.checkboxes) .form-control:focus + label, .form-group:not(.checkboxes) .form-control.has_val + label {
   font-size: 14px;
   top: 3px;

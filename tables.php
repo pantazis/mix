@@ -64,28 +64,32 @@ echo '.'.$obj->$filename;
 
                                 <div class="form-group col-lg-3 flex-fill">
                                     <div class="input-cont">
-                                        <label for="text">ID</label>
+                                      
                                         <input type="text" class="form-control" id="text" placeholder="Γράψε ID"
                                             required="">
+                                            <label for="text">ID</label>
                                     </div>
+                                 
                                 </div>
                                 <div class="form-group col-lg-3 flex-fill">
                                     <div class="input-cont">
-                                        <label for="Select1">Κατάσταση</label>
+                                      
                                         <select class="form-control" id="Select1" placeholder="Επιλογή κατάστασης">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
                                         </select>
+                                        <label for="Select1">Κατάσταση</label>
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-3 flex-fill">
                                     <div class="input-cont">
-                                        <label for="text">Email</label>
+                                      
                                         <input type="text" class="form-control" id="text" placeholder="Γράψε email"
                                             required="">
+                                            <label for="text">Email</label>
                                     </div>
                                 </div>
 
@@ -93,7 +97,7 @@ echo '.'.$obj->$filename;
                                 <div class="form-group checkboxes col-lg-3 flex-fill">
 
                                     <div class="input-cont redio flex-fill focused redio-special-group">
-                                        <label for="Male">Προϋπόθεση</label>
+                                    <label for="Male">Προϋπόθεση</label>
                                         <div class="redio-special">
                                             <label for="Male" class="option1"><span>και</span></label>
                                             <input type="checkbox" class="form-control" id="Male" name="gender">
