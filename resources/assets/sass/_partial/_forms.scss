@@ -38,16 +38,24 @@ textarea.form-control{
 }
 
 
-.input-cont{
-    label {
+.form-control{
+    + label {
         transition: all .3s; 
         position: absolute;
         left: 20px;
         top: 19px;
     }
-    &:hover,&.focused{
-        label {
-        font-size: 14px;
+   
+&:visited,
+&:link,
+&:hover, 
+&:active,
+&:focus,
+&.has_val
+{
+   
+       + label {
+         font-size: 14px;
         top: 3px;
        
         }

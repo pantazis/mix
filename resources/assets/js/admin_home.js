@@ -21,9 +21,10 @@ nav.nav_popover('[data-toggle="popover2"]',$(".help").html(),popover_options);
 
 //fullMenuOnHover();
 nav.menu_sub_cat();
+
 nav.toggleMenu();
 
-nav.detect_body_scroll();
+
 
 
 

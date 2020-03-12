@@ -20707,21 +20707,8 @@ function nav_popover(el, data, options) {
     $(this).attr('data-content', data);
     $(el).popover(options);
   });
-}
+} //object with function for navigation
 
-function detect_body_scroll() {
-  $(window).scroll(function () {
-    var body_scroll = $(this)[0].pageYOffset;
-
-    if (body_scroll > 20) {
-      $("body").addClass("logo_small");
-    } else {
-      $("body").removeClass("logo_small");
-    }
-  });
-}
-
-; //object with function for navigation
 
 nav = {
   change_menu: change_menu,
@@ -20729,8 +20716,7 @@ nav = {
   toggleMenu: toggleMenu,
   change_container_size: change_container_size,
   menu_sub_cat: menu_sub_cat,
-  nav_popover: nav_popover,
-  detect_body_scroll: detect_body_scroll
+  nav_popover: nav_popover
 };
 exports.nav = nav;
 
@@ -20774,7 +20760,6 @@ _partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].nav_popover('[data-toggle="popo
 
 _partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].menu_sub_cat();
 _partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].toggleMenu();
-_partial_nav__WEBPACK_IMPORTED_MODULE_3__["nav"].detect_body_scroll();
 $("body").click(function (event) {
   var is_popover_body = $(event.target).closest(".popover-body").length == 0;
   var is_popover = $(event.target).closest('[data-toggle*="popover"]').length == 0;

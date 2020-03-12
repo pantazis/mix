@@ -193,16 +193,18 @@ echo '.'.$obj->$filename;
                                 <?php foreach ( $arr as $key => $value) { ?>
                                 <div class="form-group col-lg-6 flex-fill">
                                     <div class="input-cont">
-                                        <label for="<?=$value?>"><?=$value?></label>
+                                       
                                         <input type="<?=$value?>" class="form-control" id="<?=$value?>"
                                             placeholder="First name" required>
+                                        <label for="<?=$value?>"><?=$value?></label>
                                     </div>
                                 </div>
                                 <?php } ?>
                                 <div class="form-group col-lg-12 flex-fill">
                                     <div class="input-cont">
-                                        <label for="textarea">textarea</label>
+                                       
                                         <textarea class="form-control" id="textarea" rows="3"></textarea>
+                                        <label for="textarea">textarea</label>
                                     </div>
                                 </div>
                                 <div class="form-group checkboxes col-lg-6 flex-fill">

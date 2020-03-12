@@ -1,35 +1,37 @@
 <?php include "partials_php/fakeData.php";?>
 <nav class="nav_top">
-<div class="icon-par ip1">
-        <div class="nav-icon popover-cont"  >
+    <div class="icon-par ip1">
+        <div class="nav-icon popover-cont">
             <div class="bg-effect"></div>
             <i class="fas fa-bars"></i>
-        </div>    
+        </div>
 
     </div>
- 
+
     <div class="logo_cont">
         <div class="logo_bg">
             <div class="logo_bg_in">
                 <div class="bg_w"></div>
             </div>
         </div>
-        <img src="public/assets/img/nav/logo-notext.svg" alt="" class="logo">        
+        <img src="public/assets/img/nav/logo-notext.svg" alt="" class="logo">
     </div>
 
     <div class="icon-par">
-        <div class="nav-icon popover-cont" data-container="body" data-toggle="popover0" data-placement="bottom" data-content="1"
-           title="" >
+        <div class="nav-icon popover-cont" data-container="body" data-toggle="popover0" data-placement="bottom"
+            data-content="1" title="">
             <div class="bg-effect"></div>
             <i class="fas fa-user-cog"></i>
         </div>
 
-        <div class="nav-icon popover-cont" data-container="body" data-toggle="popover1" data-placement="bottom" data-content="1" title="Το καλάθι σου είναι άδειο">
+        <div class="nav-icon popover-cont" data-container="body" data-toggle="popover1" data-placement="bottom"
+            data-content="1" title="Το καλάθι σου είναι άδειο">
             <div class="bg-effect"></div>
             <i class="fas fa-shopping-cart"></i>
         </div>
 
-        <div class="nav-icon popover-cont" data-container="body" data-toggle="popover2" data-placement="bottom" data-content="1">
+        <div class="nav-icon popover-cont" data-container="body" data-toggle="popover2" data-placement="bottom"
+            data-content="1">
             <div class="bg-effect"></div>
             <i class="far fa-question-circle"></i>
         </div>
@@ -42,33 +44,47 @@
         <?php  foreach ($menu_cat2["menucat"] as $key => $value){ ?>
         <li>
             <a href="#"><span class="nav_icon"><img src="public/assets/img/nav/<?=$arr[$key]?>.svg" alt=""></span><span
-            class="text"><?=$value["name"]?></span></a>
+                    class="text"><?=$value["name"]?></span></a>
         </li>
         <?php } ?>
     </ul>
 </nav>
 <nav class="nav-modal">
-    <div class="bgdark"></div>    
+    <div class="bgdark"></div>
     <div class="side_cont">
-       <div class="close_nav">
-            <div class="icon-par  ">
-            <a href="" class="nav-icon popover-cont ">
-                    <div class="bg-effect"></div>
-                    <i class="fas fa-user-cog"></i>
-                </a>
-                <a  href="" class="nav-icon popover-cont ">
-                    <div class="bg-effect"></div>
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-                <div class="nav-icon popover-cont close_icon">
+        <div class="nav-head">
+        <div class="nav-icon popover-cont close_icon">
                     <div class="bg-effect"></div>
                     <i class="fas fa-times"></i>
-                </div>            
+                </div> 
+        <div class="logo-side">
+            <img src="public/assets/img/nav/logo-notext.svg" alt="" class="logo-side-img">
+        </div>
+        <div class="user-text">
+                    <p class="h3">pantazis vastardis</p>
+                    <p>pantazisvastardis@gmail.com</p>                   
+                </div>
+            <div class="close_nav">
+                <div class="icon_nav2 ">
+                    <a href="" class="nav-icon popover-cont ">
+                        <div class="bg-effect"></div>
+                        <i class="fas fa-user-cog"></i>
+                    </a>
+                    <a href="" class="nav-icon popover-cont ">
+                        <div class="bg-effect"></div>
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="" class="nav-icon popover-cont ">
+                        <div class="bg-effect"></div>
+                        <i class="far fa-question-circle"></i>
+                    </a>
+                   
+                </div>
             </div>
         </div>
         <div class="ul_par">
             <ul>
-              
+
                 <?php foreach ($menu_cat2["menucat"] as $key => $value){ ?>
                 <li data-parent="<?=$value["name"]?>">
                     <?php if(count($value["sub"]) > 0){  ?>
@@ -77,11 +93,11 @@
                         <div class="nav-icon">
                             <div class="bg-effect"></div>
                             <i class="fas fa-angle-right"></i>
-                        </div>               
-                    </div>                   
+                        </div>
+                    </div>
                     <?php } ?>
-                    <a href="#"><span class="nav_icon"><img src="public/assets/img/nav/<?=$arr[$key]?>.svg" alt=""></span><span
-                            class="text"><?=$value["name"]?></span></a>
+                    <a href="#"><span class="nav_icon"><img src="public/assets/img/nav/<?=$arr[$key]?>.svg"
+                                alt=""></span><span class="text"><?=$value["name"]?></span></a>
                 </li>
                 <?php } ?>
             </ul>
@@ -89,12 +105,12 @@
             <?php if(count($value["sub"]) > 0){ ?>
             <ul class="sub_cat" data-child="<?=$value["name"]?>">
                 <li class="first_sub">
-                <div class="icon-par close_sub ">
-                <div class="nav-icon popover-cont">
-                    <div class="bg-effect"></div>
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
+                    <div class="icon-par close_sub ">
+                        <div class="nav-icon popover-cont">
+                            <div class="bg-effect"></div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
                     <a href="#"><span class="nav_icon"><img src="<?=$value["img"]?>" alt=""></span><span
                             class="text"><?=$value["name"]?></span></a>
                 </li>
@@ -115,40 +131,42 @@
 
 </nav>
 <div class="popover_html_cont">
-   <div class="login">
-   <div class="dropdown-menu show">
-   <div class="list-item user" data-id="19">                      
-                            <span class="avatar ">
-                                <img src="public/assets/img/nav/user.jpg" alt="">
-                            </span>
-                        <div class="user-text">
-                            <p class="h3">pantazis vastardis</p>
-                            <p>pantazisvastardis@gmail.com</p>
-                            <p>+30.6932968500</p>
-                        </div>                        
-                    </div>
-    <a class="dropdown-item" href="#">Πίνακας ελέγχου</a>
-    <a class="dropdown-item" href="#">Ρυθμίσεις λογαριασμού</a>
-    <a class="dropdown-item" href="#">Αποσύνδεση</a>
-  </div>
+    <div class="login">
+        <div class="dropdown-menu show">
+            <div class="list-item user" data-id="19">
+                <span class="avatar ">
+                    <img src="public/assets/img/nav/user.jpg" alt="">
+                </span>
+                <div class="user-text">
+                    <p class="h3">pantazis vastardis</p>
+                    <p>pantazisvastardis@gmail.com</p>
+                    <p>+30.6932968500</p>
+                </div>
+            </div>
+            <a class="dropdown-item" href="#">Πίνακας ελέγχου</a>
+            <a class="dropdown-item" href="#">Ρυθμίσεις λογαριασμού</a>
+            <a class="dropdown-item" href="#">Αποσύνδεση</a>
+        </div>
 
-   </div>
-   <div class="cart">
-   <p>
-        Αγόρασε ένα
-        <a href="http://laravel.upgrade/domain" title="Κατοχύρωση domain name και άλλα εργαλεία">domain name</a>,
-        <a href="http://laravel.upgrade/hosting" title="Βρες το σωστό τύπο και πακέτο φιλοξενίας για το site σου">πακέτο hosting</a>
-        ή ένα <a href="http://laravel.upgrade/ssl-certificates" title="SSL certificates για προστασία ιστοσελίδων">ssl πιστοποιητικό</a>
-        στις χαμηλότερες τιμές της αγοράς!
-   </p>
+    </div>
+    <div class="cart">
+        <p>
+            Αγόρασε ένα
+            <a href="http://laravel.upgrade/domain" title="Κατοχύρωση domain name και άλλα εργαλεία">domain name</a>,
+            <a href="http://laravel.upgrade/hosting"
+                title="Βρες το σωστό τύπο και πακέτο φιλοξενίας για το site σου">πακέτο hosting</a>
+            ή ένα <a href="http://laravel.upgrade/ssl-certificates"
+                title="SSL certificates για προστασία ιστοσελίδων">ssl πιστοποιητικό</a>
+            στις χαμηλότερες τιμές της αγοράς!
+        </p>
 
-   </div>
-   <div class="help">
+    </div>
+    <div class="help">
         <div class="dropdown-menu show">
             <a class="dropdown-item" href="#">Yποβολή αιτήματος</a>
             <a class="dropdown-item" href="#">Live Chat</a>
             <a class="dropdown-item" href="#">Γνωσιακή βάση</a>
             <a class="dropdown-item" href="#">Tρόποι πληρωμής</a>
         </div>
-   </div> 
-</div>  
+    </div>
+</div>

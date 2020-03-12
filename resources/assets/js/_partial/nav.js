@@ -64,16 +64,7 @@ $(el).hover(function(){
 });
 }
 
-function detect_body_scroll(){
-$(window).scroll(function() {
-        var body_scroll =  $(this)[0].pageYOffset;
-        if( body_scroll > 20){
-            $("body").addClass("logo_small");
-        }else{
-            $("body").removeClass("logo_small");
-        }
-    });
-};
+
 
    
 //object with function for navigation
@@ -84,7 +75,7 @@ nav = {
     change_container_size : change_container_size,
     menu_sub_cat : menu_sub_cat,
     nav_popover : nav_popover,
-    detect_body_scroll: detect_body_scroll
+    
 }
 
 exports.nav = nav;
