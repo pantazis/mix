@@ -20655,6 +20655,9 @@ $("input,select").on("focus", function () {
 $("input").on("focusout", function () {
   var input_el = this;
   check_input(input_el);
+});
+$(".filter2").click(function () {
+  $(this).parent().toggleClass("open");
 }); ///$("input").on( "focusout", check_input() );
 //$("input").on( "focus",check_input() );
 

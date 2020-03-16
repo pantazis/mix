@@ -50,13 +50,11 @@ echo '.'.$obj->$filename;
                     </div>
                 </div>
                 <div class="col-lg-12">
+                <div class=" filter2 ">
+                                <img src="public/assets/img/tables/filters.svg" alt="">Φίλτρο αποτελεσμάτων
+                 </div>
                     <div class="text_con main_cat d-block p-0">
-                        <div class="row m-0">
-                            <div class="col-lg-12 p-0">
-                                <button class="btn btn-primary filter ">
-                                    <img src="public/assets/img/tables/filters.svg" alt=""> Κατοχύρωσε ένα νέο Domain
-                                </button></div>
-                        </div>
+                      
 
                         <form class=" flex-fill filter-form">
                             <div class="form-row flex-fill ">
@@ -145,11 +143,19 @@ echo '.'.$obj->$filename;
                                 <thead>
                                     <tr class="table100-head">
                                         <?php $arr_cat=["ID","Email","Κατάσταση","Μέθοδος επαλήθευσης","Συνδρομές","Τελευταίος συγχρονισμός"];?>
-
+                                        <th valign="middle" class="column1" ></th>
                                         <?php foreach ($arr_cat as $key => $value) { ?>
-
-                                        <th class="column1" ;><?=$value?></th>
-
+                                            <th valign="middle" class="column1" >
+                                                
+                                                <?=$value?>
+                                               <div class="inline_box">
+                                                    <div class="filter_box">
+                                                        <i class="fas fa-sort-up"></i>
+                                                        <i class="fas fa-sort-down"></i>
+                                                    </div>
+                                               </div> 
+                                            
+                                            </th>
                                         <?php } ?>
 
                                     </tr>
@@ -158,6 +164,16 @@ echo '.'.$obj->$filename;
                                     <?php for ($i=0; $i <20; $i++) { ?>
                                     <tr>
                                         <?php $arr=[$i,"sunray69@gmail.com","ΕΝΕΡΓΟ","Email - Κωδικός","45","18/02/2020"];?>
+                                        <td class="column1"> <span class="cat"><?=$arr_cat[$key]?>:</span>
+                                        <div class="row_filter">                                            
+                                            <img src="public\assets\img\tables\check_box.png" alt="">
+                                            <img src="public\assets\img\tables\check_box_c.png" alt="">    
+                                        </div>
+                                        <div class="row_filter"> 
+                                            <img src="public\assets\img\tables\star_b1.png" alt="">
+                                            <img src="public\assets\img\tables\star_blue.png" alt="">
+                                         </div>
+                                        </td>
                                         <?php foreach ($arr as $key => $value) { ?>
                                         <td class="column1"> <span class="cat"><?=$arr_cat[$key]?>:</span>
                                             <?=$value?>

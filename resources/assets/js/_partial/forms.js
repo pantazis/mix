@@ -27,6 +27,10 @@ var $ = require("jquery");
     var input_el = this;
     check_input (input_el);
   });
+
+  $(".filter2").click(function(){
+    $(this).parent().toggleClass("open");
+  }); 
   ///$("input").on( "focusout", check_input() );
   //$("input").on( "focus",check_input() );
  

@@ -20623,6 +20623,21 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./resources/assets/js/_partial/custom_table.js":
+/*!******************************************************!*\
+  !*** ./resources/assets/js/_partial/custom_table.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+$(".row_filter").click(function () {
+  $(this).toggleClass("checked_f");
+});
+
+/***/ }),
+
 /***/ "./resources/assets/js/_partial/forms.js":
 /*!***********************************************!*\
   !*** ./resources/assets/js/_partial/forms.js ***!
@@ -20655,6 +20670,9 @@ $("input,select").on("focus", function () {
 $("input").on("focusout", function () {
   var input_el = this;
   check_input(input_el);
+});
+$(".filter2").click(function () {
+  $(this).parent().toggleClass("open");
 }); ///$("input").on( "focusout", check_input() );
 //$("input").on( "focus",check_input() );
 
@@ -20761,7 +20779,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _partial_nav__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_partial_nav__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _partial_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./_partial/forms */ "./resources/assets/js/_partial/forms.js");
 /* harmony import */ var _partial_forms__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_partial_forms__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _partial_custom_table_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_partial/custom_table.js */ "./resources/assets/js/_partial/custom_table.js");
+/* harmony import */ var _partial_custom_table_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_partial_custom_table_js__WEBPACK_IMPORTED_MODULE_5__);
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 
 
 

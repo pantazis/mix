@@ -4,6 +4,7 @@ import { createPopper } from '@popperjs/core';
 import {  Alert,Tooltip } from 'bootstrap';
 import {nav} from './_partial/nav';
 import {} from './_partial/forms';
+import {} from './_partial/custom_table.js';
 window.bootstrapValidate = bootstrapValidate;
 var menu_class_arr = ["no-menu","only_icons","full_menu"];
 var container_size_arr = ["full_container", "normal_container"];
