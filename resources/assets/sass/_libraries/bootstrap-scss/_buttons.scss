@@ -25,12 +25,12 @@
   }
 &:active{
   &::before{
-    animation-name: example;
+    animation-name: example2;
     animation-duration: .3s;
   }
 }
 
-@keyframes example {
+@keyframes example2 {
   0% {   width:0px;
     height: 0px;
   opacity: 1;}

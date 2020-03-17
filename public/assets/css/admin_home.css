@@ -2483,12 +2483,12 @@ textarea.form-control {
           filter: blur(3px);
 }
 .btn:active::before {
-  -webkit-animation-name: example;
-          animation-name: example;
+  -webkit-animation-name: example2;
+          animation-name: example2;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
 }
-@-webkit-keyframes example {
+@-webkit-keyframes example2 {
   0% {
     width: 0px;
     height: 0px;
@@ -2505,7 +2505,7 @@ textarea.form-control {
     opacity: 0;
   }
 }
-@keyframes example {
+@keyframes example2 {
   0% {
     width: 0px;
     height: 0px;
@@ -16020,7 +16020,7 @@ nav.nav_top {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  z-index: 1;
+  z-index: 5;
 }
 
 .logo_cont {
@@ -16126,7 +16126,7 @@ nav.nav-modal {
   right: 0;
   bottom: 0;
   height: 100%;
-  z-index: 3;
+  z-index: 6;
   width: 0;
   transition-delay: 1s;
   transition-duration: 0s;
@@ -16641,6 +16641,18 @@ p.description {
 }
 [type=radio]:checked + label:after, [type=checkbox]:checked + label:after {
   left: 30px;
+}
+
+@-webkit-keyframes example {
+  0% {
+    box-shadow: 0px 0px 4px 0px rgba(64, 125, 191, 0.15);
+  }
+  80% {
+    box-shadow: 0px 0px 4px 12px rgba(64, 125, 191, 0.15);
+  }
+  100% {
+    box-shadow: 0px 0px 4px 12px rgba(64, 125, 191, 0);
+  }
 }
 
 @keyframes example {
