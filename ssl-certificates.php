@@ -143,7 +143,7 @@ echo '.'.$obj->$filename;
                             <table>
                                 <thead>
                                     <tr class="table100-head">
-                                        <?php $arr_cat=["ID","Όνομα","Common Name","Έκδοση Europe/Athens","Ημ. Λήξης Europe/Athens","Κατάσταση","Email"];?>
+                                        <?php $arr_cat=["ID","Όνομα","Common Name","Έκδοση <span class='small-t'>Europe/Athens</span>","Ημ. Λήξης <span class='small-t'>Europe/Athens</span>","Κατάσταση","Email"];?>
                                         <th valign="middle" class="column1" ></th>
                                         <?php foreach ($arr_cat as $key => $value) { ?>
                                             <th valign="middle" class="column1" >
@@ -199,7 +199,7 @@ echo '.'.$obj->$filename;
                                            <span class="small-t">07:00</span>                                        </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Κατάσταση:</span>
-                                           ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ                                        </td>
+                                          <span class="btn"> ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ</span>                                        </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Email:</span>
                                            giorgos@dnhost.gr                                        </td>
