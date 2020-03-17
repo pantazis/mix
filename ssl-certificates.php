@@ -199,7 +199,7 @@ echo '.'.$obj->$filename;
                                            <span class="small-t">07:00</span>                                        </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Κατάσταση:</span>
-                                          <span class="btn"> ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ </span>                                       </td>
+                                          <span class="btn btn-outline-<?=$value['state']['class']?>"> <?=$value['state']['name']?> </span>                                       </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Email:</span>
                                            giorgos@dnhost.gr                                        </td>
@@ -295,17 +295,18 @@ echo '.'.$obj->$filename;
 <script>
 
 
-var arr =[{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"},{"name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ","class":"label pending"}]
+var arr =[{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"label secondary","name":"ΑΚΥΡΩΘΗΚΕ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"}];
 
 //["ID","Όνομα","Common Name","Έκδοση Europe/Athens","Ημ. Λήξης Europe/Athens","Κατάσταση","Email"]
 
 /*
 var arr= [];
-var s123 = {};
+
 
     
 
 $(".status .label").each(function(){
+    var s123 = {};
     s123.class=String($(this)[0].classList);
     s123.name=$(this).text();    console.log(s123.name);
     
@@ -340,8 +341,8 @@ $(arr).each(function(index){
     this.cname="dnhost";
     this.start =arr3[index%3];
     this.end =arr4[index%3];
-    //this.state = {name:this.name,class:this.class}
-    this.state = this.name;
+    this.state = {name:this.name,class:this.class}
+   // this.state = this.name;
     this.email =arr5[index%3];
     delete this.name;
     delete this.class;
