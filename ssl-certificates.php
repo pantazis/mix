@@ -199,7 +199,7 @@ echo '.'.$obj->$filename;
                                            <span class="small-t">07:00</span>                                        </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Κατάσταση:</span>
-                                          <span class="btn"> ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ</span>                                        </td>
+                                          <span class="btn"> ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ </span>                                       </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Email:</span>
                                            giorgos@dnhost.gr                                        </td>
