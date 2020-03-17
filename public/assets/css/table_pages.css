@@ -16919,9 +16919,15 @@ tbody tr:hover {
   cursor: pointer;
 }
 
+span.small-t {
+  display: block;
+  font-size: 11px;
+}
+
 .column1 {
   padding-left: 15px;
   padding-right: 40px;
+  font-size: 14px;
 }
 .column1:last-of-type {
   text-align: right;
