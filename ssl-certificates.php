@@ -182,8 +182,11 @@ echo '.'.$obj->$filename;
                                                                                   
                                        <td class="column1"> <span class="cat">Όνομα:</span>
                                            [DV] Comodo Essential SSL
-                                            <i class="fas fa-file-alt"></i>
-                                            <i class="fas fa-address-card"></i>
+                                           <span class="td-icons">
+                                                <i class="fas fa-file-alt"></i>
+                                                <i class="fas fa-address-card"></i>
+                                           </span>
+
                                         </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Common Name:</span>

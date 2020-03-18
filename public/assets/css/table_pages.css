@@ -16586,6 +16586,10 @@ p.description {
   margin-bottom: 0;
 }
 
+.disabled {
+  box-shadow: none !important;
+}
+
 .row-redio {
   display: flex;
   justify-content: space-between;
@@ -16854,6 +16858,9 @@ table {
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+table .btn {
+  font-size: 10px;
 }
 
 table * {
@@ -17167,5 +17174,19 @@ span.result_text {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+span.td-icons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.td-icons i {
+  padding: 0 2px;
 }
 /*# sourceMappingURL=table_pages.css.map*/

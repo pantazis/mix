@@ -16586,6 +16586,10 @@ p.description {
   margin-bottom: 0;
 }
 
+.disabled {
+  box-shadow: none !important;
+}
+
 .row-redio {
   display: flex;
   justify-content: space-between;
