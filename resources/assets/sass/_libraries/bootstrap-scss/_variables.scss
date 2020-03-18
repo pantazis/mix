@@ -37,15 +37,15 @@ $lighten:0;
 $amount:50;
 
 $blue:    lighten(desaturate(#007bff,$amount),$lighten) !default;
-$indigo:  lighten(desaturate(#6610f2,$amount),$lighten) !default;
-$purple:  lighten(desaturate(#6f42c1,$amount),$lighten) !default;
-$pink:    lighten(desaturate(#e83e8c,$amount),$lighten) !default;
-$red:     lighten(desaturate(#dc3545,$amount),$lighten) !default;
-$orange:  lighten(desaturate(#fd7e14,$amount),$lighten) !default;
-$yellow:  lighten(desaturate(#ffc107,$amount),$lighten) !default;
-$green:   lighten(desaturate(#28a745,$amount),$lighten) !default;
-$teal:    lighten(desaturate(#20c997,$amount),$lighten) !default;
-$cyan:    lighten(desaturate(#17a2b8,$amount),$lighten) !default;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -72,7 +72,7 @@ $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
-$warning:       $yellow !default;
+$warning:       $orange !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;

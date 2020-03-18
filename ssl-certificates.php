@@ -143,7 +143,7 @@ echo '.'.$obj->$filename;
                             <table>
                                 <thead>
                                     <tr class="table100-head">
-                                        <?php $arr_cat=["ID","Όνομα","Common Name","Έκδοση <span class='small-t'>Europe/Athens</span>","Ημ. Λήξης <span class='small-t'>Europe/Athens</span>","Κατάσταση","Email"];?>
+                                        <?php $arr_cat=["ID","Όνομα","Common Name","Έκδοση <span class='small-t'>Europe/Athens</span>","Ημ. Λήξης <span class='small-t'>Europe/Athens</span>","Κατάσταση","Email",""];?>
                                         <th valign="middle" class="column1" ></th>
                                         <?php foreach ($arr_cat as $key => $value) { ?>
                                             <th valign="middle" class="column1" >
@@ -181,7 +181,10 @@ echo '.'.$obj->$filename;
                                            1000                                        </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Όνομα:</span>
-                                           [DV] Comodo Essential SSL                                        </td>
+                                           [DV] Comodo Essential SSL
+                                            <i class="fas fa-file-alt"></i>
+                                            <i class="fas fa-address-card"></i>
+                                        </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Common Name:</span>
                                            dnhost                                        </td>
@@ -199,10 +202,13 @@ echo '.'.$obj->$filename;
                                            <span class="small-t">07:00</span>                                        </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Κατάσταση:</span>
-                                          <span class="btn btn-outline-<?=$value['state']['class']?>"> <?=$value['state']['name']?> </span>                                       </td>
+                                          <span class="btn btn-block btn-outline-<?=$value['state']['class']?> disabled"> <?=$value['state']['name']?> </span>                                       </td>
                                                                                   
                                        <td class="column1"> <span class="cat">Email:</span>
                                            giorgos@dnhost.gr                                        </td>
+                                           <td class="column1">
+                                           <a href=""class="btn btn-block">asasasasasas</a>
+                                            </td>
                                        
                                    </tr>
                                     <?php }?>
