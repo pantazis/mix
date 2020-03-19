@@ -948,5 +948,45 @@ nav.nav_top {
     box-shadow: none;
 }
 
+nav.nav_top {
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #464950;
+    z-index: 5;
+}
+
+.logo_cont .logo_bg {
+    position: absolute;
+    top: 53px;
+    left: 0px;
+    height: 20px;
+    width: 80px;
+    position: absolute;
+    transition: opacity 0.7s;
+    overflow: hidden;
+}
+.logo_cont img.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 53px;
+    width: 60px;
+    transition: all 0.3s;
+}
+.main_body {
+    margin-top: 46px;
+    min-height: calc(100vh - 60px);
+    background-color: #F3F3F4;
+    padding-top: 15px;
+    transition: margin-left 0.3s;
+}
+
 
 </style>
