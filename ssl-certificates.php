@@ -39,17 +39,31 @@ echo '.'.$obj->$filename;
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">HOSTING</li>
+                            <li class="breadcrumb-item active" aria-current="page">Πιστοποιητικά SSL</li>
                         </ol>
                     </nav>
                 </div>
+                
                 <div class="col-lg-12">
                     <div class="text_con main_cat title">
-                        <h1 class="h2">Λογαριασμοί Hosting</h1>
+                        <h1 class="h2">Πιστοποιητικά SSL</h1>
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
                 </div>
+                <?php foreach ($sslnum2  as $key => $value) { ?>
+                <div class="col-lg-3">
+                    <div class="text_con">
+                        <h2 class="h3"><?=$value['name']?></h2>
+                        <p>
+                        <h2 class="h3"><?=$value['num']?></h2>
+                           
+                        </p>
+                    </div>
+                   
+                </div>
+                <?php } ?>
                 <div class="col-lg-12">
+                    
                 <div class=" filter2 ">
                                 <img src="public/assets/img/tables/filters.svg" alt="">Φίλτρο αποτελεσμάτων
                  </div>
@@ -162,7 +176,7 @@ echo '.'.$obj->$filename;
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($ssldata2 as $key => $value)  { ?>
+                                    <?php $i = 0; foreach ($ssldata2 as $key => $value)  { ?>
                                     
                                         <tr>
                                        
@@ -210,7 +224,13 @@ echo '.'.$obj->$filename;
                                        <td class="column1"> <span class="cat">Email:</span>
                                            giorgos@dnhost.gr                                        </td>
                                            <td class="column1">
-                                           <a href=""class="btn btn-block">asasasasasas</a>
+                                               <?php if($i%2 == 0){?>
+                                                
+                                           <a href=""class="btn btn-block btn-primary">Έκδοση</a>
+                                           <?php $i++;?>
+                                           <?php  }else{ ?>
+                                           <a href=""class="btn btn-block btn-primary disabled">Ανανέωση</a>
+                                           <?php  } ?>
                                             </td>
                                        
                                    </tr>
@@ -362,5 +382,18 @@ $(arr).each(function(index){
 })
 
 console.log(JSON.stringify(arrn))
+
+
+var arr3=[];
+var arr = ["1065","332","6","138"];
+var arr2=["SSL ΠΙΣΤΟΠΟΙΗΤΙΚΑ","ΣΕ ΕΚΚΡΕΜΟΤΗΤΑ","ΛΗΓΟΥΝ ΣΥΝΤΟΜΑ","ΕΧΟΥΝ ΛΗΞΕΙ"];
+$(arr).each(function(index){
+    var obj = {}
+    obj.name = arr2[index];
+    obj.num = arr[index];
+    arr3.push(obj);
+})
+
+console.log(JSON.stringify(arr3))
 
 </script>

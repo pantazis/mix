@@ -16851,6 +16851,12 @@ footer a.link-f {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.btn-primary.disabled, .btn-primary:disabled {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.4;
+}
+
 table {
   border-spacing: 1;
   border-collapse: collapse;
@@ -16858,6 +16864,9 @@ table {
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+table span[class*=btn-outline].disabled {
+  opacity: 1;
 }
 table .btn {
   font-size: 10px;

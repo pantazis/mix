@@ -2,8 +2,16 @@
 
 $padding-r-l:15px;
 $row-height:60px;
-
+.btn-primary.disabled, .btn-primary:disabled {
+  filter: grayscale(1);
+  opacity: 0.4;
+}
 table {
+  span[class*='btn-outline'].disabled{
+    opacity: 1;
+
+
+  }
   .btn{
     font-size: 10px;
   }
