@@ -51,29 +51,32 @@ nav.nav_top{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+    
     position: fixed;
     top:0;
     left:0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #464950;
     z-index: 5;
+    i{
+        color: #fff;
+    }
     
    
 }
+
 .logo_cont{
-    $Mwidth:80px;
+    $Mwidth:52px;
     width: $Mwidth;
-    height: 60px;
+    height:  $nav_height;
     position: relative;
     img.logo {
-        $width:60px;
-        $width_normal:50px;
+       
         position: absolute;
-        top:#{($Mwidth - $width)/2};
-        left:#{($Mwidth - $width)/2};
-        height: $width;
-        width:  $width;
+       
+        left:0;
+        height: auto;
+        width:  100%;
         transition: all .3s;
       
     }
@@ -269,6 +272,7 @@ img.top_img {
     i {
         position: relative;
         z-index: 1;
+       
     }
    
 }
@@ -352,25 +356,24 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 20px;
+        padding: 50px 20px 10px 20px;
+        color: #ffffff;
+        font-size: 50px;
     }
     .logo-side-img{
         width: 60px;
     }
     .user-text{
-        padding: 0 20px;
+        padding: 0px 20px;
+        padding-bottom: 10px;
         text-align: center;
+        
         p{
             color:#fff;
             margin-bottom: 0;
         }
     }
-    .icon_nav2 {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0 20px;
-    }
+   
     a{
         color:rgba(255,255,255,0.7);
     }
@@ -383,6 +386,7 @@ img{
     top: 7px;
     font-size: 27px;
     color: rgba(255,255,255,.8);
+    img{width:15px;}
 }
 
 /*-------------------------------</nav-head>----------------------------------*/

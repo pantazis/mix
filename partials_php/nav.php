@@ -9,12 +9,8 @@
     </div>
 
     <div class="logo_cont">
-        <div class="logo_bg">
-            <div class="logo_bg_in">
-                <div class="bg_w"></div>
-            </div>
-        </div>
-        <img src="public/assets/img/nav/logo-notext.svg" alt="" class="logo">
+        
+        <img src="public/assets/img/nav/logo-notext2.svg" alt="" class="logo">
     </div>
 
     <div class="icon-par">
@@ -55,32 +51,16 @@
         <div class="nav-head">
         <div class="nav-icon popover-cont close_icon">
                     <div class="bg-effect"></div>
-                    <i class="fas fa-times"></i>
+                   <img src="public/assets/img/nav/close.svg" alt="close menu">  
                 </div> 
         <div class="logo-side">
-            <img src="public/assets/img/nav/logo-notext.svg" alt="" class="logo-side-img">
+        <i class="fas fa-user-circle"></i>
         </div>
         <div class="user-text">
                     <p class="h3">pantazis vastardis</p>
                     <p>pantazisvastardis@gmail.com</p>                   
                 </div>
-            <div class="close_nav">
-                <div class="icon_nav2 ">
-                    <a href="" class="nav-icon popover-cont ">
-                        <div class="bg-effect"></div>
-                        <i class="fas fa-user-cog"></i>
-                    </a>
-                    <a href="" class="nav-icon popover-cont ">
-                        <div class="bg-effect"></div>
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class="nav-icon popover-cont ">
-                        <div class="bg-effect"></div>
-                        <i class="far fa-question-circle"></i>
-                    </a>
-                   
-                </div>
-            </div>
+           
         </div>
         <div class="ul_par">
             <ul>

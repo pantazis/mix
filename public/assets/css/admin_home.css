@@ -16010,30 +16010,31 @@ readers do not read off random characters that represent icons */
 }
 
 nav.nav_top {
-  height: 60px;
+  height: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #464950;
   z-index: 5;
+}
+nav.nav_top i {
+  color: #fff;
 }
 
 .logo_cont {
-  width: 80px;
-  height: 60px;
+  width: 52px;
+  height: 46px;
   position: relative;
 }
 .logo_cont img.logo {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  height: 60px;
-  width: 60px;
+  left: 0;
+  height: auto;
+  width: 100%;
   transition: all 0.3s;
 }
 .logo_cont .logo_bg {
@@ -16041,7 +16042,7 @@ nav.nav_top {
   top: 60px;
   left: 0px;
   height: 20px;
-  width: 80px;
+  width: 52px;
   position: absolute;
   transition: opacity 0.7s;
   overflow: hidden;
@@ -16066,7 +16067,7 @@ nav.side {
   background-color: #00254c;
   overflow: hidden;
   position: fixed;
-  top: 60px;
+  top: 46px;
   bottom: 0;
   height: 100%;
   left: 0;
@@ -16154,7 +16155,7 @@ nav.nav-modal .bgdark {
   background-color: rgba(0, 0, 0, 0.7);
 }
 nav.nav-modal .close_nav {
-  height: 61px;
+  height: 47px;
   border-bottom: 1px solid;
   display: flex;
   align-items: center;
@@ -16342,24 +16343,21 @@ nav.nav-modal img.top_img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px;
+  padding: 50px 20px 10px 20px;
+  color: #ffffff;
+  font-size: 50px;
 }
 .nav-head .logo-side-img {
   width: 60px;
 }
 .nav-head .user-text {
-  padding: 0 20px;
+  padding: 0px 20px;
+  padding-bottom: 10px;
   text-align: center;
 }
 .nav-head .user-text p {
   color: #fff;
   margin-bottom: 0;
-}
-.nav-head .icon_nav2 {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 20px;
 }
 .nav-head a {
   color: rgba(255, 255, 255, 0.7);
@@ -16371,6 +16369,9 @@ nav.nav-modal img.top_img {
   top: 7px;
   font-size: 27px;
   color: rgba(255, 255, 255, 0.8);
+}
+.nav-icon.popover-cont.close_icon img {
+  width: 15px;
 }
 
 /*-------------------------------</nav-head>----------------------------------*/
@@ -16419,8 +16420,8 @@ p {
 }
 
 .main_body {
-  margin-top: 60px;
-  min-height: calc(100vh - 60px);
+  margin-top: 46px;
+  min-height: calc(100vh - 46px);
   background-color: #F3F3F4;
   padding-top: 15px;
   transition: margin-left 0.3s;
