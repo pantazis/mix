@@ -101,6 +101,16 @@ p{
         align-items: center;
      
     }
+    &.flex {
+        display: flex;
+        .icon1{
+            width: 30%;
+            img{
+                width: 100%;
+
+            }
+        }
+    }
     
     p,a:not(.dropdown-item):not(.btn){
 
@@ -236,4 +246,21 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
 
 .disabled {
     box-shadow: none !important;
+}
+
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10px;
+    .h4{
+        opacity: .7;
+    }
+}
+
+.icon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

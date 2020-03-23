@@ -51,13 +51,18 @@ echo '.'.$obj->$filename;
                     </div>
                 </div>
                 <?php foreach ($sslnum2  as $key => $value) { ?>
-                <div class="col-lg-3">
-                    <div class="text_con">
-                        <h2 class="h3"><?=$value['name']?></h2>
-                        <p>
-                        <h2 class="h3"><?=$value['num']?></h2>
+                <div class="col-lg-3 ">
+                    <div class="text_con flex">
+                        <div class="icon1">
+                            <img src="public/assets/img/static_images/clock.svg" alt="">
+                        </div>
+                       <div class="text1">   
+                       <h1 class="h1"><?=$value['num']?></h1>                             
+                            <h4 class="h4"><?=$value['name']?></h4>
+                            
+                                                
                            
-                        </p>
+                       </div>
                     </div>
                    
                 </div>

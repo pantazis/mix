@@ -10098,6 +10098,10 @@ h2, .h2 {
   font-size: 25px;
 }
 
+h4, .h4 {
+  font-size: 16px;
+}
+
 /*!
  * Font Awesome Free 5.12.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -16465,6 +16469,15 @@ p {
   flex-direction: row;
   align-items: center;
 }
+.text_con.flex {
+  display: flex;
+}
+.text_con.flex .icon1 {
+  width: 30%;
+}
+.text_con.flex .icon1 img {
+  width: 100%;
+}
 .text_con p, .text_con a:not(.dropdown-item):not(.btn) {
   padding: 0;
   margin: 0;
@@ -16589,6 +16602,22 @@ p.description {
 
 .disabled {
   box-shadow: none !important;
+}
+
+.text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 10px;
+}
+.text1 .h4 {
+  opacity: 0.7;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .row-redio {
