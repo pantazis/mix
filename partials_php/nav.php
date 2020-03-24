@@ -57,9 +57,9 @@
         <i class="fas fa-user-circle"></i>
         </div>
         <div class="user-text">
-                    <p class="h3">pantazis vastardis</p>
-                    <p>pantazisvastardis@gmail.com</p>                   
-                </div>
+                <p class="h3">pantazis vastardis</p>
+                <p class="email">pantazisvastardis@gmail.com</p>                   
+         </div>
            
         </div>
         <div class="ul_par">

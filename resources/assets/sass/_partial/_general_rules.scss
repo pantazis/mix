@@ -1,7 +1,16 @@
 $inner-padding:20px;
 
+@import "_fonts.scss";
+
+
+
 body {
     background-color: $main_bg_color;
+   /*font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
 }
 
 .c-pad {

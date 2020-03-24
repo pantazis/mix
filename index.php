@@ -21,14 +21,13 @@ echo '.'.$obj->$filename;
     <title></title>
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=greek-ext,latin-ext"
-        rel="stylesheet">
+  
 
     <link href="<?php mix('/public/assets/css/admin_home.css');?>" rel="stylesheet">
 
     <!-- Plugin CSS -->
 </head>
+
 
 <body>
     <?php include "partials_php/nav.php" ?>
@@ -37,7 +36,8 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con main_cat title">
-                        <h1 class="h2">Πίνακας ελέγχου</h1>
+                    <h1 class="h2">click here to change font</h1>
+                        <!--<h1 class="h2">Πίνακας ελέγχου</h1>-->
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
                 </div>
