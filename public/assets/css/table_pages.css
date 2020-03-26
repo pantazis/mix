@@ -17667,5 +17667,9 @@ span.td-icons {
 }
 span.td-icons i {
   padding: 0 2px;
+  color: #407dbf;
+}
+span.td-icons i.fas.fa-file-alt {
+  color: #ff3737;
 }
 /*# sourceMappingURL=table_pages.css.map*/

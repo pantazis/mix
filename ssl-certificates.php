@@ -82,45 +82,93 @@ echo '.'.$obj->$filename;
                     <div class="text_con main_cat d-block p-0">
                       
 
-                        <form class=" flex-fill filter-form">
+                    <form class=" flex-fill filter-form" _lpchecked="1">
                             <div class="form-row flex-fill ">
+                            <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
 
 
-                                <div class="form-group col-lg-3 flex-fill">
-                                    <div class="input-cont">
-                                      
-                                        <input type="text" class="form-control" id="text" placeholder="Γράψε ID"
-                                            required="">
-                                            <label for="text">ID</label>
-                                    </div>
-                                 
-                                </div>
-                                <div class="form-group col-lg-3 flex-fill">
-                                    <div class="input-cont">
-                                      
-                                        <select class="form-control" id="Select1" placeholder="Επιλογή κατάστασης">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                        <label for="Select1">Κατάσταση</label>
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-3 flex-fill">
-                                    <div class="input-cont">
-                                      
-                                        <input type="text" class="form-control" id="text" placeholder="Γράψε email"
-                                            required="">
-                                            <label for="text">Email</label>
-                                    </div>
-                                </div>
+            <input id="id" placeholder="Γράψε ID" type="text" class="form-control" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"><label for="id">ID</label></div>
+
+    </div>
+    <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
+
+
+            <input id="common_name" placeholder="Domain έκδοσης του SSL" type="text" class="form-control"><label for="common_name">Common Name</label></div>
+
+    </div>
+    
+    <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
+
+
+            <select id="sku" class="form-control A"></select><label for="sku">Όνομα</label></div>
+
+    </div>
+    
+    <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
+
+
+            <select id="status" class="form-control"></select><label for="status">Κατάσταση</label></div>
+
+    </div>
+    
+    <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
+
+
+            <input id="user_email" placeholder="Το email του χρήστη" type="text" class="form-control"><label for="user_email">Το email του χρήστη</label></div>
+
+    </div>
+    
+    <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
+
+
+            <input id="enrollDateAfterRespTable" placeholder="Επίλεξε ημερομηνία" type="text" class="form-control"><label for="enrollDateAfterRespTable">Εκδόθηκε από</label></div>
+
+    </div>
+    
+    <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
+
+
+            <input id="enrollDateBeforeRespTable" placeholder="Επίλεξε ημερομηνία" type="text" class="form-control"><label for="enrollDateBeforeRespTable">Εκδόθηκε έως</label></div>
+
+    </div>
+    
+    <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
+
+
+            <input id="exDateAfterRespTable" placeholder="Επίλεξε ημερομηνία" type="text" class="form-control"><label for="exDateAfterRespTable">Λήγει από</label></div>
+
+    </div>
+    
+    <div class="form-group col-lg-3 flex-fill">
+        <div class="input-cont">
+
+
+            <input id="exDateBeforeRespTable" placeholder="Επίλεξε ημερομηνία" type="text" class="form-control"><label for="exDateBeforeRespTable">Λήγει έως</label></div>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+                                
+                                
+                                
 
 
                                 <div class="form-group checkboxes col-lg-3 flex-fill">
 
-                                    <div class="input-cont redio flex-fill focused redio-special-group">
+                                    <div class="input-cont redio flex-fill redio-special-group">
                                     <label for="Male">Προϋπόθεση</label>
                                         <div class="redio-special">
                                             <label for="Male" class="option1"><span>και</span></label>
@@ -161,6 +209,16 @@ echo '.'.$obj->$filename;
 
 
                         </form>
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -209,8 +267,21 @@ echo '.'.$obj->$filename;
                                        <td class="column1"> <span class="cat">Όνομα:</span>
                                            [DV] Comodo Essential SSL
                                            <span class="td-icons">
+                                           <div class="" data-container="body" data-toggle="tooltip-hover" data-placement="bottom" data-content="
+                                            
+                                                Έχει αγοραστεί υπηρεσία εγκατάστασης
+                                                " data-original-title="" title="">
                                                 <i class="fas fa-file-alt"></i>
+                                            </div>
+                                           
+                                           <div class=" " data-container="body" data-toggle="tooltip-hover" data-placement="bottom" data-content="
+                                            
+                                                    Παραγγελία: #401724
+                                                " data-original-title="" title="">
                                                 <i class="fas fa-address-card"></i>
+                                          </div>
+
+                                              
                                            </span>
 
                                         </td>
@@ -328,84 +399,5 @@ echo '.'.$obj->$filename;
 </body>
 
 </html>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-
-<script>
-
-
-var arr =[{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"label secondary","name":"ΑΚΥΡΩΘΗΚΕ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"danger","name":"ΛΗΓΜΕΝΟ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"},{"class":"warning","name":"ΕΚΚΡΕΜΕΙ ΕΚΔΟΣΗ"}];
-
-//["ID","Όνομα","Common Name","Έκδοση Europe/Athens","Ημ. Λήξης Europe/Athens","Κατάσταση","Email"]
-
-/*
-var arr= [];
-
-
-    
-
-$(".status .label").each(function(){
-    var s123 = {};
-    s123.class=String($(this)[0].classList);
-    s123.name=$(this).text();    console.log(s123.name);
-    
-  
-   arr.push(s123);
-   
-   
-})*/
-var arr2=["[DV] Comodo Essential SSL",
-"[OV] Thawte SSL Web Server",
-"[DV] Thawte SSL123",]
-
-var arr3 =["18/04/2019 11:19",
-"17/04/2019 16:03",
-"17/04/2019 15:50"];
-
-var arr4=[
-"17/07/2020 07:00",
-"16/07/2020 15:00",
-"16/07/2020 15:00"];
-var arr5=[
-"giorgos@dnhost.gr",
-"digitartworks@gmail.com",
-"tsolakidischris@gmail.com"]
-
-
-var arrn=[];
-
-$(arr).each(function(index){
-    this.id=1000+index;
-    this.ssl= arr2[index%3];
-    this.cname="dnhost";
-    this.start =arr3[index%3];
-    this.end =arr4[index%3];
-    this.state = {name:this.name,class:this.class}
-   // this.state = this.name;
-    this.email =arr5[index%3];
-    delete this.name;
-    delete this.class;
-    arrn.push(this);
-    
-  
-   
-})
-
-console.log(JSON.stringify(arrn))
-
-
-var arr3=[];
-var arr = ["1065","332","6","138"];
-var arr2=["SSL ΠΙΣΤΟΠΟΙΗΤΙΚΑ","ΣΕ ΕΚΚΡΕΜΟΤΗΤΑ","ΛΗΓΟΥΝ ΣΥΝΤΟΜΑ","ΕΧΟΥΝ ΛΗΞΕΙ"];
-$(arr).each(function(index){
-    var obj = {}
-    obj.name = arr2[index];
-    obj.num = arr[index];
-    arr3.push(obj);
-})
-
-console.log(JSON.stringify(arr3))
 
 </script>

@@ -353,5 +353,13 @@ span.td-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  i{padding:0 2px;}
+  i{padding:0 2px;
+    color:#407dbf;
+  &.fas.fa-file-alt{
+    color:#ff3737;
+  }
+
+  
+  
+  }
 }

@@ -14,11 +14,19 @@ var popover_options={
    boundary:'viewport'    
 };
 
+var popover_options2={
+    html:true,
+    boundary:'viewport',
+    trigger:"hover"   
+ };
+
 nav.nav_popover('[data-toggle="popover0"]',$(".login").html(),popover_options);
 
 nav.nav_popover('[data-toggle="popover1"]',$(".cart").html(),popover_options);
 
 nav.nav_popover('[data-toggle="popover2"]',$(".help").html(),popover_options);
+
+$('[data-toggle="tooltip-hover"]').popover(popover_options2);
 
 //fullMenuOnHover();
 nav.menu_sub_cat();
