@@ -77,11 +77,9 @@ echo '.'.$obj->$filename;
                 <div class="col-lg-12">
                     
                 <div class=" filter2 ">
-                                <img src="public/assets/img/tables/filters.svg" alt="">Φίλτρο αποτελεσμάτων
+                    <img src="public/assets/img/tables/filters.svg" alt="">Φίλτρο αποτελεσμάτων
                  </div>
                     <div class="text_con main_cat d-block p-0">
-                      
-
                     <form class=" flex-fill filter-form" _lpchecked="1">
                             <div class="form-row flex-fill ">
                             <div class="form-group col-lg-3 flex-fill">
@@ -127,7 +125,7 @@ echo '.'.$obj->$filename;
         <div class="input-cont">
 
 
-            <input id="enrollDateAfterRespTable" placeholder="Επίλεξε ημερομηνία" type="text" class="form-control"><label for="enrollDateAfterRespTable">Εκδόθηκε από</label></div>
+            <input id="enrollDateAfterRespTable" placeholder="Επίλεξε ημερομηνία" type="date" class="form-control"><label for="enrollDateAfterRespTable">Εκδόθηκε από</label></div>
 
     </div>
     
@@ -135,7 +133,7 @@ echo '.'.$obj->$filename;
         <div class="input-cont">
 
 
-            <input id="enrollDateBeforeRespTable" placeholder="Επίλεξε ημερομηνία" type="text" class="form-control"><label for="enrollDateBeforeRespTable">Εκδόθηκε έως</label></div>
+            <input id="enrollDateBeforeRespTable" placeholder="Επίλεξε ημερομηνία" type="date" class="form-control"><label for="enrollDateBeforeRespTable">Εκδόθηκε έως</label></div>
 
     </div>
     
@@ -143,15 +141,15 @@ echo '.'.$obj->$filename;
         <div class="input-cont">
 
 
-            <input id="exDateAfterRespTable" placeholder="Επίλεξε ημερομηνία" type="text" class="form-control"><label for="exDateAfterRespTable">Λήγει από</label></div>
+            <input id="exDateAfterRespTable" placeholder="Επίλεξε ημερομηνία" type="date" class="form-control"><label for="exDateAfterRespTable">Λήγει από</label></div>
 
     </div>
     
     <div class="form-group col-lg-3 flex-fill">
-        <div class="input-cont">
+        <div class="input-cont focused">
 
 
-            <input id="exDateBeforeRespTable" placeholder="Επίλεξε ημερομηνία" type="text" class="form-control"><label for="exDateBeforeRespTable">Λήγει έως</label></div>
+            <input id="exDateBeforeRespTable" placeholder="Επίλεξε ημερομηνία" type="date" class="form-control"><label for="exDateBeforeRespTable">Λήγει έως</label></div>
 
     </div>
     
@@ -209,8 +207,9 @@ echo '.'.$obj->$filename;
 
 
                         </form>
+                      
 
-
+           
 
 
 
