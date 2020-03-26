@@ -64,17 +64,7 @@ $(el).hover(function(){
 });
 }
 
-var fontarr = ['Roboto','Open Sans','Source Sans Pro','Fira Sans','Ubuntu'];
-var i = 0;
-$(".text_con.main_cat.title .h2").click(function(){
-    var font = i%fontarr.length;
-    fontarr[font];
-    $("body").css("font-family", fontarr[font])
-    $(".text_con.main_cat.title .h2").html('font-family:'+ fontarr[font] );
 
-
-i++;
-});
 
    
 //object with function for navigation

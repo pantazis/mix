@@ -20,10 +20,7 @@ echo '.'.$obj->$filename;
 
     <title></title>
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=greek-ext,latin-ext"
-        rel="stylesheet">
+    
 
     <link href="<?php mix('/public/assets/css/table_pages.css');?>" rel="stylesheet">
 
@@ -52,17 +49,27 @@ echo '.'.$obj->$filename;
                 </div>
                 <?php foreach ($sslnum2  as $key => $value) { ?>
                 <div class="col-lg-3 ">
-                    <div class="text_con flex">
+                    <div class="text_con">
+                    <div class="text-right h-0">
+                    <?php if($key > 0){ ?>
+                    <a href="#" type="button" class="btn btn-primary btn-sm">προβολή</a>
+                    <?php } ?>
+
+                    </div>
+                    <div class="flex">
                         <div class="icon1">
-                            <img src="public/assets/img/static_images/clock.svg" alt="">
+                            <img src="public/assets/img/static_images/<?=$value['img']?>" alt="">
                         </div>
                        <div class="text1">   
                        <h1 class="h1"><?=$value['num']?></h1>                             
                             <h4 class="h4"><?=$value['name']?></h4>
+                           
                             
                                                 
                            
                        </div>
+                       </div>
+                     
                     </div>
                    
                 </div>

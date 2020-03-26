@@ -20,10 +20,7 @@ echo '.'.$obj->$filename;
 
     <title></title>
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=greek-ext,latin-ext"
-        rel="stylesheet">
+  
 
     <link href="<?php mix('/public/assets/css/admin_home.css');?>" rel="stylesheet">
 

@@ -108,7 +108,7 @@ $ssldata ='[{"id":1000,"ssl":"[DV] Comodo Essential SSL","cname":"dnhost","start
 
 $ssldata2 = json_decode($ssldata,true);
 
-$sslnum ='[{"name":"SSL ΠΙΣΤΟΠΟΙΗΤΙΚΑ","num":"1065"},{"name":"ΣΕ ΕΚΚΡΕΜΟΤΗΤΑ","num":"332"},{"name":"ΛΗΓΟΥΝ ΣΥΝΤΟΜΑ","num":"6"},{"name":"ΕΧΟΥΝ ΛΗΞΕΙ","num":"138"}]';
+$sslnum ='[{"name":"SSL ΠΙΣΤΟΠΟΙΗΤΙΚΑ","num":"1065","img":"sslicon.svg"},{"name":"ΣΕ ΕΚΚΡΕΜΟΤΗΤΑ","num":"332","img":"pending.svg"},{"name":"ΛΗΓΟΥΝ ΣΥΝΤΟΜΑ","num":"6","img":"clock.svg"},{"name":"ΕΧΟΥΝ ΛΗΞΕΙ","num":"138","img":"expired.svg"}]';
 $sslnum2 = json_decode($sslnum,true);
 
 //---------------------------------------------ssl-certificates-----------------------------------------//

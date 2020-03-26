@@ -36,8 +36,8 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con main_cat title">
-                    <h1 class="h2">click here to change font</h1>
-                        <!--<h1 class="h2">Πίνακας ελέγχου</h1>-->
+                   
+                        <h1 class="h2">Πίνακας ελέγχου</h1>
                         <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
                     </div>
                 </div>

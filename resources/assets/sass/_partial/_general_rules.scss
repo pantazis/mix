@@ -5,12 +5,8 @@ $inner-padding:20px;
 
 
 body {
-    background-color: $main_bg_color;
-   /*font-family: 'Roboto', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Fira Sans', sans-serif;
-font-family: 'Ubuntu', sans-serif;*/
+background-color: $main_bg_color;
+
 }
 
 .c-pad {
@@ -84,6 +80,9 @@ p{
        }
 
 }
+.h-0{
+    height: 0;
+}
 
 .text_con {
     
@@ -110,7 +109,7 @@ p{
         align-items: center;
      
     }
-    &.flex {
+    .flex {
         display: flex;
         .icon1{
             width: 30%;
