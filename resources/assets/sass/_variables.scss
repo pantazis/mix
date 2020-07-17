@@ -4,7 +4,7 @@ $amount:50;
 $lighten:100;
 
 $body-color:#e2e2e2;
-$blue:    lighten(desaturate(#007bff,$amount),$lighten) !default;
+$blue:    lighten(desaturate(#007bff,$amount),$lighten);
 $indigo:  #6610f2;
 $purple:  #6f42c1;
 $pink:    #e83e8c;
@@ -34,6 +34,12 @@ $main_body_background: #F3F3F4;
 $fontcolor: #616060;
 $main_bg_color:#e2e2e2;
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 1;
+}
+
 
 
 //font
@@ -45,4 +51,10 @@ h2, .h2 {
 }
 h4, .h4 {
     font-size: 16px;
+}
+
+body {  
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
 }
