@@ -6229,7 +6229,7 @@ nav.nav-modal img.top_img {
   border-bottom: 1px solid #dedede;
 }
 .user .h3 {
-  color: red;
+  color: #e2e2e2;
 }
 .user p {
   margin-bottom: 0;
@@ -6772,7 +6772,7 @@ p {
   margin-top: 46px;
   min-height: calc(100vh - 46px);
   background-color: #F3F3F4;
-  padding-top: 10px;
+  padding-top: 15px;
   transition: margin-left 0.3s;
 }
 .main_body.m2 {
@@ -6800,10 +6800,10 @@ p {
   background-color: #fff;
   border-radius: 4px;
   padding: 20px;
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 .text_con + .text_con {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .text_con.title {
   box-shadow: none;
@@ -6811,7 +6811,7 @@ p {
   padding: 0;
 }
 .text_con.full_height {
-  height: calc(100% - 20px);
+  height: calc(100% - 30px);
 }
 .text_con.main_cat {
   display: flex;
@@ -6863,7 +6863,7 @@ p {
 
 p.num {
   font-size: 25px;
-  color: blue;
+  color: white;
 }
 
 .popover, .dropdown-menu {
@@ -7020,7 +7020,7 @@ p.description {
 [type=radio]:checked + label:before, [type=checkbox]:checked + label:before {
   -webkit-animation: example 0.3s linear;
           animation: example 0.3s linear;
-  background-color: #6666ff;
+  background-color: white;
 }
 [type=radio]:checked + label:after, [type=checkbox]:checked + label:after {
   left: 30px;
@@ -7028,25 +7028,25 @@ p.description {
 
 @-webkit-keyframes example {
   0% {
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 255, 0.15);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.15);
   }
   80% {
-    box-shadow: 0px 0px 4px 12px rgba(0, 0, 255, 0.15);
+    box-shadow: 0px 0px 4px 12px rgba(255, 255, 255, 0.15);
   }
   100% {
-    box-shadow: 0px 0px 4px 12px rgba(0, 0, 255, 0);
+    box-shadow: 0px 0px 4px 12px rgba(255, 255, 255, 0);
   }
 }
 
 @keyframes example {
   0% {
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 255, 0.15);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.15);
   }
   80% {
-    box-shadow: 0px 0px 4px 12px rgba(0, 0, 255, 0.15);
+    box-shadow: 0px 0px 4px 12px rgba(255, 255, 255, 0.15);
   }
   100% {
-    box-shadow: 0px 0px 4px 12px rgba(0, 0, 255, 0);
+    box-shadow: 0px 0px 4px 12px rgba(255, 255, 255, 0);
   }
 }
 .redio-special {
@@ -7123,7 +7123,7 @@ p.description {
   transition: all 0.3s;
 }
 .form-group:not(.checkboxes) input.form-control:hover, .form-group:not(.checkboxes) input.form-control:active, .form-group:not(.checkboxes) input.form-control:focus, .form-group:not(.checkboxes) textarea.form-control:hover, .form-group:not(.checkboxes) textarea.form-control:active, .form-group:not(.checkboxes) textarea.form-control:focus {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid white;
   background: #e4e1e1;
   color: #000;
 }
@@ -7201,7 +7201,7 @@ footer a.link-f {
 .r-width {
   width: 100%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   .r-width {
     width: auto;
   }
@@ -7210,7 +7210,7 @@ footer a.link-f {
 .copyright {
   text-align: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   .copyright {
     text-align: left;
     order: inherit;
@@ -7220,7 +7220,7 @@ footer a.link-f {
 .copyright-cont {
   order: 2;
 }
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   .copyright-cont {
     order: inherit;
   }

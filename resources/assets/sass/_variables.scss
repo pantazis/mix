@@ -1,6 +1,8 @@
 $grid-gutter-width:30px;
 $lg: 992px;
 $amount:50;
+$lighten:100;
+
 $body-color:#e2e2e2;
 $blue:    lighten(desaturate(#007bff,$amount),$lighten) !default;
 $indigo:  #6610f2;
