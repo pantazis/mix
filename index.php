@@ -198,19 +198,19 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con">
-                        <div class="waves-effect waves-light btn">
-                            <button type="button" class="waves-effect waves-light btn">no
+                        <div class="b1 inline-b">
+                            <button type="button" class="waves-effect waves-light btn no-menu">no
                                     menu</span></button>
-                            <button type="button" class="waves-effect waves-light btn">only
+                            <button type="button" class="waves-effect waves-light btn only_icons">only
                                     icons</span></button>
-                            <button type="button" class="waves-effect waves-light btn"><span
+                            <button type="button" class="waves-effect waves-light btn full_menu"><span
                                     class="text">full</span></button>
                         </div>
-                        <div class="waves-effect waves-light btn">
-                            <button type="button" class="waves-effect waves-light btn">full
+                        <div class="b2 inline-b">
+                            <button type="button" class="waves-effect waves-light btn full_container">full
                                     container</span> </button>
-                            <button type="button" class="waves-effect waves-light btn"><span
-                                    class="text">normal_container</span></button>
+                            <button type="button" class="waves-effect waves-light btn normal_container"><span
+                                    class="text">normal container</span></button>
 
                         </div>
                     </div>
