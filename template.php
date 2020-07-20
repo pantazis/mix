@@ -56,7 +56,7 @@ echo '.'.$obj->$filename;
                             </h2>
                             <div class="flex-r">
                                 <p class="num">100</p>
-                                <button type="button" class="ml-auto btn btn-primary btn-sm">προβολή</button>
+                                <button type="button" class="waves-effect waves-light btn">προβολη</button>
                             </div>
                         </div>
                         <?php } ?>
@@ -115,7 +115,7 @@ echo '.'.$obj->$filename;
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary btn-block">Κατοχύρωσε ένα νέο Domain <i
+                        <button class="waves-effect waves-light btn">Κατοχυρωσε ενα νεο Domain <i
                                 class="fas fa-angle-right"></i></button>
                     </div>
                 </div>
@@ -125,18 +125,18 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con">
-                        <div class="btn-group b1" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary no-menu"><span class="text">no
+                        <div class="waves-effect waves-light btn">
+                            <button type="button" class="waves-effect waves-light btn">no
                                     menu</span></button>
-                            <button type="button" class="btn btn-secondary only_icons"><span class="text">only
+                            <button type="button" class="waves-effect waves-light btn">only
                                     icons</span></button>
-                            <button type="button" class="btn btn-secondary full_menu"><span
+                            <button type="button" class="waves-effect waves-light btn"><span
                                     class="text">full</span></button>
                         </div>
-                        <div class="btn-group b2" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary full_container "><span class="text">full
+                        <div class="waves-effect waves-light btn">
+                            <button type="button" class="waves-effect waves-light btn">full
                                     container</span> </button>
-                            <button type="button" class="btn btn-secondary normal_container"><span
+                            <button type="button" class="waves-effect waves-light btn"><span
                                     class="text">normal_container</span></button>
 
                         </div>
@@ -170,8 +170,8 @@ echo '.'.$obj->$filename;
                                     <label for="inputPassword2" class="sr-only">Password</label>
                                     <input type="password" class="form-control flex-grow-1" id="inputPassword2"
                                         placeholder="Password">
-                                    <div class="btn-group " role="group" aria-label="Basic example">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    <div class="waves-effect waves-light btn">
+                                        <button class="waves-effect waves-light btn"
                                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             aaaaaaaaaaa
@@ -181,7 +181,7 @@ echo '.'.$obj->$filename;
                                             <a class="dropdown-item" href="#">Another action</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
-                                        <button type="button" class="btn btn-secondary">
+                                        <button type="button" class="waves-effect waves-light btn">
                                             <span class="text"><i class="fas fa-search"></i></span>
                                         </button>
                                     </div>
@@ -230,9 +230,9 @@ echo '.'.$obj->$filename;
                                 </div>
                                 <?php $arr =["reset","submit","button"]; ?>
                                 <div class="form-group col-lg-12 flex-fill">
-                                    <div class="btn-group b1" role="group" aria-label="Basic example">
+                                    <div class="waves-effect waves-light btn">
                                         <?php foreach ( $arr as $key => $value) { ?>
-                                        <input type="<?=$value?>" class="btn btn-primary" id="<?=$value?>"
+                                        <input type="<?=$value?>" class="waves-effect waves-light btn"
                                             value="<?=$value?>">
                                         <?php } ?>
                                     </div>
@@ -255,8 +255,16 @@ echo '.'.$obj->$filename;
         </div>
 
     </div>
-
+   
     <script src="<?php mix('/public/assets/js/admin_home.js');?>"></script>
+    <script src="<?php mix('/public/assets/js/_libraries/materialize.min.js');?>"></script>
+    <script>
+    M.AutoInit();
+    
+    
+    
+    
+    </script>
 </body>
 
 </html>

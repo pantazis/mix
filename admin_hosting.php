@@ -116,11 +116,11 @@ echo '.'.$obj->$filename;
                                     <span class="result_text">Βρήκαμε 12 αποτελέσματα</span>
                                     </div>
                                     <div class="form-group col-lg-6 flex-fill d-flex aligns m-0 ">
-                                    <div class="btn-group ml-auto" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-primary  ">
+                                    <div class="waves-effect waves-light btn">
+                                        <button type="button" class="waves-effect waves-light btn">
                                             Καθαρισμός φίλτρων
                                         </button>
-                                        <button type="button" class="btn btn-primary ">
+                                        <button type="button" class="waves-effect waves-light btn">
                                             Αναζήτηση</button>
 
                                     </div>
@@ -195,7 +195,7 @@ echo '.'.$obj->$filename;
                                 </tbody>
                             </table>
                             <div class="pagination-custom">
-                                <span class="pag-el"><button class="btn dropdown-toggle" type="button"
+                                <span class="waves-effect waves-light btn"
                                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
                                         rows per page: 10
@@ -235,18 +235,18 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con">
-                        <div class="btn-group b1" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary no-menu"><span class="text">no
+                        <div class="waves-effect waves-light btn">
+                            <button type="button" class="waves-effect waves-light btn">no
                                     menu</span></button>
-                            <button type="button" class="btn btn-secondary only_icons"><span class="text">only
+                            <button type="button" class="waves-effect waves-light btn">only
                                     icons</span></button>
-                            <button type="button" class="btn btn-secondary full_menu"><span
+                            <button type="button" class="waves-effect waves-light btn"><span
                                     class="text">full</span></button>
                         </div>
-                        <div class="btn-group b2" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary full_container "><span class="text">full
+                        <div class="waves-effect waves-light btn">
+                            <button type="button" class="waves-effect waves-light btn">full
                                     container</span> </button>
-                            <button type="button" class="btn btn-secondary normal_container"><span
+                            <button type="button" class="waves-effect waves-light btn"><span
                                     class="text">normal_container</span></button>
 
                         </div>

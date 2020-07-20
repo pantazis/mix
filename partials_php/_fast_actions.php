@@ -23,8 +23,8 @@
                                     <label for="inputPassword2" class="sr-only">Password</label>
                                     <input type="password" class="form-control flex-grow-1" id="inputPassword2"
                                         placeholder="Password">
-                                    <div class="btn-group " role="group" aria-label="Basic example">
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                    <div class="waves-effect waves-light btn">
+                                        <button class="waves-effect waves-light btn"
                                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             Διάλεξε πίνακα
@@ -37,7 +37,7 @@
                                             <?php }?>
 
                                         </div>
-                                        <button type="button" class="btn btn-primary">
+                                        <button type="button" class="waves-effect waves-light btn">
                                             <span class="text"><i class="fas fa-search"></i></span>
                                         </button>
                                     </div>
@@ -71,7 +71,7 @@
                                     <h2 class="h3"><?= $arr2[$key]?></h2>
                                     <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR </p>
 
-                                    <a href="" class="btn btn-primary btn-block mt-auto"><?= $arr3[$key]?></a>
+                                    <a href="" class="waves-effect waves-light btn"><?= $arr3[$key]?></a>
 
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                                 σου
                                 για 2 έτη μόνο με 14,00€!</p>
 
-                            <a href="" class="btn btn-primary btn-block mt-auto">Δες την προσφορά <i
+                            <a href="" class="waves-effect waves-light btn">Δες την προσφορά <i
                                     class="fas fa-angle-right"></i></a>
 
                         </div>

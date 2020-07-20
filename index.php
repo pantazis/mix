@@ -59,7 +59,7 @@ echo '.'.$obj->$filename;
                             </h2>
                             <div class="flex-r">
                                 <p class="num">1363</p>
-                                <button type="button" class="waves-effect waves-light btn">προβολή</button>
+                                <button type="button" class="waves-effect waves-light btn">προβολη</button>
                             </div>
                         </div>
                         <div class="listrow">
@@ -69,7 +69,7 @@ echo '.'.$obj->$filename;
                             </h2>
                             <div class="flex-r">
                                 <p class="num">172</p>
-                                <button type="button" class="waves-effect waves-light btn">προβολή</button>
+                                <button type="button" class="waves-effect waves-light btn">προβολη</button>
                             </div>
                         </div>
                         <div class="listrow">
@@ -79,7 +79,7 @@ echo '.'.$obj->$filename;
                             </h2>
                             <div class="flex-r">
                                 <p class="num">13</p>
-                                <button type="button" class="waves-effect waves-light btn">προβολή</button>
+                                <button type="button" class="waves-effect waves-light btn">προβολη</button>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ echo '.'.$obj->$filename;
 
             <div class="row">
 
-                <?php $arr=["Κατοχύρωσε ένα νέο Domain","Αγόρασε ένα πακέτο Hosting","Έκδοσε άμεσα ένα SSL"];
+                <?php $arr=["Κατοχυρωσε ενα νεο Domain ","Αγόρασε ένα πακέτο Hosting","Έκδοσε άμεσα ένα SSL"];
                       $arr2=["DOMAIN NAMES","ΠΑΚΕΤΑ HOSTING","ΠΙΣΤΟΠΟΙΗΤΙΚΑ SSL"];
                 ?>
                 <?php foreach ($arr as $key => $value) {?>
@@ -198,16 +198,16 @@ echo '.'.$obj->$filename;
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con">
-                        <div class="waves-effect waves-light btn" role="group" aria-label="Basic example">
-                            <button type="button" class="waves-effect waves-light btn"><span class="text">no
+                        <div class="waves-effect waves-light btn">
+                            <button type="button" class="waves-effect waves-light btn">no
                                     menu</span></button>
-                            <button type="button" class="waves-effect waves-light btn"><span class="text">only
+                            <button type="button" class="waves-effect waves-light btn">only
                                     icons</span></button>
                             <button type="button" class="waves-effect waves-light btn"><span
                                     class="text">full</span></button>
                         </div>
-                        <div class="waves-effect waves-light btn" role="group" aria-label="Basic example">
-                            <button type="button" class="waves-effect waves-light btn"><span class="text">full
+                        <div class="waves-effect waves-light btn">
+                            <button type="button" class="waves-effect waves-light btn">full
                                     container</span> </button>
                             <button type="button" class="waves-effect waves-light btn"><span
                                     class="text">normal_container</span></button>
