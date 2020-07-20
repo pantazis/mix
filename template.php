@@ -257,14 +257,7 @@ echo '.'.$obj->$filename;
     </div>
    
     <script src="<?php mix('/public/assets/js/admin_home.js');?>"></script>
-    <script src="<?php mix('/public/assets/js/_libraries/materialize.min.js');?>"></script>
-    <script>
-    M.AutoInit();
     
-    
-    
-    
-    </script>
 </body>
 
 </html>

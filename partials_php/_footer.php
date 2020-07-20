@@ -83,3 +83,4 @@
 
          </footer>
          <!-- Footer -->
+         <?php include "partials_php/_js-scripts.php"?>

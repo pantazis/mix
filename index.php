@@ -188,7 +188,7 @@ echo '.'.$obj->$filename;
                                 </div>
                             </div>
                         </div>
-                        <button class="waves-effect waves-light btn"><?=$value?> <i
+                        <button class="waves-effect waves-light btn full"><?=$value?> <i
                                 class="fas fa-angle-right"></i></button>
                     </div>
                 </div>
