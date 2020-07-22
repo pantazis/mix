@@ -33,10 +33,9 @@ $grays: map-merge(
   ),
   $grays
 );
-$lighten:0;
-$amount:50;
 
-$blue:    lighten(desaturate(#007bff,$amount),$lighten) !default;
+
+$blue:    #407dbf;
 $indigo:  #6610f2;
 $purple:  #6f42c1;
 $pink:    #e83e8c;

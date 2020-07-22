@@ -9,7 +9,7 @@ background-color: $main_bg_color;
 
 }
 .row{
-    width:100%;
+    
 }
 
 .btn.full{
@@ -201,11 +201,9 @@ p{
 }
 
 .container{
-    .main_body &{
+
         max-width: 1400px;
         padding-bottom: 50px;
-    }
-    
     transition: max-width .3s;
     .full_container &{
         max-width: 100%;
@@ -263,9 +261,8 @@ p{
 
     }
     &.main_cat {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: block;
+      
      
     }
     .flex {
@@ -278,7 +275,8 @@ p{
             }
         }
     }
-    
+
+  
     p,a:not(.dropdown-item):not(.btn){
 
         padding: 0;
@@ -286,6 +284,14 @@ p{
         &.icon{
             margin-left: 10px;
         }
+    }
+    .dropdown-content li{
+       &> a,  &> span  {
+    
+      padding: 14px 16px !important;
+       }
+
+   
     }
     .listrow {
         border-bottom: 1px solid #{$border_color};

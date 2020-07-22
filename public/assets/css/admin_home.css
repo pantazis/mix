@@ -3303,11 +3303,6 @@ nav ul a span.badge {
   padding-top: 0;
 }
 
-.row {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
 .row:after {
   content: "";
   display: table;
@@ -4705,7 +4700,12 @@ small {
 .tabs.tabs-transparent .tab a,
 .tabs.tabs-transparent .tab.disabled a,
 .tabs.tabs-transparent .tab.disabled a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0);
+}
+.tabs.tabs-transparent .tabs .tab a:focus,
+.tabs.tabs-transparent .tabs .tab a:focus.active {
+  background-color: rgba(246, 178, 181, 0.2);
+  outline: none;
 }
 .tabs.tabs-transparent .tab a:hover,
 .tabs.tabs-transparent .tab a.active {
@@ -6508,13 +6508,16 @@ select:disabled {
 }
 .file-field .file-path-wrapper {
   overflow: hidden;
-  padding-left: 10px;
+  padding-right: 10px;
+}
+.file-field .file-path-wrapper label {
+  left: 0.75rem;
 }
 .file-field input.file-path {
   width: 100%;
 }
 .file-field .btn, .file-field .btn-large {
-  float: left;
+  float: right;
   height: 3rem;
   line-height: 3rem;
 }
@@ -7501,7 +7504,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 15px;
 }
 .carousel .carousel-item {
-  display: none;
+  visibility: hidden;
   width: 200px;
   height: 200px;
   position: absolute;
@@ -18760,6 +18763,16 @@ nav.nav_top i {
   line-height: 56px;
 }
 
+section.nav-tabs {
+  width: 100%;
+  background-color: #23629F;
+  position: fixed;
+  z-index: 4;
+}
+section.nav-tabs .container {
+  padding-bottom: 0;
+}
+
 .logo_cont {
   width: 52px;
   height: 46px;
@@ -19012,7 +19025,7 @@ nav.nav-modal img.top_img {
   z-index: 1;
   font-size: 16px;
   line-height: 56px;
-  color: #007bff;
+  color: #616060;
 }
 
 .bg-effect {
@@ -19095,6 +19108,9 @@ nav.nav-modal img.top_img {
   color: #ffffff;
   font-size: 50px;
 }
+.nav-head .logo-side i {
+  font-size: 50px;
+}
 .nav-head .logo-side-img {
   width: 60px;
 }
@@ -19105,7 +19121,8 @@ nav.nav-modal img.top_img {
 }
 .nav-head .user-text p {
   color: #fff;
-  margin-bottom: 0;
+  margin: 0;
+  line-height: 1.5;
 }
 .nav-head a {
   color: rgba(255, 255, 255, 0.7);
@@ -19559,10 +19576,6 @@ body {
   background-color: #e2e2e2;
 }
 
-.row {
-  width: 100%;
-}
-
 .btn.full, .full.btn-large {
   width: 100%;
 }
@@ -19749,11 +19762,9 @@ p {
 }
 
 .container {
-  transition: max-width 0.3s;
-}
-.main_body .container {
   max-width: 1400px;
   padding-bottom: 50px;
+  transition: max-width 0.3s;
 }
 .full_container .container {
   max-width: 100%;
@@ -19805,9 +19816,7 @@ p {
   height: calc(100% - 30px);
 }
 .text_con.main_cat {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
 }
 .text_con .flex {
   display: flex;
@@ -19824,6 +19833,9 @@ p {
 }
 .text_con p.icon, .text_con a:not(.dropdown-item):not(.btn):not(.btn-large).icon {
   margin-left: 10px;
+}
+.text_con .dropdown-content li > a, .text_con .dropdown-content li > span {
+  padding: 14px 16px !important;
 }
 .text_con .listrow {
   border-bottom: 1px solid #dedede;
@@ -20019,25 +20031,25 @@ p.description {
 
 @-webkit-keyframes example {
   0% {
-    box-shadow: 0px 0px 4px 0px rgba(0, 123, 255, 0.15);
+    box-shadow: 0px 0px 4px 0px rgba(64, 125, 191, 0.15);
   }
   80% {
-    box-shadow: 0px 0px 4px 12px rgba(0, 123, 255, 0.15);
+    box-shadow: 0px 0px 4px 12px rgba(64, 125, 191, 0.15);
   }
   100% {
-    box-shadow: 0px 0px 4px 12px rgba(0, 123, 255, 0);
+    box-shadow: 0px 0px 4px 12px rgba(64, 125, 191, 0);
   }
 }
 
 @keyframes example {
   0% {
-    box-shadow: 0px 0px 4px 0px rgba(0, 123, 255, 0.15);
+    box-shadow: 0px 0px 4px 0px rgba(64, 125, 191, 0.15);
   }
   80% {
-    box-shadow: 0px 0px 4px 12px rgba(0, 123, 255, 0.15);
+    box-shadow: 0px 0px 4px 12px rgba(64, 125, 191, 0.15);
   }
   100% {
-    box-shadow: 0px 0px 4px 12px rgba(0, 123, 255, 0);
+    box-shadow: 0px 0px 4px 12px rgba(64, 125, 191, 0);
   }
 }
 .redio-special {
@@ -20114,7 +20126,7 @@ p.description {
   transition: all 0.3s;
 }
 .form-group:not(.checkboxes) input.form-control:hover, .form-group:not(.checkboxes) input.form-control:active, .form-group:not(.checkboxes) input.form-control:focus, .form-group:not(.checkboxes) textarea.form-control:hover, .form-group:not(.checkboxes) textarea.form-control:active, .form-group:not(.checkboxes) textarea.form-control:focus {
-  border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #407dbf;
   background: #e4e1e1;
   color: #000;
 }

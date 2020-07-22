@@ -162,7 +162,7 @@ echo '.'.$obj->$filename;
 
             <div class="row">
 
-                <?php $arr=["Κατοχυρωσε ενα νεο Domain ","Αγόρασε ένα πακέτο Hosting","Έκδοσε άμεσα ένα SSL"];
+                <?php $arr=["Κατοχυρωσε ενα νεο Domain ","Αγορασε ενα πακετο Hosting","Εκδοσε αμεσα ενα SSL"];
                       $arr2=["DOMAIN NAMES","ΠΑΚΕΤΑ HOSTING","ΠΙΣΤΟΠΟΙΗΤΙΚΑ SSL"];
                 ?>
                 <?php foreach ($arr as $key => $value) {?>
@@ -219,8 +219,6 @@ echo '.'.$obj->$filename;
         </div>
     </div>
     <?php include "partials_php/_fast_actions.php" ?>
-
-
     <script src="<?php mix('/public/assets/js/admin_home.js');?>"></script>
 </body>
 </html>

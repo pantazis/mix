@@ -5,7 +5,12 @@
     .tab a,
     .tab.disabled a,
     .tab.disabled a:hover {
-      color: rgba(255,255,255,0.7);
+      color: rgba(255,255,255,0);
+    }
+     .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+      background-color: rgba(246,178,181,0.2);
+      outline: none;
     }
 
     .tab a:hover,

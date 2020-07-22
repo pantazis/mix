@@ -6,13 +6,17 @@
 
   .file-path-wrapper {
     overflow: hidden;
-    padding-left: 10px;
+    padding-right: 10px;
+     label {
+      left: $gutter-width / 2;
+  }
+
   }
 
   input.file-path { width: 100%; }
 
   .btn {
-    float: left;
+    float: right;
     height: $input-height;
     line-height: $input-height;
   }
