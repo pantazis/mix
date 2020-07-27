@@ -27,37 +27,6 @@
         </div>
     </div>
 </nav>
-<section class="nav-tabs z-depth-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">dfddff</div>
-            <div id="swipeable" class="section scrollspy">
-                <h3 class="header">Swipeable Tabs</h3>
-                <p>By setting the <code class="language-javascript">swipeable</code> option to <code class="language-markup">true</code>, you can enable tabs where you can swipe on touch enabled devices to switch tabs. Make sure you keep the tab content divs in the same wrapping container. You can also set the <code class="language-javascript">responsiveThreshold</code> option to a screen width in pixels where the swipeable functionality will activate.</p>
-                <p>Note: This is also touch compatible! Try swiping with your finger to scroll through the carousel.</p>
-                <ul id="tabs-swipe-demo" class="tabs">
-                    <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
-                    <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
-                    <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
-                </ul>
-                <div id="test-swipe-1" class="col s12 blue">Test 1</div>
-                <div id="test-swipe-2" class="col s12 red">Test 2</div>
-                <div id="test-swipe-3" class="col s12 green">Test 3</div>
-
-                <pre><code class="language-markup col s12">
-  &lt;ul id="tabs-swipe-demo" class="tabs"&gt;
-    &lt;li class="tab col s3"&gt;&lt;a href="#test-swipe-1"&gt;Test 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li class="tab col s3"&gt;&lt;a class="active" href="#test-swipe-2"&gt;Test 2&lt;/a&gt;&lt;/li&gt;
-    &lt;li class="tab col s3"&gt;&lt;a href="#test-swipe-3"&gt;Test 3&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div id="test-swipe-1" class="col s12 blue"&gt;Test 1&lt;/div&gt;
-  &lt;div id="test-swipe-2" class="col s12 red"&gt;Test 2&lt;/div&gt;
-  &lt;div id="test-swipe-3" class="col s12 green"&gt;Test 3&lt;/div&gt;
-        </code></pre>
-            </div>
-
-</section>
-
 <nav class="side">
     <ul>
         <?php $arr = ["control_panel", "hosting", "domains", "ssl", "users", "euro", "product"]; ?>

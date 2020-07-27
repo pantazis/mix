@@ -65,7 +65,7 @@
                                 <div class="c-pad d-flex flex-column flex-grow-1">
                                     <h2 class="h3"><?= $arr2[$key] ?></h2>
                                     <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR </p>
-                                    <a href="" class="waves-effect waves-light btn"><?= $arr3[$key] ?></a>
+                                    <a href="" class="waves-effect waves-light btn mt-auto"><?= $arr3[$key] ?></a>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                             <p class="description">Εκμεταλλεύσου την προσφορά μας και κατοχύρωσε το .GR domain name
                                 σου
                                 για 2 έτη μόνο με 14,00€!</p>
-                            <a href="" class="waves-effect waves-light btn">Δες την προσφορά <i  class="fas fa-angle-right"></i></a>
+                            <a href="" class="waves-effect waves-light btn mt-auto">Δες την προσφορά <i  class="fas fa-angle-right"></i></a>
                         </div>
                     </div>
                 <?php } ?>

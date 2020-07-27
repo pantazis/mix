@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -20838,7 +20838,7 @@ $("input").hover(function () {}, function () {});
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!**************************************************!*\
   !*** multi ./resources/assets/js/table_pages.js ***!
   \**************************************************/

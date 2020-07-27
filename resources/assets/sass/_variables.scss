@@ -3,6 +3,12 @@ $lg: 992px;
 $amount:0;
 $lighten:0;
 
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
 $body-color:#e2e2e2;
 $blue:    lighten(desaturate(#007bff,$amount),$lighten);
 $indigo:  #6610f2;

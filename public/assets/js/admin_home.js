@@ -20817,15 +20817,27 @@ $(".b2 button").click(function (event) {
 
 /***/ }),
 
+/***/ "./resources/assets/sass/table_pages.scss":
+/*!************************************************!*\
+  !*** ./resources/assets/sass/table_pages.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*****************************************************************************************!*\
-  !*** multi ./resources/assets/js/admin_home.js ./resources/assets/sass/admin_home.scss ***!
-  \*****************************************************************************************/
+/*!**********************************************************************************************************************************!*\
+  !*** multi ./resources/assets/js/admin_home.js ./resources/assets/sass/admin_home.scss ./resources/assets/sass/table_pages.scss ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\wamp64\www\mix\resources\assets\js\admin_home.js */"./resources/assets/js/admin_home.js");
-module.exports = __webpack_require__(/*! C:\wamp64\www\mix\resources\assets\sass\admin_home.scss */"./resources/assets/sass/admin_home.scss");
+__webpack_require__(/*! C:\wamp64\www\mix\resources\assets\sass\admin_home.scss */"./resources/assets/sass/admin_home.scss");
+module.exports = __webpack_require__(/*! C:\wamp64\www\mix\resources\assets\sass\table_pages.scss */"./resources/assets/sass/table_pages.scss");
 
 
 /***/ })

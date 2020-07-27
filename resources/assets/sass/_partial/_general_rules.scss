@@ -262,6 +262,9 @@ p{
     }
     &.main_cat {
         display: block;
+      &.title {
+        display: flex;
+      }
       
      
     }
