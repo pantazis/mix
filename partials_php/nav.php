@@ -27,6 +27,7 @@
         </div>
     </div>
 </nav>
+<?php include "partials_php/tabs.php" ?>
 <nav class="side">
     <ul>
         <?php $arr = ["control_panel", "hosting", "domains", "ssl", "users", "euro", "product"]; ?>
@@ -137,3 +138,5 @@
         </div>
     </div>
 </div>
+
+

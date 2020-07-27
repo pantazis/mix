@@ -219,7 +219,7 @@ p{
     display: flex;
     flex-direction: column;
     }
-    margin-top: $nav_height;
+    margin-top: $subnav_height+$nav_height;
     min-height: calc(100vh - #{$nav_height});
     background-color: $main_body_background;
     padding-top:#{$grid-gutter-width/2};
@@ -439,4 +439,16 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.sub-menu{
+ position: fixed;
+    top: 46px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    height: 48px;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
 }

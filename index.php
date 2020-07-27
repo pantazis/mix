@@ -24,14 +24,18 @@ function mix($filename)
 <body>
 <?php include "partials_php/nav.php" ?>
 <div class="main_body">
+
     <div class="container">
+    <div class="row">
+<div class="col-lg-12">
+<div class="text_con main_cat title">
+<h1 class="h2">Πίνακας ελέγχου</h1>
+<a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
+</div>
+</div>
+</div>
         <div class="row">
-            <div class="col-lg-12">
-                <div class="text_con main_cat title">
-                    <h1 class="h2">Πίνακας ελέγχου</h1>
-                    <a href="" class="icon"><img src="public/assets/img/info.svg" alt=""></a>
-                </div>
-            </div>
+        
             <div class="col-lg-4">
                 <div class="text_con">
                     <h2 class="h3">pantazis vastardis</h2>
