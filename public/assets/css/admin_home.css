@@ -19770,7 +19770,8 @@ p {
 }
 
 .main_body {
-  margin-top: 94px;
+  position: relative;
+  margin-top: 141px;
   min-height: calc(100vh - 46px);
   background-color: #F3F3F4;
   padding-top: 15px;
@@ -19981,12 +19982,65 @@ p.description {
   right: 0;
   width: 100%;
   z-index: 3;
-  height: 48px;
+  height: 95px;
   background-color: #fff;
   display: flex;
   align-items: flex-end;
 }
+.sub-menu .text_con.main_cat.title {
+  margin: 0;
+}
 
+.container[id*=view] {
+  -webkit-animation-name: out;
+          animation-name: out;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.container[id*=view].active {
+  position: relative;
+  -webkit-animation-name: in;
+          animation-name: in;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes out {
+  from {
+    transform: translate(0vw, 0px);
+  }
+  to {
+    transform: translate(100vw, 0px);
+  }
+}
+@keyframes out {
+  from {
+    transform: translate(0vw, 0px);
+  }
+  to {
+    transform: translate(100vw, 0px);
+  }
+}
+@-webkit-keyframes in {
+  from {
+    transform: translate(100vw, 0px);
+  }
+  to {
+    transform: translate(0vw, 0px);
+  }
+}
+@keyframes in {
+  from {
+    transform: translate(100vw, 0px);
+  }
+  to {
+    transform: translate(0vw, 0px);
+  }
+}
 .row-redio {
   display: flex;
   justify-content: space-between;

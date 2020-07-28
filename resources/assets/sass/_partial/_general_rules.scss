@@ -213,6 +213,7 @@ p{
 
 
 .main_body {
+  position: relative;
     &.m2 {
     background-color:$main_bg_color; 
     height: auto;
@@ -441,14 +442,63 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
     align-items: center;
 }
 .sub-menu{
- position: fixed;
-    top: 46px;
+  .text_con.main_cat.title{
+    margin:0;
+  }
+    position: fixed;
+    top: $nav_height;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 3;
-    height: 48px;
+    height: $subnav_height;
     background-color: #fff;
     display: flex;
     align-items: flex-end;
+
+
+}
+.container[id*=view]{
+  animation-name: out;
+  animation-duration: 4s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  
+
+   
+    &.active{
+      position: relative;
+      animation-name: in;
+      animation-duration: 4s;      
+   
+    }
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+@include keyframes(out) {
+
+    from {transform: translate(0vw, 0px);}
+    to {transform: translate(100vw, 0px);}
+
+}
+@include keyframes(in) {
+
+  from {transform: translate(100vw, 0px);}
+  to {transform: translate(0vw, 0px);}
+
 }
