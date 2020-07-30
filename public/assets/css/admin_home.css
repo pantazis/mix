@@ -3174,7 +3174,7 @@ table.responsive-table td {
   text-align: right;
 }
 
-.center, .center-align {
+.center-align {
   text-align: center;
 }
 
@@ -18818,7 +18818,8 @@ nav.side {
   bottom: 0;
   height: 100%;
   left: 0;
-  box-shadow: -2px 0px 3px 0px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: -2px 0px 3px 0px rgba(0, 0, 0, 0.5) inset;
+  z-index: 3;
   transition: width 0.3s;
 }
 .no-menu nav.side {
@@ -19778,19 +19779,22 @@ p {
   transition: margin-left 0.3s;
 }
 .main_body.m2 {
+  padding-top: 61px;
+  margin: 0;
   background-color: #e2e2e2;
   height: auto;
   display: flex;
   flex-direction: column;
+  transition: padding-left 0.3s;
 }
-.no-menu .main_body {
-  margin-left: 0;
+.no-menu .main_body.m2 {
+  padding-left: 0;
 }
-.only_icons .main_body {
-  margin-left: 60px;
+.only_icons .main_body.m2 {
+  padding-left: 60px;
 }
-.full_menu .main_body {
-  margin-left: 200px;
+.full_menu .main_body.m2 {
+  padding-left: 200px;
 }
 
 .h-0 {
@@ -19849,6 +19853,7 @@ p {
   right: 0;
   position: absolute;
   top: 20px;
+  width: 55px;
 }
 .text_con .listrow:last-of-type {
   padding-bottom: 0;
@@ -19980,15 +19985,27 @@ p.description {
   top: 46px;
   left: 0;
   right: 0;
-  width: 100%;
   z-index: 3;
   height: 95px;
   background-color: #fff;
   display: flex;
   align-items: flex-end;
+  transition: padding 0.3s, transform 0.3s;
+}
+.sub-menu .tabs.tabs-transparent {
+  display: flex;
 }
 .sub-menu .text_con.main_cat.title {
   margin: 0;
+}
+.no-menu .sub-menu {
+  padding-left: 0;
+}
+.only_icons .sub-menu {
+  padding-left: 60px;
+}
+.full_menu .sub-menu {
+  padding-left: 200px;
 }
 
 .container[id*=view] {
@@ -20041,6 +20058,23 @@ p.description {
     transform: translate(0vw, 0px);
   }
 }
+.owl-carousel.owl-drag .item {
+  transition: padding-left 0.3s;
+}
+.no-menu .owl-carousel.owl-drag .item {
+  padding-left: 0;
+}
+.only_icons .owl-carousel.owl-drag .item {
+  padding-left: 60px;
+}
+.full_menu .owl-carousel.owl-drag .item {
+  padding-left: 200px;
+}
+
+.owl-dots {
+  display: none;
+}
+
 .row-redio {
   display: flex;
   justify-content: space-between;

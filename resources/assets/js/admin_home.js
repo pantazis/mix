@@ -53,12 +53,14 @@ nav.toggleMenu();
 
 $(".b1 button").click(function(event){
     var targ = $(event.target).closest(".btn");
-    nav.change_menu(menu_class_arr,targ);
+    nav.change_menu(menu_class_arr,targ);  
+    //setTimeout(function(){  Owl.initializeItems() }, 300);
 });
 
 $(".b2 button").click(function(event){
     var targ = $(event.target).closest(".btn");
     nav.change_container_size(container_size_arr,targ );
+   // setTimeout(function(){  Owl.initializeItems() }, 300);  
 })
 
 

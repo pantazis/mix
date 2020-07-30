@@ -64,6 +64,30 @@ $(el).hover(function(){
 });
 }
 
+function hideSubMenu(){
+    debugger;
+    $(window).scroll(function(){
+        var menuHeiht = $(".nav_top").height();
+        var subMenuHeight = $(".sub-menu").height();
+        console.log(menuHeiht+" "+subMenuHeight);
+        var windowOfSet = $(window).scrollTop();
+        var downLimit = $(".main_body.m2").offset().top;
+        var fullMenuHeight =  windowOfSet + menuHeiht  + subMenuHeight;
+
+
+        if(fullMenuHeight > downLimit){
+            $(".sub-menu").css("transform", "translateY(-100%)");
+            
+        }else{
+            $(".sub-menu").css("transform", "translateY(0%)");
+        };
+
+    });
+     
+}
+
+hideSubMenu();
+
 
 
    

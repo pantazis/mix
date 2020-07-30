@@ -215,27 +215,34 @@ p{
 .main_body {
   position: relative;
     &.m2 {
+    padding-top:#{$grid-gutter-width/2 + $nav_height};  
+    margin:0;  
     background-color:$main_bg_color; 
     height: auto;
     display: flex;
     flex-direction: column;
+    transition: padding-left .3s;
+  .no-menu &{
+    padding-left: $nav_side_none;
+  }
+   
+   .only_icons &{
+   padding-left: $nav_side_icons;
+ 
+   }
+   
+   .full_menu &{
+   padding-left: $nav_side_full;
+
+   }
     }
+    
     margin-top: $subnav_height+$nav_height;
     min-height: calc(100vh - #{$nav_height});
     background-color: $main_body_background;
     padding-top:#{$grid-gutter-width/2};
     transition:  margin-left .3s;
-    .no-menu &{
-        margin-left: $nav_side_none;
-       }
-       
-       .only_icons &{
-       margin-left: $nav_side_icons;
-       }
-       
-       .full_menu &{
-       margin-left: $nav_side_full;
-       }
+   
 
 }
 .h-0{
@@ -305,6 +312,7 @@ p{
             right: 0;
             position: absolute;
             top: 20px;
+            width:55px;
         }
         &:last-of-type {
             padding-bottom:  0;
@@ -442,19 +450,34 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
     align-items: center;
 }
 .sub-menu{
+  
+  .tabs.tabs-transparent{
+    display: flex;
+  }
   .text_con.main_cat.title{
     margin:0;
   }
     position: fixed;
     top: $nav_height;
-    left: 0;
-    right: 0;
-    width: 100%;
+    left: 0;    
+    right: 0;   
     z-index: 3;
     height: $subnav_height;
     background-color: #fff;
     display: flex;
     align-items: flex-end;
+    transition: padding 0.3s,  transform .3s;
+    .no-menu &{
+      padding-left: $nav_side_none;
+     }
+     
+     .only_icons &{
+     padding-left: $nav_side_icons;
+     }
+     
+     .full_menu &{
+     padding-left: $nav_side_full;
+     }
 
 
 }
@@ -502,3 +525,28 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
   to {transform: translate(0vw, 0px);}
 
 }
+
+
+.owl-carousel.owl-drag .item{
+  transition: padding-left .3s;
+  .no-menu &{
+    padding-left: $nav_side_none;
+   
+   }
+   
+   .only_icons &{
+   padding-left: $nav_side_icons;
+ 
+   }
+   
+   .full_menu &{
+   padding-left: $nav_side_full;
+
+   }
+
+}
+
+.owl-dots{
+  display:none;
+}
+

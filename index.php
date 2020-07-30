@@ -25,11 +25,55 @@ function mix($filename)
 <?php include "partials_php/nav.php" ?>
 <div class="main_body">
 <div class="owl-carousel owl-theme">
-<?php for ($i = 1; $i <= 2; $i++) { ?>
+<?php for ($i = 1; $i <= 3; $i++) { ?>
             <div class="item" data-hash="zero">
-            <div class="container"   >
+            <div class="container">
  
  <div class="row">
+ <?php if($i==1){ ?>
+    <div class="col-lg-12">
+         <div class="text_con">
+             <h2 class="h3">pantazis vastardis</h2>
+             <p>pantazisvastardis@gmail.com <a href="">(επαλήθευση)</a>
+             <p>
+                 +30.6932968500
+             </p>
+             <a href="">αλλαγή στοιχείων & ρυθμίσεων</a>
+             </p>
+         </div>
+         <div class="text_con">
+             <div class="listrow">
+                 <h2 class="h3">
+                     ΑΤΙΜΟΛΟΓΗΤΕΣ ΚΙΝΗΣΕΙΣ
+                 </h2>
+                 <div class="flex-r">
+                     <p class="num">1363</p>
+                     <button type="button" class="waves-effect waves-light btn">προβολη</button>
+                 </div>
+             </div>
+             <div class="listrow">
+                 <h2 class="h3">
+                     ΠΑΡΑΓΓΕΛΙΕΣ ΠΟΥ ΑΠΑΙΤΟΥΝ ADMIN ΕΝΕΡΓΕΙΕΣ
+                 </h2>
+                 <div class="flex-r">
+                     <p class="num">172</p>
+                     <button type="button" class="waves-effect waves-light btn">προβολη</button>
+                 </div>
+             </div>
+             <div class="listrow">
+                 <h2 class="h3">
+                     ΠΕΛΑΤΕΣ ΜΕ ΠΙΣΤΩΤΙΚΟ ΟΡΙΟ
+                 </h2>
+                 <div class="flex-r">
+                     <p class="num">13</p>
+                     <button type="button" class="waves-effect waves-light btn">προβολη</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+ <?php }?>
  
      <div class="col-lg-4">
          <div class="text_con">
@@ -210,17 +254,31 @@ function mix($filename)
 
 <?php include "partials_php/_fast_actions.php" ?>
 <script src="<?php mix('/public/assets/js/admin_home.js'); ?>"></script>
-<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+<script src="resources\assets\js\_libraries\owl.carousel.js?<?php echo rand(0,100) ?>"></script>
 <script>
-  $('.owl-carousel').owlCarousel({
+   var owl = $('.owl-carousel');
+   owl.owlCarousel({
+        autoHeight: true,   
         items:1,
         loop:false,
         center:true,
-        margin:10,
-        URLhashListener:true,
-        autoplayHoverPause:true,
-        startPosition: 'URLHash'
+        margin:0,     
+       
     });
+
+
+    owl.on('changed.owl.carousel', function(event) { 
+        if(event.type == "changed"){
+    var linext = $('ul.tabs.tabs-transparent') 
+    $(linext).click();
+        }
+})
+
+
+
+
+
+
 
 
 
