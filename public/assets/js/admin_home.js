@@ -20734,7 +20734,6 @@ function nav_popover(el, data, options) {
 }
 
 function hideSubMenu() {
-  debugger;
   $(window).scroll(function () {
     var menuHeiht = $(".nav_top").height();
     var subMenuHeight = $(".sub-menu").height();

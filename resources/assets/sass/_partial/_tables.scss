@@ -174,9 +174,7 @@ table tbody tr td span.cat {
   .column3 {
     width: 100%;
   }
-  tbody tr {
-    
-  }
+
 }
 @media (max-width: $sm) {
   .container-table100 {
@@ -362,4 +360,495 @@ span.td-icons {
   
   
   }
+}
+.btn2::before {
+  background: 
+  rgba(250, 250, 250, 0.1);
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  transition: all 0.1s;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+//colors
+$color_steel_blue_approx: #407dbf;
+$white: #fff;
+$color_steel_blue_50_approx: rgba(64, 125, 191, 0.5);
+$color_pale_sky_approx: #6c757d;
+$color_pale_sky_50_approx: rgba(108, 117, 125, 0.5);
+$color_sea_green_approx: #28a745;
+$color_sea_green_50_approx: rgba(40, 167, 69, 0.5);
+$color_eastern_blue_approx: #17a2b8;
+$color_eastern_blue_50_approx: rgba(23, 162, 184, 0.5);
+$color_ecstasy_approx: #fd7e14;
+$color_shark_approx: #212529;
+$color_ecstasy_50_approx: rgba(253, 126, 20, 0.5);
+$color_amaranth_approx: #dc3545;
+$color_amaranth_50_approx: rgba(220, 53, 69, 0.5);
+$color_athens_gray_approx: #f8f9fa;
+$color_athens_gray_50_approx: rgba(248, 249, 250, 0.5);
+$color_limed_spruce_approx: #343a40;
+$color_limed_spruce_50_approx: rgba(52, 58, 64, 0.5);
+
+//@extend-elements
+//original selectors
+//.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show >.btn-outline-primary.dropdown-toggle
+%extend_1 {
+	color: $white;
+	background-color: $color_steel_blue_approx;
+	border-color: $color_steel_blue_approx;
+}
+
+//original selectors
+//.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show >.btn-outline-secondary.dropdown-toggle
+%extend_2 {
+	color: $white;
+	background-color: $color_pale_sky_approx;
+	border-color: $color_pale_sky_approx;
+}
+
+//original selectors
+//.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show >.btn-outline-success.dropdown-toggle
+%extend_3 {
+	color: $white;
+	background-color: $color_sea_green_approx;
+	border-color: $color_sea_green_approx;
+}
+
+//original selectors
+//.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show >.btn-outline-info.dropdown-toggle
+%extend_4 {
+	color: $white;
+	background-color: $color_eastern_blue_approx;
+	border-color: $color_eastern_blue_approx;
+}
+
+//original selectors
+//.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show >.btn-outline-warning.dropdown-toggle
+%extend_5 {
+	color: $color_shark_approx;
+	background-color: $color_ecstasy_approx;
+	border-color: $color_ecstasy_approx;
+}
+
+//original selectors
+//.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show >.btn-outline-danger.dropdown-toggle
+%extend_6 {
+	color: $white;
+	background-color: $color_amaranth_approx;
+	border-color: $color_amaranth_approx;
+}
+
+//original selectors
+//.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show >.btn-outline-light.dropdown-toggle
+%extend_7 {
+	color: $color_shark_approx;
+	background-color: $color_athens_gray_approx;
+	border-color: $color_athens_gray_approx;
+}
+
+//original selectors
+//.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show >.btn-outline-dark.dropdown-toggle
+%extend_8 {
+	color: $white;
+	background-color: $color_limed_spruce_approx;
+	border-color: $color_limed_spruce_approx;
+}
+
+
+.btn-outline-primary {
+	color: $color_steel_blue_approx;
+	border-color: $color_steel_blue_approx;
+	&:hover {
+		color: $white;
+		background-color: $color_steel_blue_approx;
+		border-color: $color_steel_blue_approx;
+	}
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_steel_blue_50_approx;
+	}
+	&.focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_steel_blue_50_approx;
+	}
+	&.disabled {
+		color: $color_steel_blue_approx;
+		background-color: transparent;
+	}
+	&:disabled {
+		color: $color_steel_blue_approx;
+		background-color: transparent;
+	}
+	&:not(:disabled):not(.disabled) {
+		&:active {
+			@extend %extend_1;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_steel_blue_50_approx;
+			}
+		}
+		&.active {
+			@extend %extend_1;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_steel_blue_50_approx;
+			}
+		}
+	}
+}
+.btn-outline-secondary {
+	color: $color_pale_sky_approx;
+	border-color: $color_pale_sky_approx;
+	&:hover {
+		color: $white;
+		background-color: $color_pale_sky_approx;
+		border-color: $color_pale_sky_approx;
+	}
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_pale_sky_50_approx;
+	}
+	&.focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_pale_sky_50_approx;
+	}
+	&.disabled {
+		color: $color_pale_sky_approx;
+		background-color: transparent;
+	}
+	&:disabled {
+		color: $color_pale_sky_approx;
+		background-color: transparent;
+	}
+	&:not(:disabled):not(.disabled) {
+		&:active {
+			@extend %extend_2;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_pale_sky_50_approx;
+			}
+		}
+		&.active {
+			@extend %extend_2;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_pale_sky_50_approx;
+			}
+		}
+	}
+}
+.btn-outline-success {
+	color: $color_sea_green_approx;
+	border-color: $color_sea_green_approx;
+	&:hover {
+		color: $white;
+		background-color: $color_sea_green_approx;
+		border-color: $color_sea_green_approx;
+	}
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_sea_green_50_approx;
+	}
+	&.focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_sea_green_50_approx;
+	}
+	&.disabled {
+		color: $color_sea_green_approx;
+		background-color: transparent;
+	}
+	&:disabled {
+		color: $color_sea_green_approx;
+		background-color: transparent;
+	}
+	&:not(:disabled):not(.disabled) {
+		&:active {
+			@extend %extend_3;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_sea_green_50_approx;
+			}
+		}
+		&.active {
+			@extend %extend_3;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_sea_green_50_approx;
+			}
+		}
+	}
+}
+.btn-outline-info {
+	color: $color_eastern_blue_approx;
+	border-color: $color_eastern_blue_approx;
+	&:hover {
+		color: $white;
+		background-color: $color_eastern_blue_approx;
+		border-color: $color_eastern_blue_approx;
+	}
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_eastern_blue_50_approx;
+	}
+	&.focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_eastern_blue_50_approx;
+	}
+	&.disabled {
+		color: $color_eastern_blue_approx;
+		background-color: transparent;
+	}
+	&:disabled {
+		color: $color_eastern_blue_approx;
+		background-color: transparent;
+	}
+	&:not(:disabled):not(.disabled) {
+		&:active {
+			@extend %extend_4;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_eastern_blue_50_approx;
+			}
+		}
+		&.active {
+			@extend %extend_4;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_eastern_blue_50_approx;
+			}
+		}
+	}
+}
+.btn-outline-warning {
+	color: $color_ecstasy_approx;
+	border-color: $color_ecstasy_approx;
+	&:hover {
+		color: $color_shark_approx;
+		background-color: $color_ecstasy_approx;
+		border-color: $color_ecstasy_approx;
+	}
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_ecstasy_50_approx;
+	}
+	&.focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_ecstasy_50_approx;
+	}
+	&.disabled {
+		color: $color_ecstasy_approx;
+		background-color: transparent;
+	}
+	&:disabled {
+		color: $color_ecstasy_approx;
+		background-color: transparent;
+	}
+	&:not(:disabled):not(.disabled) {
+		&:active {
+			@extend %extend_5;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_ecstasy_50_approx;
+			}
+		}
+		&.active {
+			@extend %extend_5;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_ecstasy_50_approx;
+			}
+		}
+	}
+}
+.btn-outline-danger {
+	color: $color_amaranth_approx;
+	border-color: $color_amaranth_approx;
+	&:hover {
+		color: $white;
+		background-color: $color_amaranth_approx;
+		border-color: $color_amaranth_approx;
+	}
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_amaranth_50_approx;
+	}
+	&.focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_amaranth_50_approx;
+	}
+	&.disabled {
+		color: $color_amaranth_approx;
+		background-color: transparent;
+	}
+	&:disabled {
+		color: $color_amaranth_approx;
+		background-color: transparent;
+	}
+	&:not(:disabled):not(.disabled) {
+		&:active {
+			@extend %extend_6;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_amaranth_50_approx;
+			}
+		}
+		&.active {
+			@extend %extend_6;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_amaranth_50_approx;
+			}
+		}
+	}
+}
+.btn-outline-light {
+	color: $color_athens_gray_approx;
+	border-color: $color_athens_gray_approx;
+	&:hover {
+		color: $color_shark_approx;
+		background-color: $color_athens_gray_approx;
+		border-color: $color_athens_gray_approx;
+	}
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_athens_gray_50_approx;
+	}
+	&.focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_athens_gray_50_approx;
+	}
+	&.disabled {
+		color: $color_athens_gray_approx;
+		background-color: transparent;
+	}
+	&:disabled {
+		color: $color_athens_gray_approx;
+		background-color: transparent;
+	}
+	&:not(:disabled):not(.disabled) {
+		&:active {
+			@extend %extend_7;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_athens_gray_50_approx;
+			}
+		}
+		&.active {
+			@extend %extend_7;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_athens_gray_50_approx;
+			}
+		}
+	}
+}
+.btn-outline-dark {
+	color: $color_limed_spruce_approx;
+	border-color: $color_limed_spruce_approx;
+	&:hover {
+		color: $white;
+		background-color: $color_limed_spruce_approx;
+		border-color: $color_limed_spruce_approx;
+	}
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_limed_spruce_50_approx;
+	}
+	&.focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 0.2rem $color_limed_spruce_50_approx;
+	}
+	&.disabled {
+		color: $color_limed_spruce_approx;
+		background-color: transparent;
+	}
+	&:disabled {
+		color: $color_limed_spruce_approx;
+		background-color: transparent;
+	}
+	&:not(:disabled):not(.disabled) {
+		&:active {
+			@extend %extend_8;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_limed_spruce_50_approx;
+			}
+		}
+		&.active {
+			@extend %extend_8;
+			&:focus {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 0 0.2rem $color_limed_spruce_50_approx;
+			}
+		}
+	}
+}
+.show > {
+	.btn-outline-primary.dropdown-toggle {
+		@extend %extend_1;
+		&:focus {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 0.2rem $color_steel_blue_50_approx;
+		}
+	}
+	.btn-outline-secondary.dropdown-toggle {
+		@extend %extend_2;
+		&:focus {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 0.2rem $color_pale_sky_50_approx;
+		}
+	}
+	.btn-outline-success.dropdown-toggle {
+		@extend %extend_3;
+		&:focus {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 0.2rem $color_sea_green_50_approx;
+		}
+	}
+	.btn-outline-info.dropdown-toggle {
+		@extend %extend_4;
+		&:focus {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 0.2rem $color_eastern_blue_50_approx;
+		}
+	}
+	.btn-outline-warning.dropdown-toggle {
+		@extend %extend_5;
+		&:focus {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 0.2rem $color_ecstasy_50_approx;
+		}
+	}
+	.btn-outline-danger.dropdown-toggle {
+		@extend %extend_6;
+		&:focus {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 0.2rem $color_amaranth_50_approx;
+		}
+	}
+	.btn-outline-light.dropdown-toggle {
+		@extend %extend_7;
+		&:focus {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 0.2rem $color_athens_gray_50_approx;
+		}
+	}
+	.btn-outline-dark.dropdown-toggle {
+		@extend %extend_8;
+		&:focus {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 0.2rem $color_limed_spruce_50_approx;
+		}
+	}
 }

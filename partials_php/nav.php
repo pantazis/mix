@@ -1,4 +1,4 @@
-<?php include "partials_php/fakeData.php"; ?>
+<?php include "fakeData.php"; ?>
 <nav class="nav_top">
     <div class="icon-par ip1">
         <div class="nav-icon popover-cont">
@@ -27,7 +27,7 @@
         </div>
     </div>
 </nav>
-<?php include "partials_php/tabs.php" ?>
+<?php include "tabs.php" ?>
 <nav class="side">
     <ul>
         <?php $arr = ["control_panel", "hosting", "domains", "ssl", "users", "euro", "product"]; ?>

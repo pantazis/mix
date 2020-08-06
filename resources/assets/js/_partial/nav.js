@@ -65,7 +65,7 @@ $(el).hover(function(){
 }
 
 function hideSubMenu(){
-    debugger;
+
     $(window).scroll(function(){
         var menuHeiht = $(".nav_top").height();
         var subMenuHeight = $(".sub-menu").height();

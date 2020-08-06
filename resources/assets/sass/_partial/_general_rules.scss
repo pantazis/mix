@@ -1,6 +1,9 @@
 $inner-padding:20px;
 
 @import "_fonts.scss";
+@import "../_libraries/owlcarousel/owl.carousel.min.scss";
+@import "../_libraries/owlcarousel/owl.theme.default.min.scss";
+
 
 
 
@@ -548,5 +551,52 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
 
 .owl-dots{
   display:none;
+}
+
+//colors
+$color_0: #e9ecef;
+$color_1: #6c757d;
+
+.breadcrumb {
+	padding: 0.75rem 1rem;
+	margin-bottom: 1rem;
+	background-color: $color_0;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 0;
+	margin-bottom: 0;
+	list-style: none;
+	background-color: transparent;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.25rem;
+	position: relative;
+	top: -15px;
+}
+
+
+.breadcrumb-item {
+	&+ {
+		.breadcrumb-item {
+			padding-left: 0.5rem;
+			&:hover::before {
+				text-decoration: underline;
+				text-decoration: none;
+			}
+      	&::before {
+			display: inline-block;
+			padding-right: 0.5rem;
+			color: $color_1;
+			content: "/";
+		}
+		}
+	
+	}
+	&.active {
+		color: $color_1;
+	}
+}
+
+.p-n{
+  padding:20px;
 }
 

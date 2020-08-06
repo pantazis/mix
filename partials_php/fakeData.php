@@ -97,6 +97,35 @@ $menu_cat = '{
     }
   ]
 }';
+$tabArr = [
+  [
+     "title"=>"Home",
+     "link"=>"tabs/firstpage.php"
+  ],
+  [
+     "title"=>"Ssl Certificates",
+     "link"=>"tabs/ssl-certificates.php"
+  ],
+  [
+     "title"=>"Admin Hosting",
+     "link"=>"tabs/admin_hosting.php"
+  ]
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 $menu_cat2 = json_decode($menu_cat,true);
 

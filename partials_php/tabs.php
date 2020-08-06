@@ -15,9 +15,15 @@
 <div class="row">
 <div class="col s12 p-0">
 <ul class="tabs tabs-transparent">
-<li class="tab col s3"><a class="active" href="#view1">Test 1</a></li>
-<li class="tab col s3"><a  href="#view2">Test 2</a></li>
-<li class="tab col s3"><a href="#view3">Test 3</a></li>
+
+<?php foreach ($tabArr as $key => $value){?>
+<li class="tab col s3">
+<a class="<?php if($key==0) echo 'active'; ?>" href="#view1">
+<?=$value['title']?></a>
+</li>
+
+<?php } ?>
+
 </ul>
 </div>
 </div>

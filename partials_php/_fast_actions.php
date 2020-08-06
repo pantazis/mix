@@ -91,5 +91,5 @@
             </div>
         </div>
     </div>
-    <?php include "partials_php/_footer.php" ?>
+    <?php include "_footer.php" ?>
 </div>
