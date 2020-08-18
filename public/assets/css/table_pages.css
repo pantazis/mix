@@ -19901,6 +19901,7 @@ nav.nav-modal img.top_img {
 
 body {
   background-color: #e2e2e2;
+  overflow: hidden;
 }
 
 .btn.full, .full.btn-large, .full.btn-small {
@@ -20387,6 +20388,8 @@ p.description {
 }
 .owl-carousel.owl-drag .item {
   transition: padding-left 0.3s;
+  overflow-y: scroll;
+  height: 100vh;
 }
 .no-menu .owl-carousel.owl-drag .item {
   padding-left: 0;

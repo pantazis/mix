@@ -29,6 +29,7 @@ function mix($filename)
 <?php foreach ($tabArr as $key => $value){ ?>
             <div class="item" data-hash="zero">
              <?php include $value['link'] ?>
+             <?php include "partials_php/_fast_actions.php" ?>
             </div>                   
             <?php }?>         
           </div>
@@ -42,7 +43,7 @@ function mix($filename)
 
 
 
-<?php include "partials_php/_fast_actions.php" ?>
+
 <script src="<?php mix('/public/assets/js/admin_home.js'); ?>"></script>
 <script src="resources\assets\js\_libraries\owl.carousel.js?<?php echo rand(0,100) ?>"></script>
 <script>

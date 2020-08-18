@@ -9,6 +9,7 @@ $inner-padding:20px;
 
 body {
 background-color: $main_bg_color;
+overflow: hidden;
 
 }
 .row{
@@ -532,6 +533,8 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
 
 .owl-carousel.owl-drag .item{
   transition: padding-left .3s;
+  overflow-y: scroll;
+  height: 100vh;
   .no-menu &{
     padding-left: $nav_side_none;
    
