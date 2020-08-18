@@ -220,6 +220,5 @@
                     </div>
                 </div>
             </div>
-        </div>
-    <?php include "../partials_php/_fast_actions.php" ?>
+        </div> 
     <script src="<?php mix('/public/assets/js/table_pages.js');?>"></script>

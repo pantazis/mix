@@ -284,6 +284,20 @@ button.btn-floating {
     font-size: $button-large-icon-font-size;
   }
 }
+// Small button
+.btn-small{
+  @extend .btn;
+  height: 29px;
+  line-height: 29px;
+  padding: 0 8px;
+  font-size: 14px;
+
+  i {
+    font-size: 14px;
+  }
+
+
+}
 
 // Block button
 .btn-block {

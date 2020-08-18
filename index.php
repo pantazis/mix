@@ -58,15 +58,15 @@ function mix($filename)
 
 
     owl.on('changed.owl.carousel', function(event) { 
+        console.log(event.type);
         if(event.type == "changed"){
     var linext = $('ul.tabs.tabs-transparent') 
-    $(linext).click();
-    var activeEl=$(".owl-carousel .item")[event.page.index];
-  
-    $(activeEl).closest(".owl-height").height("auto");
+    $(linext).click();    
         }
 })
+owl.on('change.owl.carousel', function(event) { 
 
+})
 
 
 

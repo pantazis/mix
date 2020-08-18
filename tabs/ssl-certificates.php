@@ -24,7 +24,7 @@
                     <div class="text_con">
                     <div class="text-right h-0">
                     <?php if($key > 0){ ?>
-                    <a href="#" type="button" class="waves-effect waves-light btn">προβολη</a>
+                    <a href="#" type="button" class="waves-effect waves-light btn-small">προβολη</a>
                     <?php } ?>
 
                     </div>
@@ -1219,27 +1219,11 @@
 
 
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text_con">
-                        <div class="waves-effect waves-light btn">
-                            <button type="button" class="waves-effect waves-light btn">no
-                                    menu</span></button>
-                            <button type="button" class="waves-effect waves-light btn">only
-                                    icons</span></button>
-                            <button type="button" class="waves-effect waves-light btn"><span
-                                    class="text">full</span></button>
-                        </div>
-                        <div class="waves-effect waves-light btn">
-                            <button type="button" class="waves-effect waves-light btn">full
-                                    container</span> </button>
-                            <button type="button" class="waves-effect waves-light btn"><span
-                                    class="text">normal_container</span></button>
+           
 
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+
         </div>
         <link href="<?php mix('/public/assets/css/table_pages.css'); ?>" rel="stylesheet">
     <script src="<?php mix('/public/assets/js/table_pages.js');?>"></script>
