@@ -20103,7 +20103,6 @@ p {
   margin-top: 141px;
   min-height: calc(100vh - 46px);
   background-color: #F3F3F4;
-  padding-top: 15px;
   transition: margin-left 0.3s;
 }
 .main_body.m2 {
@@ -20114,15 +20113,6 @@ p {
   display: flex;
   flex-direction: column;
   transition: padding-left 0.3s;
-}
-.no-menu .main_body.m2 {
-  padding-left: 0;
-}
-.only_icons .main_body.m2 {
-  padding-left: 60px;
-}
-.full_menu .main_body.m2 {
-  padding-left: 200px;
 }
 
 .h-0 {
@@ -20387,9 +20377,10 @@ p.description {
   }
 }
 .owl-carousel.owl-drag .item {
+  padding-top: 15px;
   transition: padding-left 0.3s;
   overflow-y: scroll;
-  height: 100vh;
+  height: calc(100vh - 141px);
 }
 .no-menu .owl-carousel.owl-drag .item {
   padding-left: 0;

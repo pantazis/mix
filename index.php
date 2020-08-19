@@ -27,9 +27,10 @@ function mix($filename)
 <div class="owl-carousel owl-theme">
 
 <?php foreach ($tabArr as $key => $value){ ?>
-            <div class="item" data-hash="zero">
+            <div class="item" data-hash="v<?=$key?>">
              <?php include $value['link'] ?>
              <?php include "partials_php/_fast_actions.php" ?>
+             <?php include "partials_php/_footer.php" ?>
             </div>                   
             <?php }?>         
           </div>
@@ -41,25 +42,25 @@ function mix($filename)
 
 
 
-
-
-
+<?php include "partials_php/_footer.php" ?>
+<?php include "partials_php/_js-scripts.php"?>
 <script src="<?php mix('/public/assets/js/admin_home.js'); ?>"></script>
 <script src="resources\assets\js\_libraries\owl.carousel.js?<?php echo rand(0,100) ?>"></script>
 <script>
    var owl = $('.owl-carousel');
-   owl.owlCarousel({
-        
+
+   $( document ).ready(startOwl()); 
+
+   function startOwl(){
+   owl.owlCarousel({        
         items:1,
         loop:false,
         center:true,
-        margin:0,     
-       
+        margin:0,
     });
 
 
-    owl.on('changed.owl.carousel', function(event) { 
-        console.log(event.type);
+    owl.on('changed.owl.carousel', function(event) {      
         if(event.type == "changed"){
     var linext = $('ul.tabs.tabs-transparent') 
     $(linext).click();    
@@ -68,15 +69,7 @@ function mix($filename)
 owl.on('change.owl.carousel', function(event) { 
 
 })
-
-
-
-
-
-
-
-
-
+   }
 
 </script>
 </body>

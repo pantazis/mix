@@ -186,7 +186,7 @@ echo '.'.$obj->$filename;
                                         </button>
                                     </div>
                                 </div>
-                                <?php $arr =["date","datetime-local","email","month","number","password","search","tel","text","time","url","week"]; ?>
+                                <?php $arr =["date","datetime-local","email","month","number","password","search2","tel","text","time","url","week"]; ?>
                                 <?php foreach ( $arr as $key => $value) { ?>
                                 <div class="form-group col-lg-6 flex-fill">
                                     <div class="input-cont">

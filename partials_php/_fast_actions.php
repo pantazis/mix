@@ -32,8 +32,8 @@
                                         <?php } ?>
                                     </ul>
                                     <div class="file-path-wrapper">
-                                        <input id="search" type="text" class="validate">
-                                        <label for="search">Last Name</label>
+                                        <input id="search1" type="text" class="validate">
+                                        <label for="search1">Last Name</label>
                                     </div>
                                 </div>
                             </div>
@@ -91,5 +91,5 @@
             </div>
         </div>
     </div>
-    <?php include "_footer.php" ?>
+   
 </div>

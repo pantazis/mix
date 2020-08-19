@@ -226,25 +226,12 @@ p{
     display: flex;
     flex-direction: column;
     transition: padding-left .3s;
-  .no-menu &{
-    padding-left: $nav_side_none;
-  }
-   
-   .only_icons &{
-   padding-left: $nav_side_icons;
- 
-   }
-   
-   .full_menu &{
-   padding-left: $nav_side_full;
 
-   }
     }
     
     margin-top: $subnav_height+$nav_height;
     min-height: calc(100vh - #{$nav_height});
-    background-color: $main_body_background;
-    padding-top:#{$grid-gutter-width/2};
+    background-color: $main_body_background;    
     transition:  margin-left .3s;
    
 
@@ -532,9 +519,10 @@ background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 10
 
 
 .owl-carousel.owl-drag .item{
+  padding-top:#{$grid-gutter-width/2};
   transition: padding-left .3s;
   overflow-y: scroll;
-  height: 100vh;
+  height: calc(100vh - #{$nav_height+$subnav_height});
   .no-menu &{
     padding-left: $nav_side_none;
    

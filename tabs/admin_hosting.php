@@ -202,21 +202,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text_con">
-                        <div class="waves-effect waves-light btn">
-                            <button type="button" class="waves-effect waves-light btn">no
-                                    menu</span></button>
-                            <button type="button" class="waves-effect waves-light btn">only
-                                    icons</span></button>
-                            <button type="button" class="waves-effect waves-light btn"><span
-                                    class="text">full</span></button>
-                        </div>
-                        <div class="waves-effect waves-light btn">
-                            <button type="button" class="waves-effect waves-light btn">full
-                                    container</span> </button>
-                            <button type="button" class="waves-effect waves-light btn"><span
-                                    class="text">normal_container</span></button>
-
-                        </div>
+                       
+                   
+                     
                     </div>
                 </div>
             </div>
