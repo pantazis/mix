@@ -18,7 +18,7 @@
 
 <?php foreach ($tabArr as $key => $value){?>
 <li class="tab col s3">
-<a class="<?php if($key==0) echo 'active'; ?>" href="#view1">
+<a class="" id="<?=$value['url']?>">
 <?=$value['title']?></a>
 </li>
 

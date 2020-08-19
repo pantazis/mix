@@ -19,6 +19,7 @@ function mix($filename)
     <title></title>
     <!-- Google Fonts -->
     <link href="<?php mix('/public/assets/css/admin_home.css'); ?>" rel="stylesheet">
+    1111
     <!-- Plugin CSS -->
 </head>
 <body>
@@ -27,7 +28,7 @@ function mix($filename)
 <div class="owl-carousel owl-theme">
 
 <?php foreach ($tabArr as $key => $value){ ?>
-            <div class="item" data-hash="v<?=$key?>">
+            <div class="item" data-hash="<?=$value['url']?>">
              <?php include $value['link'] ?>
              <?php include "partials_php/_fast_actions.php" ?>
              <?php include "partials_php/_footer.php" ?>
@@ -48,16 +49,27 @@ function mix($filename)
 <script src="resources\assets\js\_libraries\owl.carousel.js?<?php echo rand(0,100) ?>"></script>
 <script>
    var owl = $('.owl-carousel');
-
+   var hashLocation =window.location.hash;
+ 
+   activeLi =  $(hashLocation).closest("li")[0] == -1 ? 0 :  $(hashLocation).closest("li")[0];
+    
+   
+ 
+   var activeTab = $(".tabs.tabs-transparent li").index(activeLi);  
+   $($(".tabs li")[activeTab]).find("a").addClass("active"); 
    $( document ).ready(startOwl()); 
 
    function startOwl(){
-   owl.owlCarousel({        
+   
+   var aaa={        
         items:1,
         loop:false,
         center:true,
         margin:0,
-    });
+        startPosition: activeTab
+    }
+    console.log(aaa);
+   owl.owlCarousel(aaa);
 
 
     owl.on('changed.owl.carousel', function(event) {      
@@ -66,9 +78,11 @@ function mix($filename)
     $(linext).click();    
         }
 })
-owl.on('change.owl.carousel', function(event) { 
 
-})
+ 
+    console.log( '$("a'+ activeTab +'").closest("li").click();');
+
+    $("a"+activeTab).closest("li").click(); 
    }
 
 </script>

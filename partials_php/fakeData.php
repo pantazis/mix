@@ -100,15 +100,18 @@ $menu_cat = '{
 $tabArr = [
   [
      "title"=>"Home",
-     "link"=>"tabs/firstpage.php"
+     "link"=>"tabs/firstpage.php",
+     "url"=>"firstpage"
   ],
   [
      "title"=>"Ssl Certificates",
-     "link"=>"tabs/ssl-certificates.php"
+     "link"=>"tabs/ssl-certificates.php",
+     "url"=>"ssl-certificates"
   ],
   [
      "title"=>"Admin Hosting",
-     "link"=>"tabs/admin_hosting.php"
+     "link"=>"tabs/admin_hosting.php",
+     "url"=>"admin_hosting"
   ]
 ];
 

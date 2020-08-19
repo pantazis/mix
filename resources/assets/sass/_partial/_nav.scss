@@ -197,6 +197,9 @@ nav.nav-modal {
     .ul_par {
         display: flex;
         flex-direction: row;
+        ul{
+          margin:0;
+        }
     }
     
 .side_cont {

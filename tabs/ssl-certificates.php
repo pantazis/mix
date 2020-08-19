@@ -1185,23 +1185,15 @@
 
                                 </tbody>
                             </table>
-                            <div class="pagination-custom">
-                                <span class="pag-el"><button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        rows per page: 10
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-                                        <a class="dropdown-item" href="#">rows per page: 10</a>
-
-                                        <a class="dropdown-item" href="#">rows per page: 20</a>
-
-                                        <a class="dropdown-item" href="#"> rows per page: 40</a>
-
-                                    </div>
-                                </span>
-                                <span class="pag-el">1-10 άπω 100</span>
-                                <span class="pag-el next-p"><i class="fas fa-angle-left"></i><i class="fas fa-angle-right"></i></span>
-                            </div>
+                            <ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="fas fa-search"></i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="fas fa-search"></i></a></li>
+  </ul>
                         </div>
                     </div>
                 </div>
