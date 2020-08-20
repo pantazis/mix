@@ -2650,7 +2650,7 @@ video.responsive-video {
   color: #444;
   display: inline-block;
   font-size: 1.2rem;
-  padding: 0 10px;
+  padding: 0 10px !important;
   line-height: 30px;
 }
 
@@ -20296,7 +20296,6 @@ p {
 .main_body {
   position: relative;
   margin-top: 141px;
-  min-height: calc(100vh - 46px);
   background-color: #F3F3F4;
   transition: margin-left 0.3s;
 }

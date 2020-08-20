@@ -404,7 +404,7 @@ p{
     }
     
     margin-top: $subnav_height+$nav_height;
-    min-height: calc(100vh - #{$nav_height});
+  
     background-color: $main_body_background;    
     transition:  margin-left .3s;
    

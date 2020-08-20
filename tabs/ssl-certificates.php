@@ -1185,14 +1185,18 @@
 
                                 </tbody>
                             </table>
+                                <!-- Dropdown Trigger -->
+                                <a class='dropdown-trigger btn' data-target='d234'>rows per page: 10</a>
+                                <!-- Dropdown Structure -->
+                                    <ul id='d234' class='dropdown-content  z-depth-4'>
+                                        <?php foreach ([10,20,40] as $key => $value) { ?>
+                                            <li><a>rows per page: <?= $value ?></a></li>
+                                        <?php } ?>
+                                    </ul>
+                            <p>1-10 άπω 100</p>
                             <ul class="pagination">
-    <li class="disabled"><a href="#!"><i class="fas fa-search"></i></a></li>
-    <li class="active"><a href="#!">1</a></li>
-    <li class="waves-effect"><a href="#!">2</a></li>
-    <li class="waves-effect"><a href="#!">3</a></li>
-    <li class="waves-effect"><a href="#!">4</a></li>
-    <li class="waves-effect"><a href="#!">5</a></li>
-    <li class="waves-effect"><a href="#!"><i class="fas fa-search"></i></a></li>
+    <li class="disabled waves-effect"><a href="#!"><i class="fas fa-angle-left"></i></a></li>
+    <li class="waves-effect"><a href="#!"><i class="fas fa-angle-right"></i></a></li>
   </ul>
                         </div>
                     </div>
