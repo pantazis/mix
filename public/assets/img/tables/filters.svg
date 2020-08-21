@@ -1,20 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 18 19" style="enable-background:new 0 0 18 19;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#39434E;}
-</style>
-<g>
-	<path class="st0" d="M9,9.1"/>
-	<path class="st0" d="M9,9.1"/>
-	<g>
-		<rect x="1" y="2" class="st0" width="17" height="1"/>
-		<rect y="9" class="st0" width="18" height="1"/>
-		<rect y="16" class="st0" width="18" height="1"/>
-		<path class="st0" d="M5,2.5C5,3.9,3.9,5,2.5,5C1.1,5,0,3.9,0,2.5C0,1.1,1.1,0,2.5,0C3.9,0,5,1.1,5,2.5z"/>
-		<path class="st0" d="M16,9.5c0,1.4-1.1,2.5-2.5,2.5c-1.4,0-2.5-1.1-2.5-2.5C11,8.1,12.1,7,13.5,7C14.9,7,16,8.1,16,9.5z"/>
-		<path class="st0" d="M9,16.5C9,17.9,7.9,19,6.5,19C5.1,19,4,17.9,4,16.5C4,15.1,5.1,14,6.5,14C7.9,14,9,15.1,9,16.5z"/>
+<svg id="ep204tuqdaqr1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 19" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="18" height="19">
+<style>
+
+
+
+svg:hover #ep204tuqdaqr6_to {
+	animation: ep204tuqdaqr6_to__to 1500ms linear 1 normal forwards
+}
+svg:hover #ep204tuqdaqr7_to {
+	animation: ep204tuqdaqr7_to__to 1500ms linear 1 normal forwards
+}
+
+svg:hover #ep204tuqdaqr8_to {
+	animation: ep204tuqdaqr8_to__to 1500ms linear 1 normal forwards
+}
+
+
+
+
+
+
+
+@keyframes ep204tuqdaqr6_to__to {
+	0% {
+		transform: translate(0px, 0px);
+		animation-timing-function: cubic-bezier(0.420000, 0, 0.580000, 1)
+	}
+	46.666667% {
+		transform: translate(12px, 0px)
+	}
+	100% {
+		transform: translate(0px, 0px)
+	}
+}
+
+
+
+@keyframes ep204tuqdaqr7_to__to {
+	0% {
+		transform: translate(0px, 0px)
+	}
+	46.666667% {
+		transform: translate(-11px, 0px)
+	}
+	100% {
+		transform: translate(0px, 0px)
+	}
+}
+
+
+
+@keyframes ep204tuqdaqr8_to__to {
+	0% {
+		transform: translate(0px, 0px)
+	}
+	46.666667% {
+		transform: translate(9px, 0px)
+	}
+	70% {
+		transform: translate(-4px, 0px)
+	}
+	100% {
+		transform: translate(0px, 0px)
+	}
+}
+
+></style>
+	<g id="ep204tuqdaqr2">
+		<rect id="ep204tuqdaqr3" width="18" height="1" rx="0" ry="0" transform="matrix(1 0 0 1 0 2)" fill="rgb(57,67,78)" stroke="none" stroke-width="1"/>
+		<rect id="ep204tuqdaqr4" width="18" height="1" rx="0" ry="0" transform="matrix(1 0 0 1 0 9)" fill="rgb(57,67,78)" stroke="none" stroke-width="1"/>
+		<rect id="ep204tuqdaqr5" width="18" height="1" rx="0" ry="0" transform="matrix(1 0 0 1 0 16)" fill="rgb(57,67,78)" stroke="none" stroke-width="1"/>
+		<g id="ep204tuqdaqr6_to" transform="translate(0,0)">
+			<path id="ep204tuqdaqr6" d="M5,2.500000C5,3.900000,3.900000,5,2.500000,5C1.100000,5,0,3.900000,0,2.500000C0,1.100000,1.100000,0,2.500000,0C3.900000,0,5,1.100000,5,2.500000Z" transform="translate(0,0)" fill="rgb(57,67,78)" stroke="none" stroke-width="1"/>
+		</g>
+		<g id="ep204tuqdaqr7_to" transform="translate(0,0)">
+			<path id="ep204tuqdaqr7" d="M16,9.500000C16,10.900000,14.900000,12,13.500000,12C12.100000,12,11,10.900000,11,9.500000C11,8.100000,12.100000,7,13.500000,7C14.900000,7,16,8.100000,16,9.500000Z" transform="translate(0,0)" fill="rgb(57,67,78)" stroke="none" stroke-width="1"/>
+		</g>
+		<g id="ep204tuqdaqr8_to" transform="translate(0,0)">
+			<path id="ep204tuqdaqr8" d="M9,16.500000C9,17.900000,7.900000,19,6.500000,19C5.100000,19,4,17.900000,4,16.500000C4,15.100000,5.100000,14,6.500000,14C7.900000,14,9,15.100000,9,16.500000Z" transform="translate(0,0)" fill="rgb(57,67,78)" stroke="none" stroke-width="1"/>
+		</g>
 	</g>
-</g>
 </svg>

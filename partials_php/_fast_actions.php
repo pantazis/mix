@@ -22,18 +22,18 @@
                         <form class="col s12">
                             <div class="row">
                                 <div class="file-field input-field col-lg-12">
-                                    <div class="btn"><i class="fas fa-search"></i></div>
+                                    <div class="btn waves-effect waves-light"><i class="fas fa-search"></i></div>
                                     <!-- Dropdown Trigger -->
-                                    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Διαλεξε πινακα</a>
+                                    <a class='dropdown-trigger btn waves-effect waves-light' href='#' data-target='dropdown<?=$num?>'>Διαλεξε πινακα</a>
                                     <!-- Dropdown Structure -->
-                                    <ul id='dropdown1' class='dropdown-content  z-depth-4'>
+                                    <ul id='dropdown<?=$num?>' class='dropdown-content  z-depth-4'>
                                         <?php foreach ($arr as $key => $value) { ?>
                                             <li><a href="#!"><?= $value ?></a></li>
                                         <?php } ?>
                                     </ul>
                                     <div class="file-path-wrapper">
-                                        <input id="search1" type="text" class="validate">
-                                        <label for="search1">Last Name</label>
+                                        <input id="search<?=$num?>" type="text" class="validate">
+                                        <label for="search<?=$num?>">Last Name</label>
                                     </div>
                                 </div>
                             </div>

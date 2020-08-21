@@ -11,8 +11,7 @@
                             <li class="breadcrumb-item active" aria-current="page">Πιστοποιητικά SSL</li>
                         </ol>
                     </nav>
-                </div>
-                
+                </div>                
                 <div class="col-lg-12">
                     <div class="text_con main_cat title">
                         <h1 class="h2">Πιστοποιητικά SSL</h1>
@@ -34,22 +33,17 @@
                         </div>
                        <div class="text1">   
                        <h1 class="h1"><?=$value['num']?></h1>                             
-                            <h4 class="h4"><?=$value['name']?></h4>
-                           
-                            
-                                                
-                           
+                            <h4 class="h4"><?=$value['name']?></h4> 
                        </div>
                        </div>
-                     
                     </div>
-                   
                 </div>
                 <?php } ?>
                 <div class="col-lg-12">
                     
                 <div class=" filter2 ">
-                    <img src="public/assets/img/tables/filters.svg" alt="">Φίλτρο αποτελεσμάτων
+                <?php include 'partials_php/filters_icon.php'?>
+                Φίλτρο αποτελεσμάτων
                  </div>
                     <div class="text_con main_cat d-block p-0">
 

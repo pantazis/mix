@@ -37,16 +37,10 @@
 
                      <?php $arr=["DOMAINS","HOSTING","WEBSITES","SSL CERTIFICATES","H ΕΤΑΙΡΙΑ","ΕΞΥΠΗΡΕΤΗΣΗ  ΠΕΛΑΤΩΝ" ]?>
                         <?php foreach ($arr as $key => $value) {?>
-                        
-                        
-                      
                             <!-- Links -->
                             <?php $dd = $key%2; if($dd==0)  echo '<div class="par">'?>
                             <h5 class="text-uppercase mynav"><?=$value?></h5>
                             <?php $dd = $key%2; if($dd==1)  echo '</div>'?>
-
-                            
-                    
                         <?php }?>
                         </div>
                      </div>
@@ -69,18 +63,14 @@
                         </div>
                         <div class="ml-lg-auto r-width d-flex  flex-column flex-lg-row flex-wrap">
                             <?php $arr=["Όροι χρήσης","Πολιτική απορρήτου","Ρύθμιση ΦΠΑ","Χάρτης ιστοτόπου "]?>  
-                            <?php foreach ($arr as $key => $value) {?>                     
-                            
+                            <?php foreach ($arr as $key => $value) {?> 
                                 <a class="link-f" href="#"><?=$value?></a>
-                                
-                        
                             <?php } ?>
                         </div>
                     </div>
                  </div>
              </div>
              <!-- Copyright -->
-
          </footer>
          <!-- Footer -->
         

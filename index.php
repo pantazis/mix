@@ -29,9 +29,10 @@ function mix($filename)
 
 <?php foreach ($tabArr as $key => $value){ ?>
             <div class="item" data-hash="<?=$value['url']?>">
-             <?php include $value['link'] ?>
-             <?php include "partials_php/_fast_actions.php" ?>
-             <?php include "partials_php/_footer.php" ?>
+                <?php $num = $key; ?>            
+                <?php include $value['link'] ?>
+                <?php include "partials_php/_fast_actions.php" ?>
+                <?php include "partials_php/_footer.php" ?>
             </div>                   
             <?php }?>         
           </div>
