@@ -20672,9 +20672,18 @@ $("input").on("focusout", function () {
   check_input(input_el);
 });
 $(".filter2").click(function () {
-  $(this).parent().toggleClass("open");
-}); ///$("input").on( "focusout", check_input() );
-//$("input").on( "focus",check_input() );
+  if ($(this).parent().hasClass("open")) {
+    $(this).parent().removeClass("open");
+    $(this).parent().addClass("closed");
+    var el = this;
+    $(".filter2").find("#line3")[0].addEventListener("animationend", function () {
+      $(el).parent().removeClass("closed");
+    });
+  } else {
+    $(this).parent().removeClass("closed");
+    $(this).parent().addClass("open");
+  }
+});
 
 /***/ }),
 

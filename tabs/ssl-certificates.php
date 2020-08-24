@@ -41,9 +41,11 @@
                 <?php } ?>
                 <div class="col-lg-12">
                     
-                <div class=" filter2 ">
+                <div class=" filter2 waves-effect waves-light ">
+                <div class="parfil">   
                 <?php include 'partials_php/filters_icon.php'?>
                 Φίλτρο αποτελεσμάτων
+                </div> 
                  </div>
                     <div class="text_con main_cat d-block p-0">
 
