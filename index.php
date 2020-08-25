@@ -62,15 +62,15 @@ function mix($filename)
 
    function startOwl(){
    
-   var aaa={        
+   var options={        
         items:1,
         loop:false,
         center:true,
-        margin:0,
+        margin:0,        
         startPosition: activeTab
     }
-    console.log(aaa);
-   owl.owlCarousel(aaa);
+    console.log(options);
+   owl.owlCarousel(options);
 
 
     owl.on('changed.owl.carousel', function(event) {      

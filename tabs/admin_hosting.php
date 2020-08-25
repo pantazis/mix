@@ -15,93 +15,100 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                <div class=" filter2 ">
-                                <img src="public/assets/img/tables/filters.svg" alt="">Φίλτρο αποτελεσμάτων
+                    
+                <div class=" filter2 waves-effect waves-light ">
+                <div class="parfil">   
+                <?php include 'partials_php/filters_icon.php'?>
+                Φίλτρο αποτελεσμάτων
+                </div> 
                  </div>
                     <div class="text_con main_cat d-block p-0">
-                      
 
-                        <form class=" flex-fill filter-form">
-                            <div class="form-row flex-fill ">
-
-
-                                <div class="form-group col-lg-3 flex-fill">
-                                    <div class="input-cont">
-                                      
-                                        <input type="text" class="form-control" id="text" placeholder="Γράψε ID"
-                                            required="">
-                                            <label for="text">ID</label>
-                                    </div>
-                                 
-                                </div>
-                                <div class="form-group col-lg-3 flex-fill">
-                                    <div class="input-cont">
-                                      
-                                        <select class="form-control" id="Select1" placeholder="Επιλογή κατάστασης">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                        <label for="Select1">Κατάσταση</label>
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-3 flex-fill">
-                                    <div class="input-cont">
-                                      
-                                        <input type="text" class="form-control" id="text" placeholder="Γράψε email"
-                                            required="">
-                                            <label for="text">Email</label>
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group checkboxes col-lg-3 flex-fill">
-
-                                    <div class="input-cont redio flex-fill focused redio-special-group">
-                                    <label for="Male">Προϋπόθεση</label>
-                                        <div class="redio-special">
-                                            <label for="Male" class="option1"><span>και</span></label>
-                                            <input type="checkbox" class="form-control" id="Male" name="gender">
-                                            <label for="Male" class="option2"><span>ή</span></label>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-                            <div class="form-row flex-fill">
-                                <div class="form-group col-lg-6 flex-fill d-flex aligns m-0 ">
-
-
-
-                                    <span class="result_text">Βρήκαμε 12 αποτελέσματα</span>
-                                    </div>
-                                    <div class="form-group col-lg-6 flex-fill d-flex aligns m-0 ">
-                                    <div class="waves-effect waves-light btn">
-                                        <button type="button" class="waves-effect waves-light btn">
-                                            Καθαρισμός φίλτρων
-                                        </button>
-                                        <button type="button" class="waves-effect waves-light btn">
-                                            Αναζήτηση</button>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-
-
-                        </form>
+                    <div class="row p-n">
+    <form class="col s12">
+      <div class="row block">
+        <div class="input-field col l2 m4 s12">
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">ID</label>
+        </div>
+        <div class="input-field col l2 m4 s12">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Domain</label>
+        </div>
+        <div class="input-field col l2 m4 s12">
+        <select>
+      <option value="" disabled selected>Κατάσταση domain</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Κατάσταση domain</label>
+         
+        </div>
+        <div class="input-field col l2 m4 s12">
+        <input type="text" class="datepicker">
+        <label for="birthdate" class="">Aπό</label>
+        </div>
+        <div class="input-field col l2 m4 s12">
+        <input type="text" class="datepicker">
+        <label for="birthdate" class="">Aπό</label>
+        </div>
+        <div class="input-field col l2 m4 s12">
+        <div class="switch">
+            <div class="flex-box-center">
+            <label for="lever" class="">Προϋπόθεση</label>
+                <label>                  
+                    <input type="checkbox" id="lever"  checked>
+                    <span class="lever"></span>
+                    <span class="v1">ή</span><span class="v2">και</span>
+                </label>                
+            </div>         
+        </div>        
+        </div>        
+      </div>
+      <input type="checkbox" >
+      <div class="row block">      
+        <div class="input-field col l3">
+        <label for="birthdate" class="">Aπό</label>
+        <div id="test-slider"></div>
+                 
+        </div>
+        <div class="col l6"></div> 
+        <div class="file-field input-field col l3">
+        <div class="btn waves-effect waves-light">Αναζήτηση</div>
+        </div> 
+      </div> 
+      <div class="row block">      
+        <div class="input-field col l3 p-0" >
+        <label for="birthdate" class="relative">Βρήκαμε <b>4</b> αποτελέσματα</label>
+        </div>
+        <div class="col l6"></div> 
+        <div class="input-field col l3">
+          
+         </div>        
+      </div>       
+    </form>
+  </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="col-lg-12">
                     <div class="text_con p-0">
                         <div class="table100">

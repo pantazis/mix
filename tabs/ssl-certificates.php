@@ -51,71 +51,75 @@
 
                     <div class="row p-n">
     <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
+      <div class="row block">
+        <div class="input-field col l2 m4 s12">
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">ID</label>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field col l2 m4 s12">
           <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
+          <label for="last_name">Domain</label>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
+        <div class="input-field col l2 m4 s12">
+        <select>
+      <option value="" disabled selected>Κατάσταση domain</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Κατάσταση domain</label>
+         
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
+        <div class="input-field col l2 m4 s12">
+        <input type="text" class="datepicker">
+        <label for="birthdate" class="">Aπό</label>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
+        <div class="input-field col l2 m4 s12">
+        <input type="text" class="datepicker">
+        <label for="birthdate" class="">Aπό</label>
         </div>
+        <div class="input-field col l2 m4 s12">
+        <div class="switch">
+            <div class="flex-box-center">
+            <label for="lever" class="">Προϋπόθεση</label>
+                <label>                  
+                    <input type="checkbox" id="lever"  checked>
+                    <span class="lever"></span>
+                    <span class="v1">ή</span><span class="v2">και</span>
+                </label>                
+            </div>         
+        </div>        
+        </div>        
       </div>
-      <div class="row">
-        <div class="col s12">
-          This is an inline input field:
-          <div class="input-field inline">
-            <input id="email_inline" type="email" class="validate">
-            <label for="email_inline">Email</label>
-            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-          </div>
+      <input type="checkbox" >
+      <div class="row block">      
+        <div class="input-field col l3">
+        <label for="birthdate" class="">Aπό</label>
+        <div id="test-slider"></div>
+                 
         </div>
-      </div>
+        <div class="col l6"></div> 
+        <div class="file-field input-field col l3">
+        <div class="btn waves-effect waves-light">Αναζήτηση</div>
+        </div> 
+      </div> 
+      <div class="row block">      
+        <div class="input-field col l3 p-0" >
+        <label for="birthdate" class="relative">Βρήκαμε <b>4</b> αποτελέσματα</label>
+        </div>
+        <div class="col l6"></div> 
+        <div class="input-field col l3">
+          
+         </div>        
+      </div>       
     </form>
   </div>
-        
-
-
-
-
-
-
-
-
-
-
-                    
-                      
-
-           
-
-
-
-
-
-
-
-
                     </div>
                 </div>
+
+
+
+                
                 <div class="col-lg-12">
                     <div class="text_con p-0">
                     <div class="table100">
@@ -1181,19 +1185,16 @@
 
                                 </tbody>
                             </table>
-                                <!-- Dropdown Trigger -->
-                                <a class='dropdown-trigger btn' data-target='d234'>rows per page: 10</a>
-                                <!-- Dropdown Structure -->
-                                    <ul id='d234' class='dropdown-content  z-depth-4'>
-                                        <?php foreach ([10,20,40] as $key => $value) { ?>
-                                            <li><a>rows per page: <?= $value ?></a></li>
-                                        <?php } ?>
-                                    </ul>
-                            <p>1-10 άπω 100</p>
-                            <ul class="pagination">
-    <li class="disabled waves-effect"><a href="#!"><i class="fas fa-angle-left"></i></a></li>
-    <li class="waves-effect"><a href="#!"><i class="fas fa-angle-right"></i></a></li>
-  </ul>
+                            <div class="pagination-custom">
+                                <span class="pag-el">
+                                        rows per page: 10
+                                </span>
+                                <span class="pag-el">1-10 άπω 100</span>
+                                <span class="pag-el next-p">
+                                <div class="waves-effect"><i class="fas fa-angle-left"></i></div>
+                                <div class="waves-effect"><i class="fas fa-angle-right"></i></div>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
