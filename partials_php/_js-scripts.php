@@ -15,9 +15,17 @@
         $('#tabs-swipe-demo').tabs({swipeable: true});
         $('.carousel').carousel();
 
-        var slider = document.getElementById('test-slider');
+  var slider = document.getElementById('test-slider');
+
+  var first = parseInt($("label.test-slider").attr("data-start"));
+  var second= parseInt($("label.test-slider").attr("data-end")); 
+  $(".slide-start").html(first);
+  $(".slide-end").html(second);
+
+
+  var arr =[first,second];      
   noUiSlider.create(slider, {
-   start: [20, 80],
+   start: arr,
    connect: true,
    step: 1,
    orientation: 'horizontal', // 'horizontal' or 'vertical'
@@ -29,8 +37,17 @@
      decimals: 0
    })
   });
+  
+  slider.noUiSlider.on("end",function(){updateRange()});
         
     });
+
+    function updateRange(){
+      
+
+      $(".slide-start").html($(".noUi-handle-lower span").text());
+      $(".slide-end").html($(".noUi-handle-upper span").text());
+    }
 
 
 </script>

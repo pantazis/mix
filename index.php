@@ -20,6 +20,7 @@ function mix($filename)
     <!-- Google Fonts -->
     <link href="<?php mix('/public/assets/css/admin_home.css'); ?>" rel="stylesheet">
     
+    
     <!-- Plugin CSS -->
 </head>
 <body>
@@ -46,7 +47,8 @@ function mix($filename)
 
 
 <?php include "partials_php/_js-scripts.php"?>
-<script src="<?php mix('/public/assets/js/admin_home.js'); ?>"></script>
+
+
 <script src="resources\assets\js\_libraries\owl.carousel.js?<?php echo rand(0,100) ?>"></script>
 <script>
    var owl = $('.owl-carousel');

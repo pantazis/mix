@@ -12,11 +12,21 @@ a.waves-effect.waves-light.btn-small{
   filter: grayscale(1);
   opacity: 0.4;
 }
+.table100{
+    width:100%;
+    border-radius: 4px;
+    overflow: hidden;
 table {
   span[class*='btn-outline'].disabled{
     opacity: 1;
 
 
+  }
+
+  .inline_box {
+	position: absolute;
+	right: 16px;
+	top: 16px;
   }
   .btn{
     font-size: 10px;
@@ -27,42 +37,38 @@ table {
   width: 100%;
   margin: 0 auto;
   position: relative;
-}
-table * {
+
+ * {
   position: relative;
 }
 
-table thead tr {
+ thead tr {
   height: $row-height;
   background: #2e435e;
 }
-table tbody tr {
+ tbody tr {
   height: 50px;
 }
-table tbody tr:last-child {
+ tbody tr:last-child {
   border: 0;
 }
-table td,
-table th {
+ td,
+ th {
   text-align: left;
 }
-table td.l,
-table th.l {
+ td.l,
+ th.l {
   text-align: right;
 }
-table td.c,
-table th.c {
+ td.c,
+ th.c {
   text-align: center;
 }
-table td.r,
-table th.r {
+ td.r,
+ th.r {
   text-align: center;
 }
-.table100{
-    width:100%;
-    border-radius: 4px;
-    overflow: hidden;
-}
+
 .table100-head th {
   
   
@@ -98,7 +104,8 @@ span.small-t {
  
  
   &:last-of-type{
-    text-align: right;
+	text-align: right;
+	padding-right: 15px;
   
     @media screen and (max-width:$lg){
         text-align: left;
@@ -127,35 +134,35 @@ span.small-t {
   text-align: right;
   padding-right: 62px;
 }
-table tbody tr td span.cat {
+ tbody tr td span.cat {
     display: none;
 }
 
 @media screen and (max-width: $lg) {
-  table {
+  
+    display: block;
+
+  > *,
+   tr,
+  td,
+  th {
     display: block;
   }
-  table > *,
-  table tr,
-  table td,
-  table th {
-    display: block;
-  }
-  table thead {
+  thead {
     display: none;
   }
-  table tbody tr {
+  tbody tr {
     height: auto;
     padding: 37px 0;
   }
-  table tbody tr td {
+   tbody tr td {
   
     margin-bottom: 24px;
   }
-  table tbody tr td:last-child {
+   tbody tr td:last-child {
     margin-bottom: 0;
   }
-  table tbody tr td span.cat {
+   tbody tr td span.cat {
     
     display: inline-block;
     color: #000;
@@ -164,7 +171,7 @@ table tbody tr td span.cat {
     
  
   }
-  table tbody tr td:before {
+   tbody tr td:before {
     display: block;
   }
   .column4,
@@ -188,6 +195,8 @@ table tbody tr td span.cat {
     padding-right: 15px;
   }
 }
+}
+}
 .pagination-custom{  
   font-weight: bold;
 padding:0 $padding-r-l;
@@ -196,12 +205,22 @@ display: flex;
 align-items: center;
 .pag-el{
   padding-left:$padding-r-l; 
+  
+	.select-wrapper input.select-dropdown{
+	margin: 0;
+	border-bottom: 0;
+	min-width: 218px;
+	}
+	
   &:first-of-type{
     margin-left: auto;
   }
   &.next-p{
     i.fas{
-      font-size: 25px;
+		
+			font-size: 1.2rem;
+			line-height: 30px;
+		
      
       &:first-of-type{
         padding-right:#{$padding-r-l/2};
@@ -229,11 +248,7 @@ span.result_text {
   padding: $inner-padding;
 } 
 
-.inline_box {
-  position: absolute;
-  right: 16px;
-  top: 16px;
-}
+
 
 
 .filter_box {

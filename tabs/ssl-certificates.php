@@ -60,7 +60,7 @@
           <input id="last_name" type="text" class="validate">
           <label for="last_name">Domain</label>
         </div>
-        <div class="input-field col l2 m4 s12">
+        <div class="input-field  down col l2 m4 s12">
         <select>
       <option value="" disabled selected>Κατάσταση domain</option>
       <option value="1">Option 1</option>
@@ -94,7 +94,7 @@
       <input type="checkbox" >
       <div class="row block">      
         <div class="input-field col l3">
-        <label for="birthdate" class="">Aπό</label>
+        <label for="test-slider" class="test-slider" data-start="20" data-end="80">από <span class="slide-start"></span> μέχρι <span class="slide-end"></span>  </label>
         <div id="test-slider"></div>
                  
         </div>
@@ -119,7 +119,19 @@
 
 
 
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="col-lg-12">
                     <div class="text_con p-0">
                     <div class="table100">
@@ -976,8 +988,8 @@
                                        <td class="column1"> <span class="cat">Email:</span>
                                            giorgos@dnhost.gr                                        </td>
                                            <td class="column1">
-                                                                                          <a href="" class="btn btn-block btn-primary disabled">Ανανέωση</a>
-                                                                                       </td>
+                                            <a href="" class="btn btn-block btn-primary disabled">Ανανέωση</a>
+                                            </td>
                                        
                                    </tr>
                                                                         
@@ -1187,12 +1199,32 @@
                             </table>
                             <div class="pagination-custom">
                                 <span class="pag-el">
-                                        rows per page: 10
+                               
+                                <div class="up">
+                                <select>
+                                <?php foreach ([5,10,15,20,40]  as $key => $value) { ?>
+                                <option value="<?=$key?>"  <?php if($key==0) echo "selected" ?>>Αποτελέσµατα ανά σελίδα <?=$value?></option>
+                                <?php } ?>
+                               
+                                </select>
+                               
+                            </div>
                                 </span>
                                 <span class="pag-el">1-10 άπω 100</span>
                                 <span class="pag-el next-p">
-                                <div class="waves-effect"><i class="fas fa-angle-left"></i></div>
-                                <div class="waves-effect"><i class="fas fa-angle-right"></i></div>
+                                    
+                               
+                                <ul class="pagination">
+                                    <li class="disabled"><a><i class="fas fa-angle-left"></i></a></li>
+                                    <li class="active"><a >1</a></li>
+                                    <li class="waves-effect"><a >2</a></li>
+                                    <li class="waves-effect"><a >3</a></li>
+                                    <li class="waves-effect"><a >4</a></li>
+                                    <li class="waves-effect"><a >5</a></li>
+                                    <li class="disabled"><a >...</a></li>
+                                    <li class="waves-effect"><a >100</a></li>
+                                    <li class="waves-effect"><a ><i class="fas fa-angle-right"></i></a></li>
+                                </ul>
                                 </span>
                             </div>
                         </div>
@@ -1218,5 +1250,5 @@
 
 
         </div>
-        <link href="<?php mix('/public/assets/css/table_pages.css'); ?>" rel="stylesheet">
-    <script src="<?php mix('/public/assets/js/table_pages.js');?>"></script>
+        
+   

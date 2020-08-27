@@ -1,5 +1,5 @@
 .dropdown-content {
-  @extend .z-depth-1;
+  @extend .z-depth-3;
   background-color: $dropdown-bg-color;
   margin: 0;
   display: none;
@@ -10,6 +10,13 @@
   position: absolute;
   z-index: 999;
   will-change: width, height;
+  .down &{
+    top:0!important;
+  }
+  .up &{
+    top:auto!important;
+    bottom:0!important;
+  }
 
   li {
     clear: both;

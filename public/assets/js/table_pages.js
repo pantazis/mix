@@ -20676,7 +20676,7 @@ $(".filter2").click(function () {
     $(this).parent().removeClass("open");
     $(this).parent().addClass("closed");
     var el = this;
-    $(".filter2").find("#line3")[0].addEventListener("animationend", function () {
+    $(el).find("#line3")[0].addEventListener("animationend", function () {
       $(el).parent().removeClass("closed");
     });
   } else {
