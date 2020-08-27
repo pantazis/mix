@@ -1,5 +1,13 @@
 $padding-r-l:15px;
 $row-height:60px;
+$pagi-font-size:15px;
+$pagi-line-height:27px;
+
+
+.pagination li a {
+    font-size: $pagi-font-size; 
+    line-height: $pagi-line-height;
+}
 
 a.waves-effect.waves-light.btn-small{
 	right: 35px;
@@ -198,11 +206,14 @@ span.small-t {
 }
 }
 .pagination-custom{  
+	font-size:$pagi-font-size;
+	line-height:$pagi-line-height;
   font-weight: bold;
 padding:0 $padding-r-l;
 height: $row-height;
 display: flex;
 align-items: center;
+justify-content: space-between;
 .pag-el{
   padding-left:$padding-r-l; 
   
@@ -212,14 +223,12 @@ align-items: center;
 	min-width: 218px;
 	}
 	
-  &:first-of-type{
-    margin-left: auto;
-  }
+ 
   &.next-p{
     i.fas{
 		
-			font-size: 1.2rem;
-			line-height: 30px;
+			font-size: $pagi-font-size;
+			line-height:$pagi-line-height;
 		
      
       &:first-of-type{

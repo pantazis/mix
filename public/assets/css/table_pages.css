@@ -16947,6 +16947,11 @@ footer a.link-f {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.pagination li a {
+  font-size: 15px;
+  line-height: 27px;
+}
+
 a.waves-effect.waves-light.btn-small {
   right: 35px;
   position: absolute;
@@ -17121,11 +17126,14 @@ a.waves-effect.waves-light.btn-small {
 }
 
 .pagination-custom {
+  font-size: 15px;
+  line-height: 27px;
   font-weight: bold;
   padding: 0 15px;
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .pagination-custom .pag-el {
   padding-left: 15px;
@@ -17135,12 +17143,9 @@ a.waves-effect.waves-light.btn-small {
   border-bottom: 0;
   min-width: 218px;
 }
-.pagination-custom .pag-el:first-of-type {
-  margin-left: auto;
-}
 .pagination-custom .pag-el.next-p i.fas {
-  font-size: 1.2rem;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 27px;
 }
 .pagination-custom .pag-el.next-p i.fas:first-of-type {
   padding-right: 7.5px;
