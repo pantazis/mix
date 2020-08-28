@@ -46,7 +46,12 @@ function mix($filename)
 
 
 
+
+
 <?php include "partials_php/_js-scripts.php"?>
+<div>
+
+</div>
 
 
 <script src="resources\assets\js\_libraries\owl.carousel.js?<?php echo rand(0,100) ?>"></script>
@@ -63,6 +68,8 @@ function mix($filename)
    $( document ).ready(startOwl()); 
 
    function startOwl(){
+    setInterval(function(){  M.toast({html: 'I am a toast! dddddddddddddddddddddddddddddddddddddddddd'}) }, 3000);
+  
    
    var options={        
         items:1,
