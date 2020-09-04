@@ -13,14 +13,18 @@
     max-width: 90%;
   }
   @media #{$large-and-up} {
-    top: 10%;
+    top: 150px;
     right: 7%;
     max-width: 86%;
+    .notification .main {
+      max-width: 388px;
+    }
+    
   }
 }
 
 .toast {
-  @extend .z-depth-1;
+  @extend .z-depth-4;
   border-radius: 2px;
   top: 35px;
   width: auto;
@@ -32,7 +36,7 @@
   line-height: 1.5em;
   word-break: break-all;
   background-color: $toast-color;
-  padding: 10px 25px;
+  padding: 10px 0px;
   font-size: 1.1rem;
   font-weight: 300;
   color: $toast-text-color;
