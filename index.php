@@ -72,8 +72,8 @@ if(maintext.length > limit){
 
 
 
-
-
+var b = 0 ;
+function notification(num){
 var notification = `<div class="notification" data-opend="false">
         <div class="head">
             <i class="fas fa-star"></i>
@@ -87,7 +87,7 @@ var notification = `<div class="notification" data-opend="false">
             <div class="main">
             <i class="fas fa-user-shield"></i>      
             <div>
-                <div class="title">Security notification</div>                
+                <div class="title">${num}Security notification</div>                
                 <div class="text-samll a">${res}</div>
                 <div class="text-samll b">${maintext}</div>                           
             </div>
@@ -99,6 +99,8 @@ var notification = `<div class="notification" data-opend="false">
             <a href="" class="action 2nd">action2</a>
         </div>
     </div>`;
+    return notification
+}
 
    var owl = $('.owl-carousel');
    var hashLocation =window.location.hash; 
@@ -116,11 +118,10 @@ var notification = `<div class="notification" data-opend="false">
    function startOwl(){
        var b = 0
     setInterval(function(){
-        if(b<10){
+        if( b < 2){
        
-        var not = M.toast({html: notification,displayLength: Infinity });
+        var not = M.toast({html: notification(b),displayLength: Infinity });
         notificationToggle(not);
-  
         }
         b++
      }, 3000);
@@ -145,8 +146,10 @@ var notification = `<div class="notification" data-opend="false">
         
         $(el).find(".parent_el").css("height",$(el).find(".main").height()+"px");              
             if( detectDrag > 0 && detectDrag < 25 || detectDrag < 0 && detectDrag > -25 || detectDrag == 0){
-                if(e.target =="i.fas.fa-times"){
-                    console.log("xxxxxxxxxxxxxxxx")
+              
+                if(e.target.className =="fas fa-times" ){
+                 
+                    M.toast._onDragEnd2("e.target");
                     return 
                 }
                 if($(el).attr("data-opend")=="false"){
@@ -174,7 +177,7 @@ var notification = `<div class="notification" data-opend="false">
         margin:0,        
         startPosition: activeTab
     }
-    console.log(options);
+
    owl.owlCarousel(options);
 
 
