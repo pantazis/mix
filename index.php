@@ -117,8 +117,10 @@ var notification = `<div class="notification" data-opend="false">
 
    function startOwl(){
        var b = 0
+       var not = M.toast({html: notification(b),displayLength: Infinity });
+        notificationToggle(not);
     setInterval(function(){
-        if( b < 2){
+        if( b < 3){
        
         var not = M.toast({html: notification(b),displayLength: Infinity });
         notificationToggle(not);
