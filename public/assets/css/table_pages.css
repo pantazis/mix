@@ -16372,7 +16372,7 @@ p {
   display: flex;
 }
 .text_con .flex .icon1 {
-  width: 30%;
+  width: 83px;
 }
 .text_con .flex .icon1 img {
   width: 100%;
@@ -16627,13 +16627,14 @@ p.description {
   background-color: #e9ecef;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 0;
+  padding: 0;
   margin-bottom: 0;
   list-style: none;
   background-color: transparent;
   border-radius: 0.25rem;
   position: relative;
-  top: -15px;
+  top: 0;
+  margin-top: 0;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -16764,6 +16765,10 @@ div#test-slider {
 }
 
 /*--------------------------------------notification-end----------------------------------*/
+.chart-btn {
+  margin: 4px 2px 0px 2px;
+}
+
 .row-redio {
   display: flex;
   justify-content: space-between;

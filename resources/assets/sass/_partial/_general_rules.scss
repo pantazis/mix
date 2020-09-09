@@ -444,7 +444,7 @@ p{
     .flex {
         display: flex;
         .icon1{
-            width: 30%;
+            width: 83px;
             img{
                 width: 100%;
 
@@ -726,16 +726,16 @@ $color_1: #6c757d;
 	padding: 0.75rem 1rem;
 	margin-bottom: 1rem;
 	background-color: $color_0;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 10px 0;
-	margin-bottom: 0;
-	list-style: none;
-	background-color: transparent;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 0.25rem;
-	position: relative;
-	top: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  position: relative;
+  top: 0;
+  margin-top: 0;
 }
 
 
@@ -868,6 +868,11 @@ div#test-slider {
 
 
 /*--------------------------------------notification-end----------------------------------*/
+
+.chart-btn {
+  margin: 4px 2px 0px 2px;
+}
+
 
 
 

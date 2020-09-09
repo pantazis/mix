@@ -99,20 +99,20 @@ $menu_cat = '{
 }';
 $tabArr = [
   [
-     "title"=>"Home",
+     "title"=>"Data",
      "link"=>"tabs/firstpage.php",
      "url"=>"firstpage"
   ],
   [
-     "title"=>"Ssl Certificates",
+     "title"=>"Table",
      "link"=>"tabs/ssl-certificates.php",
      "url"=>"ssl-certificates"
-  ],
+  ],  
   [
-     "title"=>"Admin Hosting",
-     "link"=>"tabs/admin_hosting.php",
-     "url"=>"admin_hosting"
-  ]
+    "title"=>"Charts and Graphs",
+    "link"=>"tabs/charts-and-graphs.php",
+    "url"=>"Charts"
+ ]
 ];
 
 
@@ -142,6 +142,23 @@ $ssldata2 = json_decode($ssldata,true);
 
 $sslnum ='[{"name":"SSL ΠΙΣΤΟΠΟΙΗΤΙΚΑ","num":"1065","img":"sslicon.svg"},{"name":"ΣΕ ΕΚΚΡΕΜΟΤΗΤΑ","num":"332","img":"pending.svg"},{"name":"ΛΗΓΟΥΝ ΣΥΝΤΟΜΑ","num":"6","img":"clock.svg"},{"name":"ΕΧΟΥΝ ΛΗΞΕΙ","num":"138","img":"expired.svg"}]';
 $sslnum2 = json_decode($sslnum,true);
+$charts ='[{
+              "name":"SSL ΠΙΣΤΟΠΟΙΗΤΙΚΑ",
+              "num":"1065",
+              "img":"sslicon.svg"
+            },
+            {
+              "name":"domain",
+              "num":"862",
+              "img":"domainsicon.svg"
+            },
+            {
+              "name":"hosting",
+              "num":"565",
+              "img":"hostingicon.svg"
+            }
+          ]';
+$charts = json_decode($charts,true);
 
 //---------------------------------------------ssl-certificates-----------------------------------------//
 
