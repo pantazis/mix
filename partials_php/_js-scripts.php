@@ -4,6 +4,9 @@
         crossorigin="anonymous"></script>
 <script src="<?php mix('/public/assets/js/_libraries/materialize.min.js'); ?>"></script>
 <script src="<?php mix('/public/assets/js/_libraries/nouislider.js'); ?>"></script>
+<script src="<?php mix('/public/assets/js/table_pages.js');?>"></script>
+<script src="resources/assets/js/_libraries/owl.carousel.js?<?php echo rand(0,100) ?>"></script>
+
 <script>
 
 

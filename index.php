@@ -56,7 +56,6 @@ function mix($filename)
 
 
 
-<script src="resources\assets\js\_libraries\owl.carousel.js?<?php echo rand(0,100) ?>"></script>
 
 
 <script>

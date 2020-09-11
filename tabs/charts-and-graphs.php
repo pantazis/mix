@@ -39,8 +39,8 @@
                 <?php } ?>
  <div class="col-lg-8">
          <div class="text_con">
-             <h2 class="h3">pantazis vastardis</h2> 
-             <div id="canvas-holder" ><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+           
+    	<div id="canvas-holder" ><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
         <canvas id="canvas2"></canvas>
     <div class="d-flex flex-row flex-xl-wrap justify-content-xl-center mt-auto">
         <button id="randomizeData2" class="waves-effect waves-light btn-small chart-btn">Randomize Data</button>
