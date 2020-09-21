@@ -1,6 +1,7 @@
 
 <div class="z-depth-1 sub-menu">
 <div class="container" style="padding-bottom:0;padding-top:0" >
+<div class="row">
 
 
 <div class="col-lg-12">
@@ -13,7 +14,7 @@
 </div>
 </div>
 <div class="row">
-<div class="col s12 p-0">
+<div class="col s12 ">
 <ul class="tabs tabs-transparent">
 
 <?php foreach ($tabArr as $key => $value){?>
@@ -28,6 +29,9 @@
 </div>
 </div>
 </div>
+</div>
+
+
 </div>
 </div>
 </div>

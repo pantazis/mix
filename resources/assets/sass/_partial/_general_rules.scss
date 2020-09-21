@@ -175,7 +175,26 @@ $inner-padding:20px;
  }
  .popover-body {
   padding:.5rem .75rem;
-  color:#212529
+  color:#212529;
+
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;  
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+  
+  
  }
 
 

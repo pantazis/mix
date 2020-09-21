@@ -1,4 +1,5 @@
 <?php include "partials_php/fakeData.php" ?>
+<?php include "partials_php/loader.php" ?>
 <?php
 function mix($filename)
 {
@@ -117,17 +118,14 @@ var notification = `<div class="notification" data-opend="false">
 
 
    function startOwl(){
-       var b = 0
-       var not = M.toast({html: notification(b),displayLength: Infinity });
-        notificationToggle(not);
-    setInterval(function(){
-        if( b < 3){
-       
-        var not = M.toast({html: notification(b),displayLength: Infinity });
-        notificationToggle(not);
+       var b = 0      
+            setInterval(function(){
+        if(b < 3){       
+            var not = M.toast({html: notification(b),displayLength: Infinity });
+            notificationToggle(not);
         }
         b++
-     }, 3000);
+     }, 10000);
      
 
 
@@ -137,16 +135,9 @@ var notification = `<div class="notification" data-opend="false">
 
         var i = 0;
     function notificationToggle (not){
-        $(not.el).mouseup(function(e){ 
-              
-            var detectDrag = M.Toast._draggedToast.startingXPos-M.Toast._draggedToast.xPos;
-                        
+        $(not.el).mouseup(function(e){              
+            var detectDrag = M.Toast._draggedToast.startingXPos-M.Toast._draggedToast.xPos;                        
          var el = $(not.el).find(".notification");
-      
-
-
-
-        
         $(el).find(".parent_el").css("height",$(el).find(".main").height()+"px");              
             if( detectDrag > 0 && detectDrag < 25 || detectDrag < 0 && detectDrag > -25 || detectDrag == 0){
               
@@ -198,6 +189,16 @@ var notification = `<div class="notification" data-opend="false">
 
   
    }
+
+   setTimeout(function(){
+
+    $(".coverdiv.loader").addClass("hide-loader");
+   
+    //display: none;
+   }, 4000);
+
+
+
 
 
 

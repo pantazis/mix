@@ -33,16 +33,29 @@
     </div>
 </div>
 <style>
+.coverdiv.hide-loader{
+  left:-100%;
+}
 .loaderimg {
   width: 100px;
   height: auto; }
 
 .coverdiv {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10001;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  transition: left .5s ease-in;
+
+    
+   }
 
 .inner_div {
   position: relative; }

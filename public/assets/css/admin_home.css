@@ -19041,10 +19041,6 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-.email {
-  font-size: 100;
-}
-
 nav.nav_top {
   height: 46px;
   display: flex;
@@ -19368,7 +19364,7 @@ nav.nav-modal img.top_img {
   border-bottom: 1px solid #dedede;
 }
 .user .h3 {
-  color: #e2e2e2;
+  color: #000;
 }
 .user p {
   margin-bottom: 0;
@@ -20348,6 +20344,22 @@ nav.nav-modal img.top_img {
 .popover-body {
   padding: 0.5rem 0.75rem;
   color: #212529;
+}
+.popover-body .dropdown-menu.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popover-body .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
 }
 
 body {

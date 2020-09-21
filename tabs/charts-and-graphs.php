@@ -127,8 +127,7 @@
 			window.myDoughnut = new Chart(ctx, config);
 			
 
-            var ctx2 = document.getElementById('canvas2').getContext('2d');
-            debugger;
+            var ctx2 = document.getElementById('canvas2').getContext('2d');       
 			window.myLine = new Chart(ctx2, config2);
 			
 		};
